@@ -12,30 +12,16 @@
     "image_with_text_overlay_YBXfjj": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_wHkAMe": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_bNK6dx": {
           "type": "heading",
           "settings": {
             "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_3QtzHj": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "heading_tag": "h3"
           }
         }
       },
       "block_order": [
-        "subheading_wHkAMe",
-        "heading_bNK6dx",
-        "richtext_3QtzHj"
+        "heading_bNK6dx"
       ],
       "name": "Image with text overlay",
       "settings": {
