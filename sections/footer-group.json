@@ -107,7 +107,7 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
+            "title": "Abonnez-vous pour nos nouveautés et promotions personnalisées",
             "content": ""
           }
         },
@@ -133,7 +133,7 @@
         "text"
       ],
       "settings": {
-        "show_social_media": true,
+        "show_social_media": false,
         "show_payment_icons": true,
         "show_country_selector": true,
         "show_country_flag": true,
