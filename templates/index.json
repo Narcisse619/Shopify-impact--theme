@@ -50,6 +50,7 @@
         "logo_AMFpJj": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/1000136897-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
