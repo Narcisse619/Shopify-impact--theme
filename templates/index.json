@@ -356,12 +356,65 @@
         "overlay_opacity": 30
       }
     },
+    "faq_gUwHgn": {
+      "type": "faq",
+      "blocks": {
+        "item_8tfTYM": {
+          "type": "item",
+          "settings": {
+            "title": "Do you ship overseas?",
+            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "item_VBaGrf": {
+          "type": "item",
+          "settings": {
+            "title": "How long will it take to get my orders?",
+            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "item_8UwzWM": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_8tfTYM",
+        "item_VBaGrf",
+        "item_8UwzWM"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "contact_7xcgtb": {
       "type": "contact",
       "name": "Contact form",
       "settings": {
         "full_width": true,
-        "subheading": "Notre service clientèle est disponible 7 jours sur 7.Temps de réponse moyen : 5h",
+        "subheading": "Notre service clientèle est disponible 7 jours sur 7.Temps de réponse moyen : 4h",
         "title": "Avez-vous des questions ?",
         "content": "",
         "text_position": "start",
@@ -387,6 +440,7 @@
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
     "image_with_text_overlay_eUk4y3",
+    "faq_gUwHgn",
     "contact_7xcgtb"
   ]
 }
