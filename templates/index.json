@@ -66,6 +66,7 @@
         "logo_L8tEAq": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/cOSMOPOLITAN-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
