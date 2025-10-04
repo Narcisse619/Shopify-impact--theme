@@ -42,6 +42,7 @@
         "logo_gc3ryK": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/ELLE-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
