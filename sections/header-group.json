@@ -72,9 +72,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/SKINOVA_20250915_000557_0000.png",
-        "logo_max_width": 120,
-        "logo_mobile_max_width": 100,
+        "logo": "shopify://shop_images/SKINOVA.png",
+        "logo_max_width": 255,
+        "logo_mobile_max_width": 140,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
