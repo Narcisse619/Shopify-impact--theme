@@ -232,6 +232,7 @@
         "item_PmE64Q": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/453bbfd0cfe38d7ca6e657b8a5a32f06.avif",
             "column_size": "3",
             "title": "Flore D.",
             "heading_tag": "h4",
