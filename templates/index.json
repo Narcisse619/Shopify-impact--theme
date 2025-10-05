@@ -450,6 +450,80 @@
         "input_text_color": ""
       }
     },
+    "multi_column_KjEUaW": {
+      "type": "multi-column",
+      "blocks": {
+        "item_dMmzHn": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_mfM6A4": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_m7DmHw": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_tPTDJi": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_dMmzHn",
+        "item_mfM6A4",
+        "item_m7DmHw",
+        "item_tPTDJi"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Les adorent Skinona Beauty Mask",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "slideshow_8yx3ir": {
       "type": "slideshow",
       "name": "Slideshow",
@@ -662,6 +736,7 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
+    "multi_column_KjEUaW",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "faq_gUwHgn",
