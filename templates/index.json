@@ -527,11 +527,11 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "gap": "small",
         "text_alignment": "center",
         "subheading": "",
-        "title": "Les adorent Skinona Beauty Mask",
+        "title": "Elles adorent Skinona Beauty Mask",
         "content": "",
         "background": "",
         "background_gradient": "",
