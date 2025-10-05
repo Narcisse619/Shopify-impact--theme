@@ -38,12 +38,12 @@
 
   .video-testimonials__item {
     position: relative;
-    border-radius: 20px;
+    border-radius: {{ section.settings.border_radius }}px;
     overflow: hidden;
     background: #000;
     flex-shrink: 0;
-    width: 280px;
-    height: 500px;
+    width: {{ section.settings.video_width }}px;
+    height: {{ section.settings.video_height }}px;
   }
 
   .video-testimonials__video {
@@ -213,14 +213,20 @@
       <div class="video-testimonials__track" id="videoTrack-{{ section.id }}">
         {% for block in section.blocks %}
           <div class="video-testimonials__item" {{ block.shopify_attributes }}>
-            <video 
-              class="video-testimonials__video"
-              src="{{ block.settings.video_url }}"
-              playsinline
-              loop
-              muted
-              {% if block.settings.autoplay %}autoplay{% endif %}
-            ></video>
+            {% if block.settings.video != blank %}
+              <video 
+                class="video-testimonials__video"
+                src="{{ block.settings.video | file_url }}"
+                playsinline
+                loop
+                muted
+                {% if block.settings.autoplay %}autoplay{% endif %}
+              ></video>
+            {% else %}
+              <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: white; text-align: center; padding: 20px;">
+                Ajoutez une vidéo
+              </div>
+            {% endif %}
             
             {% unless block.settings.autoplay %}
               <div class="video-testimonials__overlay" onclick="playVideo{{ section.id }}(this)">
@@ -360,6 +366,33 @@
       "default": "#FFFFFF"
     },
     {
+      "type": "range",
+      "id": "video_width",
+      "label": "Largeur des vidéos (px)",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "video_height",
+      "label": "Hauteur des vidéos (px)",
+      "min": 300,
+      "max": 700,
+      "step": 20,
+      "default": 500
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des coins (px)",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "default": 20
+    },
+    {
       "type": "checkbox",
       "id": "autoplay_carousel",
       "label": "Défilement automatique du carousel",
@@ -372,10 +405,11 @@
       "name": "Vidéo",
       "settings": [
         {
-          "type": "url",
-          "id": "video_url",
-          "label": "URL de la vidéo",
-          "info": "Téléchargez votre vidéo dans Contenu > Fichiers et copiez l'URL ici"
+          "type": "video_url",
+          "id": "video",
+          "label": "Vidéo",
+          "accept": ["youtube", "vimeo"],
+          "info": "Téléversez votre vidéo directement ici"
         },
         {
           "type": "text",
@@ -393,7 +427,7 @@
   ],
   "presets": [
     {
-      "name": "Vidéos Témoignages Carousel",
+      "name": "Vidéos Témoignages",
       "blocks": [
         {
           "type": "video"
