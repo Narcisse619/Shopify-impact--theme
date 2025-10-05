@@ -258,6 +258,7 @@
         "item_QxmJ4W": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/P7JU5jtR9i.jpg",
             "column_size": "3",
             "title": "Thérésa H.",
             "heading_tag": "h4",
@@ -270,6 +271,7 @@
         "item_4baV3R": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/tRAsIRMBI.jpg",
             "column_size": "3",
             "title": "Claire Q.",
             "heading_tag": "h4",
