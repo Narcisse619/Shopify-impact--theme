@@ -309,11 +309,6 @@
     "featured_product_f4QbiW": {
       "type": "featured-product",
       "blocks": {
-        "vendor_wnFpKT": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {}
-        },
         "liquid_r8qNpD": {
           "type": "liquid",
           "settings": {
@@ -336,6 +331,13 @@
           "type": "liquid",
           "settings": {
             "liquid": "<!-- Alerte de stock personnalisée -->\n{% comment %}\nVariables personnalisables (optionnelles)\n{% assign stock_quantity = 4 %}\n{% assign stock_text = 'En stock' %}\n{% assign remaining_text = 'restants' %}\n{% endcomment %}\n\n{% assign stock_quantity = stock_quantity | default: 4 %}\n{% assign stock_text = stock_text | default: 'En stock' %}\n{% assign remaining_text = remaining_text | default: 'restants' %}\n\n<div class=\"stock-alert\" style=\"\n  display: inline-flex;\n  align-items: center;\n  background-color: #fef2f2;\n  border: 2px solid #dc2626;\n  border-radius: 12px;\n  padding: 12px 20px;\n  font-family: Arial, sans-serif;\n  margin: 10px 0;\n  max-width: fit-content;\n\">\n  \n  <!-- Icône d'avertissement -->\n  <div class=\"warning-icon\" style=\"\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 24px;\n    height: 24px;\n    background-color: #fbbf24;\n    border-radius: 4px;\n    margin-right: 10px;\n    flex-shrink: 0;\n  \">\n    <span style=\"\n      color: #000;\n      font-weight: bold;\n      font-size: 16px;\n      line-height: 1;\n    \">!</span>\n  </div>\n  \n  <!-- Texte du stock -->\n  <span style=\"\n    color: #dc2626;\n    font-size: 18px;\n    font-weight: bold;\n    white-space: nowrap;\n  \">\n    {{ stock_text }} : {{ stock_quantity }} {{ remaining_text }}\n  </span>\n</div>\n\n<!-- Version avec logique conditionnelle pour affichage automatique -->\n{% comment %}\nVersion avancée qui s'affiche automatiquement selon le stock\n{% endcomment %}\n\n{% if product.selected_or_first_available_variant.inventory_quantity %}\n  {% assign current_stock = product.selected_or_first_available_variant.inventory_quantity %}\n  \n  {% comment %} Afficher l'alerte seulement si le stock est faible (< 10 par exemple) {% endcomment %}\n  {% if current_stock > 0 and current_stock < 10 %}\n    <div class=\"stock-alert-auto\" style=\"\n      display: inline-flex;\n      align-items: center;\n      background-color: #fef2f2;\n      border: 2px solid #dc2626;\n      border-radius: 12px;\n      padding: 12px 20px;\n      font-family: Arial, sans-serif;\n      margin: 10px 0;\n      max-width: fit-content;\n    \">\n      \n      <!-- Icône d'avertissement -->\n      <div style=\"\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 24px;\n        height: 24px;\n        background-color: #fbbf24;\n        border-radius: 4px;\n        margin-right: 10px;\n        flex-shrink: 0;\n      \">\n        <span style=\"\n          color: #000;\n          font-weight: bold;\n          font-size: 16px;\n          line-height: 1;\n        \">!</span>\n      </div>\n      \n      <!-- Texte du stock dynamique -->\n      <span style=\"\n        color: #dc2626;\n        font-size: 18px;\n        font-weight: bold;\n        white-space: nowrap;\n      \">\n        En stock : {{ current_stock }} \n        {% if current_stock == 1 %}\n          restant\n        {% else %}\n          restants\n        {% endif %}\n      </span>\n    </div>\n  {% endif %}\n{% endif %}\n\n<!-- CSS responsive -->\n<style>\n  @media (max-width: 768px) {\n    .stock-alert,\n    .stock-alert-auto {\n      padding: 10px 16px !important;\n      font-size: 16px !important;\n      margin: 8px 0 !important;\n    }\n    \n    .stock-alert span,\n    .stock-alert-auto span {\n      font-size: 16px !important;\n    }\n    \n    .warning-icon {\n      width: 20px !important;\n      height: 20px !important;\n      margin-right: 8px !important;\n    }\n    \n    .warning-icon span {\n      font-size: 14px !important;\n    }\n  }\n  \n  /* Animation d'apparition */\n  .stock-alert,\n  .stock-alert-auto {\n    animation: slideIn 0.3s ease-out;\n  }\n  \n  @keyframes slideIn {\n    from {\n      opacity: 0;\n      transform: translateY(-10px);\n    }\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n  \n  /* Effet de pulsation pour attirer l'attention */\n  .stock-alert:hover,\n  .stock-alert-auto:hover {\n    animation: pulse 1s infinite;\n  }\n  \n  @keyframes pulse {\n    0% { transform: scale(1); }\n    50% { transform: scale(1.02); }\n    100% { transform: scale(1); }\n  }\n</style>\n\n<!-- Version avec différents seuils de stock -->\n{% comment %}\nVersion avec couleurs différentes selon le niveau de stock\n{% endcomment %}\n\n{% if product.selected_or_first_available_variant.inventory_quantity %}\n  {% assign current_stock = product.selected_or_first_available_variant.inventory_quantity %}\n  \n  {% if current_stock > 0 and current_stock <= 20 %}\n    {% comment %} Définir les couleurs selon le niveau de stock {% endcomment %}\n    {% if current_stock <= 3 %}\n      {% assign alert_bg = '#fef2f2' %}\n      {% assign alert_border = '#dc2626' %}\n      {% assign alert_text_color = '#dc2626' %}\n      {% assign icon_bg = '#ef4444' %}\n      {% assign icon_text = '!' %}\n    {% elsif current_stock <= 10 %}\n      {% assign alert_bg = '#fefce8' %}\n      {% assign alert_border = '#eab308' %}\n      {% assign alert_text_color = '#ca8a04' %}\n      {% assign icon_bg = '#fbbf24' %}\n      {% assign icon_text = '!' %}\n    {% else %}\n      {% assign alert_bg = '#f0fdf4' %}\n      {% assign alert_border = '#22c55e' %}\n      {% assign alert_text_color = '#16a34a' %}\n      {% assign icon_bg = '#4ade80' %}\n      {% assign icon_text = '✓' %}\n    {% endif %}\n    \n    <div class=\"stock-alert-levels\" style=\"\n      display: inline-flex;\n      align-items: center;\n      background-color: {{ alert_bg }};\n      border: 2px solid {{ alert_border }};\n      border-radius: 12px;\n      padding: 12px 20px;\n      font-family: Arial, sans-serif;\n      margin: 10px 0;\n      max-width: fit-content;\n    \">\n      \n      <!-- Icône dynamique -->\n      <div style=\"\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        width: 24px;\n        height: 24px;\n        background-color: {{ icon_bg }};\n        border-radius: 4px;\n        margin-right: 10px;\n        flex-shrink: 0;\n      \">\n        <span style=\"\n          color: #fff;\n          font-weight: bold;\n          font-size: 14px;\n          line-height: 1;\n        \">{{ icon_text }}</span>\n      </div>\n      \n      <!-- Texte du stock avec couleur dynamique -->\n      <span style=\"\n        color: {{ alert_text_color }};\n        font-size: 18px;\n        font-weight: bold;\n        white-space: nowrap;\n      \">\n        En stock : {{ current_stock }} \n        {% if current_stock == 1 %}\n          restant\n        {% else %}\n          restants\n        {% endif %}\n      </span>\n    </div>\n  {% endif %}\n{% endif %}"
+          }
+        },
+        "image_d9Ezwq": {
+          "type": "image",
+          "settings": {
+            "alignment": "start",
+            "max_width": 150
           }
         },
         "badges_iCJWVX": {
@@ -378,6 +380,14 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "image_fUaaHH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/7_client_offr.png",
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
         "buy_buttons_HQXdke": {
           "type": "buy_buttons",
           "settings": {
@@ -395,11 +405,11 @@
         }
       },
       "block_order": [
-        "vendor_wnFpKT",
         "liquid_r8qNpD",
         "title_XwJQUF",
         "liquid_dpnrex",
         "liquid_xBhWW3",
+        "image_d9Ezwq",
         "badges_iCJWVX",
         "price_hw7E6H",
         "rating_dwp8Cr",
@@ -407,6 +417,7 @@
         "description_fKgjTD",
         "variant_picker_kPgeML",
         "quantity_selector_4UPWMw",
+        "image_fUaaHH",
         "buy_buttons_HQXdke",
         "pickup_availability_nnAwX7"
       ],
@@ -427,21 +438,6 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
-      }
-    },
-    "image_with_text_overlay_eUk4y3": {
-      "type": "image-with-text-overlay",
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
       }
     },
     "faq_gUwHgn": {
@@ -536,7 +532,6 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
-    "image_with_text_overlay_eUk4y3",
     "faq_gUwHgn",
     "contact_7xcgtb"
   ]
