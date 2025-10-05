@@ -612,6 +612,13 @@
             "content": "<p>Oui, notre masque peut être intégré à votre routine de soins existante. Cependant, nous recommandons de tester les nouveaux produits pour s'assurer qu'ils sont compatibles avec votre peau.<br/><br/></p>"
           }
         },
+        "item_XEq7UC": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il adapté à toutes les tranches d’âge ?",
+            "content": "<p>Oui. Il est idéal dès <strong>25 ans</strong> pour prévenir la perte de collagène, mais également pour les peaux matures cherchant à retrouver fermeté et éclat.<br/><br/></p>"
+          }
+        },
         "item_7xaUMN": {
           "type": "item",
           "settings": {
@@ -647,6 +654,7 @@
         "item_VBaGrf",
         "item_8UwzWM",
         "item_Nw6qHg",
+        "item_XEq7UC",
         "item_7xaUMN",
         "item_wDeJPj",
         "item_TjfRf4",
