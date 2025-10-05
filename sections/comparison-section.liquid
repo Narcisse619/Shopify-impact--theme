@@ -1,384 +1,494 @@
-<!-- SECTION COMPARAISON - À intégrer dans votre page produit Shopify -->
-<!-- Vous pouvez ajouter ce code dans : Thème > Modifier le code > Sections > Créer une nouvelle section -->
+<!-- TABLEAU COMPARAISON "NOUS VS EUX" -->
+<!-- À intégrer dans votre thème Shopify -->
 
 <style>
-    .comparison-section {
+    .nous-eux-section {
         padding: 60px 20px;
-        background: #F8F8F8;
+        background: #FFFFFF;
     }
 
-    .comparison-container {
-        max-width: 1200px;
+    .nous-eux-container {
+        max-width: 900px;
         margin: 0 auto;
     }
 
-    .comparison-title {
+    .nous-eux-title {
         text-align: center;
         font-size: 2.5rem;
-        margin-bottom: 15px;
+        margin-bottom: 50px;
         color: #2D2D2D;
         font-weight: 700;
     }
 
-    .comparison-subtitle {
-        text-align: center;
-        font-size: 1.1rem;
-        color: #666666;
-        margin-bottom: 50px;
+    .comparison-table-nous-eux {
+        background: #F5F5F5;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    .comparison-table-wrapper {
-        background: white;
-        border-radius: 15px;
-        overflow-x: auto;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        margin-bottom: 60px;
-    }
-
-    .comparison-table {
-        width: 100%;
-        border-collapse: collapse;
-        min-width: 600px;
-    }
-
-    .comparison-table thead {
-        background: linear-gradient(135deg, #E8ACA0 0%, #F5C4B8 100%);
-    }
-
-    .comparison-table th {
-        padding: 25px 20px;
-        text-align: left;
-        font-size: 1rem;
-        font-weight: 600;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    .comparison-table th:first-child {
-        width: 30%;
-    }
-
-    .comparison-table tbody tr {
-        border-bottom: 1px solid #E8E8E8;
-        transition: background 0.3s ease;
-    }
-
-    .comparison-table tbody tr:hover {
-        background: #FFF5F3;
-    }
-
-    .comparison-table tbody tr:last-child {
-        border-bottom: none;
-    }
-
-    .comparison-table td {
-        padding: 20px;
-        font-size: 0.95rem;
-    }
-
-    .comparison-table td:first-child {
-        font-weight: 600;
-        color: #2D2D2D;
-    }
-
-    .checkmark {
-        color: #4CAF50;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
-    .cross {
-        color: #F44336;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-
-    .vs-section {
+    .comparison-header {
         display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: 30px;
-        align-items: center;
-        margin-bottom: 60px;
-    }
-
-    .vs-card {
-        background: white;
-        padding: 35px;
-        border-radius: 15px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-
-    .vs-card.highlight-card {
-        background: linear-gradient(135deg, #E8ACA0 0%, #F5C4B8 100%);
-        color: white;
-        transform: scale(1.05);
-    }
-
-    .vs-card h3 {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-        text-align: center;
-        font-weight: 600;
-    }
-
-    .vs-card ul {
-        list-style: none;
+        grid-template-columns: 2fr 1fr 1fr;
+        background: transparent;
         padding: 0;
     }
 
-    .vs-card li {
-        padding: 10px 0;
-        padding-left: 25px;
+    .header-cell {
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2D2D2D;
+    }
+
+    .header-cell.empty {
+        background: transparent;
+    }
+
+    .header-cell.nous {
+        background: linear-gradient(180deg, #5FB69A 0%, #4DA088 100%);
+        color: white;
+        border-radius: 20px 20px 0 0;
         position: relative;
     }
 
-    .vs-card li:before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #4CAF50;
-        font-weight: bold;
+    .header-cell.eux {
+        background: transparent;
     }
 
-    .vs-card.highlight-card li:before {
-        color: white;
-    }
-
-    .vs-divider {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #E8ACA0;
-        text-align: center;
-    }
-
-    .price-comparison {
+    .comparison-row {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 25px;
-        margin-bottom: 60px;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        background: white;
+        margin: 0;
+        border-bottom: 1px solid #E8E8E8;
     }
 
-    .price-card {
+    .comparison-row:last-child {
+        border-bottom: none;
+    }
+
+    .feature-cell {
+        padding: 35px 30px;
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: #2D2D2D;
         background: white;
-        padding: 30px;
-        border-radius: 15px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .check-cell {
+        padding: 35px 20px;
         text-align: center;
-        transition: transform 0.3s ease;
         position: relative;
     }
 
-    .price-card:hover {
-        transform: translateY(-5px);
+    .check-cell.nous {
+        background: linear-gradient(180deg, #5FB69A 0%, #4DA088 100%);
     }
 
-    .price-card.best {
-        background: linear-gradient(135deg, #E8ACA0 0%, #F5C4B8 100%);
+    .check-cell.eux {
+        background: white;
+    }
+
+    .check-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .check-icon.check {
+        background: white;
+        color: #5FB69A;
+    }
+
+    .check-icon.cross {
+        background: #E53935;
         color: white;
     }
 
-    .badge {
-        background: #4CAF50;
-        color: white;
-        padding: 5px 15px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        position: absolute;
-        top: -10px;
-        right: 20px;
+    /* Animation au survol */
+    .comparison-row {
+        transition: transform 0.2s ease;
     }
 
-    .price-card h4 {
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-        font-weight: 600;
+    .comparison-row:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 1;
     }
 
-    .price {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin: 20px 0;
-    }
-
-    .price-detail {
-        font-size: 0.9rem;
-        opacity: 0.8;
-        margin-bottom: 20px;
-    }
-
+    /* Responsive Design */
     @media (max-width: 768px) {
-        .comparison-title {
+        .nous-eux-title {
             font-size: 1.8rem;
+            margin-bottom: 30px;
         }
 
-        .vs-section {
-            grid-template-columns: 1fr;
+        .comparison-header {
+            grid-template-columns: 1.5fr 1fr 1fr;
         }
 
-        .vs-divider {
-            transform: rotate(90deg);
+        .comparison-row {
+            grid-template-columns: 1.5fr 1fr 1fr;
         }
 
-        .comparison-table {
+        .header-cell {
+            padding: 20px 10px;
+            font-size: 1.3rem;
+        }
+
+        .feature-cell {
+            padding: 25px 15px;
+            font-size: 0.95rem;
+        }
+
+        .check-cell {
+            padding: 25px 10px;
+        }
+
+        .check-icon {
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .comparison-header {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .comparison-row {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .header-cell {
+            font-size: 1.1rem;
+            padding: 15px 8px;
+        }
+
+        .feature-cell {
             font-size: 0.85rem;
+            padding: 20px 12px;
         }
 
-        .comparison-table th,
-        .comparison-table td {
-            padding: 15px 10px;
-        }
-
-        .vs-card.highlight-card {
-            transform: scale(1);
+        .check-icon {
+            width: 35px;
+            height: 35px;
+            font-size: 1.2rem;
         }
     }
 </style>
 
-<div class="comparison-section">
-    <div class="comparison-container">
+<div class="nous-eux-section">
+    <div class="nous-eux-container">
         
-        <!-- Titre principal -->
-        <h2 class="comparison-title">Pourquoi Choisir HIGHPRIME® ?</h2>
-        <p class="comparison-subtitle">Découvrez ce qui rend notre masque bio-collagène unique</p>
+        <!-- Titre de section (optionnel) -->
+        <h2 class="nous-eux-title">Pourquoi Nous Choisir ?</h2>
 
-        <!-- Tableau de comparaison détaillé -->
-        <div class="comparison-table-wrapper">
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Caractéristiques</th>
-                        <th>HIGHPRIME® Bio-Collagène</th>
-                        <th>Masques Traditionnels</th>
-                        <th>Masques Basiques</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Collagène de bas poids moléculaire</td>
-                        <td><span class="checkmark">✓</span> 50,000 ppm</td>
-                        <td><span class="cross">✗</span> Absent</td>
-                        <td><span class="cross">✗</span> Absent</td>
-                    </tr>
-                    <tr>
-                        <td>Acide hyaluronique oligomérique</td>
-                        <td><span class="checkmark">✓</span> 60,000 ppm</td>
-                        <td><span class="checkmark">✓</span> Standard</td>
-                        <td><span class="cross">✗</span> Limité</td>
-                    </tr>
-                    <tr>
-                        <td>Probiotiques Galactomyces</td>
-                        <td><span class="checkmark">✓</span> 50,000 ppm</td>
-                        <td><span class="cross">✗</span> Absent</td>
-                        <td><span class="cross">✗</span> Absent</td>
-                    </tr>
-                    <tr>
-                        <td>Niacinamide éclaircissant</td>
-                        <td><span class="checkmark">✓</span> Inclus</td>
-                        <td><span class="checkmark">✓</span> Parfois</td>
-                        <td><span class="cross">✗</span> Rare</td>
-                    </tr>
-                    <tr>
-                        <td>Design séparé en 2 parties</td>
-                        <td><span class="checkmark">✓</span> Ajustement parfait</td>
-                        <td><span class="cross">✗</span> Une seule pièce</td>
-                        <td><span class="cross">✗</span> Une seule pièce</td>
-                    </tr>
-                    <tr>
-                        <td>Pénétration profonde</td>
-                        <td><span class="checkmark">✓</span> Couches profondes</td>
-                        <td><span class="checkmark">✓</span> Surface moyenne</td>
-                        <td><span class="cross">✗</span> Surface uniquement</td>
-                    </tr>
-                    <tr>
-                        <td>Effet sur les pores</td>
-                        <td><span class="checkmark">✓</span> Minimisation visible</td>
-                        <td><span class="checkmark">✓</span> Léger</td>
-                        <td><span class="cross">✗</span> Aucun</td>
-                    </tr>
-                    <tr>
-                        <td>Amélioration de l'élasticité</td>
-                        <td><span class="checkmark">✓</span> Raffermissement</td>
-                        <td><span class="checkmark">✓</span> Modéré</td>
-                        <td><span class="cross">✗</span> Minimal</td>
-                    </tr>
-                    <tr>
-                        <td>Prix par utilisation</td>
-                        <td>€€</td>
-                        <td>€€€€</td>
-                        <td>€</td>
-                    </tr>
-                    <tr>
-                        <td>Résultats visibles</td>
-                        <td><span class="checkmark">✓</span> Dès la 1ère utilisation</td>
-                        <td><span class="checkmark">✓</span> Après plusieurs jours</td>
-                        <td><span class="checkmark">✓</span> Temporaire</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <!-- Section VS -->
-        <h2 class="comparison-title" style="margin-bottom: 40px;">HIGHPRIME® vs Autres Solutions</h2>
-        
-        <div class="vs-section">
-            <div class="vs-card">
-                <h3>Soins en Institut</h3>
-                <ul>
-                    <li>Coût élevé (80-150€/séance)</li>
-                    <li>Nécessite rendez-vous</li>
-                    <li>Déplacement obligatoire</li>
-                    <li>Temps d'attente</li>
-                    <li>Résultats temporaires</li>
-                </ul>
+        <div class="comparison-table-nous-eux">
+            
+            <!-- En-tête du tableau -->
+            <div class="comparison-header">
+                <div class="header-cell empty"></div>
+                <div class="header-cell nous">Nous</div>
+                <div class="header-cell eux">Eux</div>
             </div>
 
-            <div class="vs-divider">VS</div>
-
-            <div class="vs-card highlight-card">
-                <h3>HIGHPRIME® Masque</h3>
-                <ul>
-                    <li>Économique (3-5€/masque)</li>
-                    <li>Utilisation à domicile</li>
-                    <li>Quand vous voulez</li>
-                    <li>15-20 minutes seulement</li>
-                    <li>Efficacité professionnelle</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Comparaison des prix -->
-        <h2 class="comparison-title" style="margin-bottom: 40px;">Comparaison des Coûts</h2>
-        
-        <div class="price-comparison">
-            <div class="price-card">
-                <h4>Traitement en Institut</h4>
-                <div class="price">120€</div>
-                <div class="price-detail">Par séance<br>Résultats: 1-2 semaines</div>
+            <!-- Ligne 1 : Hydratation profonde -->
+            <div class="comparison-row">
+                <div class="feature-cell">Hydratation profonde</div>
+                <div class="check-cell nous">
+                    <span class="check-icon check">✓</span>
+                </div>
+                <div class="check-cell eux">
+                    <span class="check-icon cross">✕</span>
+                </div>
             </div>
 
-            <div class="price-card best">
-                <span class="badge">MEILLEUR CHOIX</span>
-                <h4>HIGHPRIME® (Boîte de 10)</h4>
-                <div class="price">39€</div>
-                <div class="price-detail">Soit 3.90€/masque<br>Résultats: Dès la 1ère utilisation</div>
+            <!-- Ligne 2 : Ingrédients naturels -->
+            <div class="comparison-row">
+                <div class="feature-cell">Ingrédients naturels</div>
+                <div class="check-cell nous">
+                    <span class="check-icon check">✓</span>
+                </div>
+                <div class="check-cell eux">
+                    <span class="check-icon cross">✕</span>
+                </div>
             </div>
 
-            <div class="price-card">
-                <h4>Masques Basiques</h4>
-                <div class="price">15€</div>
-                <div class="price-detail">Boîte de 10 (1.50€/masque)<br>Résultats: Hydratation temporaire</div>
+            <!-- Ligne 3 : Résultat anti-âge -->
+            <div class="comparison-row">
+                <div class="feature-cell">Résultat anti-âge</div>
+                <div class="check-cell nous">
+                    <span class="check-icon check">✓</span>
+                </div>
+                <div class="check-cell eux">
+                    <span class="check-icon cross">✕</span>
+                </div>
             </div>
 
-            <div class="price-card">
-                <h4>Crèmes au Collagène</h4>
-                <div class="price">45€</div>
-                <div class="price-detail">Pot de 50ml<br>Résultats: Après 4-6 semaines</div>
+            <!-- Ligne 4 : Sensation rafraîchissante -->
+            <div class="comparison-row">
+                <div class="feature-cell">Sensation rafraîchissante</div>
+                <div class="check-cell nous">
+                    <span class="check-icon check">✓</span>
+                </div>
+                <div class="check-cell eux">
+                    <span class="check-icon cross">✕</span>
+                </div>
             </div>
+
+            <!-- Ligne 5 : Peau apaisée -->
+            <div class="comparison-row">
+                <div class="feature-cell">Peau apaisée</div>
+                <div class="check-cell nous">
+                    <span class="check-icon check">✓</span>
+                </div>
+                <div class="check-cell eux">
+                    <span class="check-icon cross">✕</span>
+                </div>
+            </div>
+
         </div>
 
     </div>
 </div>
 
-<!-- FIN SECTION COMPARAISON -->
+<!-- FIN TABLEAU COMPARAISON "NOUS VS EUX" -->
+
+
+<!-- OPTION 2 : VERSION AVEC COULEURS ROSE/PÊCHE (votre branding) -->
+<!-- Décommentez cette section et commentez la section au-dessus pour utiliser vos couleurs de branding -->
+
+<!--
+<style>
+    .nous-eux-section-pink {
+        padding: 60px 20px;
+        background: #FFFFFF;
+    }
+
+    .nous-eux-container-pink {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .nous-eux-title-pink {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        color: #2D2D2D;
+        font-weight: 700;
+    }
+
+    .comparison-table-pink {
+        background: #F5F5F5;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .comparison-header-pink {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        background: transparent;
+        padding: 0;
+    }
+
+    .header-cell-pink {
+        padding: 30px 20px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #2D2D2D;
+    }
+
+    .header-cell-pink.empty {
+        background: transparent;
+    }
+
+    .header-cell-pink.nous {
+        background: linear-gradient(180deg, #E8ACA0 0%, #F5C4B8 100%);
+        color: white;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .header-cell-pink.eux {
+        background: transparent;
+    }
+
+    .comparison-row-pink {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        background: white;
+        margin: 0;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+    .comparison-row-pink:last-child {
+        border-bottom: none;
+    }
+
+    .feature-cell-pink {
+        padding: 35px 30px;
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: #2D2D2D;
+        background: white;
+    }
+
+    .check-cell-pink {
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    .check-cell-pink.nous {
+        background: linear-gradient(180deg, #E8ACA0 0%, #F5C4B8 100%);
+    }
+
+    .check-cell-pink.eux {
+        background: white;
+    }
+
+    .check-icon-pink {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .check-icon-pink.check {
+        background: white;
+        color: #E8ACA0;
+    }
+
+    .check-icon-pink.cross {
+        background: #E53935;
+        color: white;
+    }
+
+    .comparison-row-pink {
+        transition: transform 0.2s ease;
+    }
+
+    .comparison-row-pink:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 1;
+    }
+
+    @media (max-width: 768px) {
+        .nous-eux-title-pink {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .comparison-header-pink,
+        .comparison-row-pink {
+            grid-template-columns: 1.5fr 1fr 1fr;
+        }
+
+        .header-cell-pink {
+            padding: 20px 10px;
+            font-size: 1.3rem;
+        }
+
+        .feature-cell-pink {
+            padding: 25px 15px;
+            font-size: 0.95rem;
+        }
+
+        .check-cell-pink {
+            padding: 25px 10px;
+        }
+
+        .check-icon-pink {
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+        }
+    }
+</style>
+
+<div class="nous-eux-section-pink">
+    <div class="nous-eux-container-pink">
+        
+        <h2 class="nous-eux-title-pink">Pourquoi Nous Choisir ?</h2>
+
+        <div class="comparison-table-pink">
+            
+            <div class="comparison-header-pink">
+                <div class="header-cell-pink empty"></div>
+                <div class="header-cell-pink nous">Nous</div>
+                <div class="header-cell-pink eux">Eux</div>
+            </div>
+
+            <div class="comparison-row-pink">
+                <div class="feature-cell-pink">Hydratation profonde</div>
+                <div class="check-cell-pink nous">
+                    <span class="check-icon-pink check">✓</span>
+                </div>
+                <div class="check-cell-pink eux">
+                    <span class="check-icon-pink cross">✕</span>
+                </div>
+            </div>
+
+            <div class="comparison-row-pink">
+                <div class="feature-cell-pink">Ingrédients naturels</div>
+                <div class="check-cell-pink nous">
+                    <span class="check-icon-pink check">✓</span>
+                </div>
+                <div class="check-cell-pink eux">
+                    <span class="check-icon-pink cross">✕</span>
+                </div>
+            </div>
+
+            <div class="comparison-row-pink">
+                <div class="feature-cell-pink">Résultat anti-âge</div>
+                <div class="check-cell-pink nous">
+                    <span class="check-icon-pink check">✓</span>
+                </div>
+                <div class="check-cell-pink eux">
+                    <span class="check-icon-pink cross">✕</span>
+                </div>
+            </div>
+
+            <div class="comparison-row-pink">
+                <div class="feature-cell-pink">Sensation rafraîchissante</div>
+                <div class="check-cell-pink nous">
+                    <span class="check-icon-pink check">✓</span>
+                </div>
+                <div class="check-cell-pink eux">
+                    <span class="check-icon-pink cross">✕</span>
+                </div>
+            </div>
+
+            <div class="comparison-row-pink">
+                <div class="feature-cell-pink">Peau apaisée</div>
+                <div class="check-cell-pink nous">
+                    <span class="check-icon-pink check">✓</span>
+                </div>
+                <div class="check-cell-pink eux">
+                    <span class="check-icon-pink cross">✕</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+-->
+
+<!-- FIN VERSION ROSE/PÊCHE -->
