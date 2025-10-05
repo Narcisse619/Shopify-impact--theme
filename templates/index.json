@@ -450,94 +450,6 @@
         "input_text_color": ""
       }
     },
-    "multi_column_KjEUaW": {
-      "type": "multi-column",
-      "blocks": {
-        "item_dMmzHn": {
-          "type": "item",
-          "settings": {
-            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_KUnrcd": {
-          "type": "item",
-          "settings": {
-            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_mfM6A4": {
-          "type": "item",
-          "settings": {
-            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_m7DmHw": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_tPTDJi": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Column title",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_dMmzHn",
-        "item_KUnrcd",
-        "item_mfM6A4",
-        "item_m7DmHw",
-        "item_tPTDJi"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "Elles adorent Skinona Beauty Mask",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "video_testimonials_AYRrTm": {
       "type": "video-testimonials",
       "blocks": {
@@ -570,7 +482,7 @@
       ],
       "name": "Vidéos Témoignages",
       "settings": {
-        "title": "ELLES L'ADORENT",
+        "title": "ELLES ADORENT",
         "title_color": "#000000",
         "background_color": "#FFFFFF"
       }
@@ -787,7 +699,6 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
-    "multi_column_KjEUaW",
     "video_testimonials_AYRrTm",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
