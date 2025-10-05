@@ -450,6 +450,21 @@
         "input_text_color": ""
       }
     },
+    "slideshow_8yx3ir": {
+      "type": "slideshow",
+      "name": "Slideshow",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": true,
+        "image_size": "auto",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#F2F2F2",
+        "background_gradient": ""
+      }
+    },
     "tabs_LycG4c": {
       "type": "tabs",
       "blocks": {
@@ -545,13 +560,53 @@
             "title": "Est-ce que les résultats sont visibles rapidement ?",
             "content": "<p>Nos clients rapportent des résultats rapides ! Dès les premières utilisations, vous remarquerez une peau plus lumineuse, plus ferme et un effet tenseur immédiat. C'est un investissement beauté qui porte ses fruits sans attendre.<br/><br/></p>"
           }
+        },
+        "item_Nw6qHg": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": ""
+          }
+        },
+        "item_7xaUMN": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": ""
+          }
+        },
+        "item_wDeJPj": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": ""
+          }
+        },
+        "item_TjfRf4": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": ""
+          }
+        },
+        "item_XT7X63": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": ""
+          }
         }
       },
       "block_order": [
         "item_q7UaUj",
         "item_8tfTYM",
         "item_VBaGrf",
-        "item_8UwzWM"
+        "item_8UwzWM",
+        "item_Nw6qHg",
+        "item_7xaUMN",
+        "item_wDeJPj",
+        "item_TjfRf4",
+        "item_XT7X63"
       ],
       "name": "FAQ",
       "settings": {
@@ -607,6 +662,7 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
+    "slideshow_8yx3ir",
     "tabs_LycG4c",
     "faq_gUwHgn",
     "contact_7xcgtb"
