@@ -203,6 +203,19 @@
             "link_style": "link"
           }
         },
+        "item_PmE64Q": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/453bbfd0cfe38d7ca6e657b8a5a32f06.avif",
+            "column_size": "3",
+            "title": "Flore D.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_LaNxcz": {
           "type": "item",
           "settings": {
@@ -242,19 +255,6 @@
             "link_style": "link"
           }
         },
-        "item_PmE64Q": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/453bbfd0cfe38d7ca6e657b8a5a32f06.avif",
-            "column_size": "3",
-            "title": "Flore D.",
-            "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_QxmJ4W": {
           "type": "item",
           "settings": {
@@ -285,10 +285,10 @@
       "block_order": [
         "item_ACYMhN",
         "item_NhgpMH",
+        "item_PmE64Q",
         "item_LaNxcz",
         "item_wqGqdw",
         "item_V63TLT",
-        "item_PmE64Q",
         "item_QxmJ4W",
         "item_4baV3R"
       ],
