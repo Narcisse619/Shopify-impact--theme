@@ -1,5 +1,5 @@
 {% comment %}
-  Section: Vidéos Témoignages
+  Section: Vidéos Témoignages Carousel
   Utilisation: Ajouter ce fichier dans sections/ de votre thème
 {% endcomment %}
 
@@ -7,6 +7,7 @@
   .video-testimonials {
     padding: 60px 20px;
     background-color: {{ section.settings.background_color }};
+    overflow: hidden;
   }
 
   .video-testimonials__title {
@@ -18,20 +19,31 @@
     color: {{ section.settings.title_color }};
   }
 
-  .video-testimonials__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+  .video-testimonials__carousel {
+    position: relative;
+    max-width: 1400px;
     margin: 0 auto;
+  }
+
+  .video-testimonials__wrapper {
+    overflow: hidden;
+    padding: 0 60px;
+  }
+
+  .video-testimonials__track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
   }
 
   .video-testimonials__item {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    aspect-ratio: 9/16;
     background: #000;
+    flex-shrink: 0;
+    width: 280px;
+    height: 500px;
   }
 
   .video-testimonials__video {
@@ -59,9 +71,9 @@
   }
 
   .video-testimonials__play-button {
-    width: 80px;
-    height: 80px;
-    border: 4px solid white;
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -78,10 +90,10 @@
   .video-testimonials__play-icon {
     width: 0;
     height: 0;
-    border-left: 25px solid white;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    margin-left: 5px;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-left: 4px;
   }
 
   .video-testimonials__caption {
@@ -90,19 +102,105 @@
     left: 20px;
     right: 20px;
     color: white;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.4;
+  }
+
+  .video-testimonials__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .video-testimonials__nav:hover {
+    background: #f0f0f0;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .video-testimonials__nav--prev {
+    left: 0;
+  }
+
+  .video-testimonials__nav--next {
+    right: 0;
+  }
+
+  .video-testimonials__nav svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .video-testimonials__dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .video-testimonials__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .video-testimonials__dot.active {
+    background: #333;
+    width: 30px;
+    border-radius: 5px;
   }
 
   @media (max-width: 768px) {
     .video-testimonials__title {
       font-size: 32px;
+      margin-bottom: 30px;
     }
 
-    .video-testimonials__grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
+    .video-testimonials__wrapper {
+      padding: 0 50px;
+    }
+
+    .video-testimonials__item {
+      width: 240px;
+      height: 420px;
+    }
+
+    .video-testimonials__nav {
+      width: 40px;
+      height: 40px;
+    }
+
+    .video-testimonials__nav svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .video-testimonials__wrapper {
+      padding: 0 40px;
+    }
+
+    .video-testimonials__item {
+      width: 200px;
+      height: 360px;
     }
   }
 </style>
@@ -110,53 +208,133 @@
 <div class="video-testimonials">
   <h2 class="video-testimonials__title">{{ section.settings.title }}</h2>
   
-  <div class="video-testimonials__grid">
-    {% for block in section.blocks %}
-      <div class="video-testimonials__item" {{ block.shopify_attributes }}>
-        <video 
-          class="video-testimonials__video"
-          src="{{ block.settings.video_url }}"
-          playsinline
-          loop
-          muted
-          {% if block.settings.autoplay %}autoplay{% endif %}
-        ></video>
-        
-        {% unless block.settings.autoplay %}
-          <div class="video-testimonials__overlay" onclick="playVideo(this)">
-            <div class="video-testimonials__play-button">
-              <div class="video-testimonials__play-icon"></div>
-            </div>
+  <div class="video-testimonials__carousel">
+    <div class="video-testimonials__wrapper">
+      <div class="video-testimonials__track" id="videoTrack-{{ section.id }}">
+        {% for block in section.blocks %}
+          <div class="video-testimonials__item" {{ block.shopify_attributes }}>
+            <video 
+              class="video-testimonials__video"
+              src="{{ block.settings.video_url }}"
+              playsinline
+              loop
+              muted
+              {% if block.settings.autoplay %}autoplay{% endif %}
+            ></video>
+            
+            {% unless block.settings.autoplay %}
+              <div class="video-testimonials__overlay" onclick="playVideo{{ section.id }}(this)">
+                <div class="video-testimonials__play-button">
+                  <div class="video-testimonials__play-icon"></div>
+                </div>
+              </div>
+            {% endunless %}
+            
+            {% if block.settings.caption != blank %}
+              <div class="video-testimonials__caption">
+                {{ block.settings.caption }}
+              </div>
+            {% endif %}
           </div>
-        {% endunless %}
-        
-        {% if block.settings.caption != blank %}
-          <div class="video-testimonials__caption">
-            {{ block.settings.caption }}
-          </div>
-        {% endif %}
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
+
+    <button class="video-testimonials__nav video-testimonials__nav--prev" onclick="moveCarousel{{ section.id }}(-1)">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
+
+    <button class="video-testimonials__nav video-testimonials__nav--next" onclick="moveCarousel{{ section.id }}(1)">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+    </button>
+
+    <div class="video-testimonials__dots" id="dots-{{ section.id }}"></div>
   </div>
 </div>
 
 <script>
-  function playVideo(overlay) {
-    const video = overlay.previousElementSibling;
+  (function() {
+    const sectionId = '{{ section.id }}';
+    const track = document.getElementById('videoTrack-' + sectionId);
+    const dotsContainer = document.getElementById('dots-' + sectionId);
+    const items = track.querySelectorAll('.video-testimonials__item');
     
-    if (video.paused) {
-      video.play();
-      video.muted = false;
-      overlay.style.display = 'none';
-    } else {
-      video.pause();
-      overlay.style.display = 'flex';
+    let currentIndex = 0;
+    const itemsPerView = window.innerWidth < 480 ? 1 : window.innerWidth < 768 ? 2 : 3;
+    const totalSlides = Math.ceil(items.length / itemsPerView);
+
+    // Créer les dots
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'video-testimonials__dot';
+      if (i === 0) dot.classList.add('active');
+      dot.onclick = function() { goToSlide{{ section.id }}(i); };
+      dotsContainer.appendChild(dot);
     }
-    
-    video.addEventListener('ended', function() {
-      overlay.style.display = 'flex';
-    });
-  }
+
+    window.moveCarousel{{ section.id }} = function(direction) {
+      currentIndex += direction;
+      if (currentIndex < 0) currentIndex = totalSlides - 1;
+      if (currentIndex >= totalSlides) currentIndex = 0;
+      updateCarousel();
+    };
+
+    window.goToSlide{{ section.id }} = function(index) {
+      currentIndex = index;
+      updateCarousel();
+    };
+
+    function updateCarousel() {
+      const itemWidth = items[0].offsetWidth;
+      const gap = 20;
+      const offset = currentIndex * (itemWidth + gap) * itemsPerView;
+      track.style.transform = `translateX(-${offset}px)`;
+
+      // Update dots
+      const dots = dotsContainer.querySelectorAll('.video-testimonials__dot');
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+      });
+    }
+
+    window.playVideo{{ section.id }} = function(overlay) {
+      const video = overlay.previousElementSibling;
+      
+      if (video.paused) {
+        // Pause toutes les autres vidéos
+        items.forEach(item => {
+          const v = item.querySelector('video');
+          if (v !== video && !v.paused) {
+            v.pause();
+            const o = item.querySelector('.video-testimonials__overlay');
+            if (o) o.style.display = 'flex';
+          }
+        });
+
+        video.play();
+        video.muted = false;
+        overlay.style.display = 'none';
+      } else {
+        video.pause();
+        overlay.style.display = 'flex';
+      }
+      
+      video.addEventListener('ended', function() {
+        overlay.style.display = 'flex';
+      });
+    };
+
+    // Auto-play carousel (optionnel)
+    {% if section.settings.autoplay_carousel %}
+    setInterval(function() {
+      window.moveCarousel{{ section.id }}(1);
+    }, 5000);
+    {% endif %}
+  })();
 </script>
 
 {% schema %}
@@ -180,6 +358,12 @@
       "id": "background_color",
       "label": "Couleur de fond",
       "default": "#FFFFFF"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay_carousel",
+      "label": "Défilement automatique du carousel",
+      "default": false
     }
   ],
   "blocks": [
@@ -209,8 +393,14 @@
   ],
   "presets": [
     {
-      "name": "Vidéos Témoignages",
+      "name": "Vidéos Témoignages Carousel",
       "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
         {
           "type": "video"
         },
