@@ -336,8 +336,9 @@
         "image_d9Ezwq": {
           "type": "image",
           "settings": {
-            "alignment": "start",
-            "max_width": 150
+            "image": "shopify://shop_images/Publication_Instagram_Reduction_Moderne_Vert_et_Jaune_1.png",
+            "alignment": "center",
+            "max_width": 200
           }
         },
         "badges_iCJWVX": {
