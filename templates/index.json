@@ -216,6 +216,19 @@
             "link_style": "link"
           }
         },
+        "item_4baV3R": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/7yfXQBVixU.jpg",
+            "column_size": "3",
+            "title": "Jessica D.",
+            "heading_tag": "h4",
+            "content": "<p>Je l'ai acheté en urgence avant un mariage où j'étais témoin. STRESS ! La veille, peau grise et pores dilatés. J'ai testé ce masque en désespoir de cause. RÉSULTAT : Le jour J, ma peau était uniforme, lumineuse et le maquillage a tenu parfaitement toute la journée. Toutes mes amies m'ont demandé le nom de mon institut de beauté. Je n'ai révélé mon secret à personne... jusqu'à aujourd'hui !<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_LaNxcz": {
           "type": "item",
           "settings": {
@@ -267,30 +280,17 @@
             "link_text": "",
             "link_style": "link"
           }
-        },
-        "item_4baV3R": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/7yfXQBVixU.jpg",
-            "column_size": "3",
-            "title": "Jessica D.S",
-            "heading_tag": "h4",
-            "content": "<p>Je l'ai acheté en urgence avant un mariage où j'étais témoin. STRESS ! La veille, peau grise et pores dilatés. J'ai testé ce masque en désespoir de cause. RÉSULTAT : Le jour J, ma peau était uniforme, lumineuse et le maquillage a tenu parfaitement toute la journée. Toutes mes amies m'ont demandé le nom de mon institut de beauté. Je n'ai révélé mon secret à personne... jusqu'à aujourd'hui !<br/><br/></p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
         }
       },
       "block_order": [
         "item_ACYMhN",
         "item_NhgpMH",
         "item_PmE64Q",
+        "item_4baV3R",
         "item_LaNxcz",
         "item_wqGqdw",
         "item_V63TLT",
-        "item_QxmJ4W",
-        "item_4baV3R"
+        "item_QxmJ4W"
       ],
       "name": "Multi-column",
       "settings": {
