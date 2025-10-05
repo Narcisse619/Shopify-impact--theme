@@ -405,7 +405,7 @@
           "settings": {
             "image": "shopify://shop_images/TTTT.avif",
             "alignment": "center",
-            "max_width": 150
+            "max_width": 350
           }
         },
         "pickup_availability_nnAwX7": {
