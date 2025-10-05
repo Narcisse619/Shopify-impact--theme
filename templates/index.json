@@ -165,8 +165,9 @@
         "item_ACYMhN": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/4_57b32c2e-d984-4d60-9fc0-4050dbc89a76.webp",
             "column_size": "3",
-            "title": "Camille S.",
+            "title": "Nathalie C.",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
