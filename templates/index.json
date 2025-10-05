@@ -538,6 +538,43 @@
         "text_color": ""
       }
     },
+    "video_testimonials_AYRrTm": {
+      "type": "video-testimonials",
+      "blocks": {
+        "video_PXyK3C": {
+          "type": "video",
+          "settings": {
+            "caption": "",
+            "autoplay": false
+          }
+        },
+        "video_pMhyGr": {
+          "type": "video",
+          "settings": {
+            "caption": "",
+            "autoplay": false
+          }
+        },
+        "video_V8dUr6": {
+          "type": "video",
+          "settings": {
+            "caption": "",
+            "autoplay": false
+          }
+        }
+      },
+      "block_order": [
+        "video_PXyK3C",
+        "video_pMhyGr",
+        "video_V8dUr6"
+      ],
+      "name": "Vidéos Témoignages",
+      "settings": {
+        "title": "ELLES L'ADORENT",
+        "title_color": "#000000",
+        "background_color": "#FFFFFF"
+      }
+    },
     "slideshow_8yx3ir": {
       "type": "slideshow",
       "name": "Slideshow",
@@ -751,6 +788,7 @@
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
     "multi_column_KjEUaW",
+    "video_testimonials_AYRrTm",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "faq_gUwHgn",
