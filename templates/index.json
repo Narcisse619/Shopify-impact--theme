@@ -466,6 +466,19 @@
             "link_style": "link"
           }
         },
+        "item_KUnrcd": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/2138875596636821_vid_0_S0s.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_mfM6A4": {
           "type": "item",
           "settings": {
@@ -506,6 +519,7 @@
       },
       "block_order": [
         "item_dMmzHn",
+        "item_KUnrcd",
         "item_mfM6A4",
         "item_m7DmHw",
         "item_tPTDJi"
@@ -513,8 +527,8 @@
       "name": "Multi-column",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
+        "stack_on_mobile": true,
+        "gap": "small",
         "text_alignment": "center",
         "subheading": "",
         "title": "Les adorent Skinona Beauty Mask",
