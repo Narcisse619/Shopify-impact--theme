@@ -359,6 +359,13 @@
     "faq_gUwHgn": {
       "type": "faq",
       "blocks": {
+        "item_q7UaUj": {
+          "type": "item",
+          "settings": {
+            "title": "Le masque aide-t-il vraiment contre la peau sèche ?",
+            "content": "<p>Oui, absolument ! Le <br/>Skinova Beauty Mask est un allié puissant contre la peau sèche. Il procure une hydratation intense et durable, laissant votre peau souple, douce et confortable, même en hiver. Dites adieu à la sécheresse !<br/><br/></p>"
+          }
+        },
         "item_8tfTYM": {
           "type": "item",
           "settings": {
@@ -370,18 +377,19 @@
           "type": "item",
           "settings": {
             "title": "À quelle fréquence dois-je utiliser le masque pour des résultats optimaux ?",
-            "content": "<p>Pour révéler tout le potentiel de votre peau, nous recommandons d'utiliser le Masque Bio-Collagène 2 à 3 fois par semaine. C'est le secret pour maintenir une hydratation parfaite, un éclat durable et une fermeté visible.<br/><br/></p>"
+            "content": "<p>Pour révéler tout le potentiel de votre peau, nous recommandons d'utiliser le <br/>Skinova Beauty Mask 2 à 3 fois par semaine. C'est le secret pour maintenir une hydratation parfaite, un éclat durable et une fermeté visible.<br/><br/></p>"
           }
         },
         "item_8UwzWM": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Est-ce que les résultats sont visibles rapidement ?",
+            "content": "<p>Nos clients rapportent des résultats rapides ! Dès les premières utilisations, vous remarquerez une peau plus lumineuse, plus ferme et un effet tenseur immédiat. C'est un investissement beauté qui porte ses fruits sans attendre.<br/><br/></p>"
           }
         }
       },
       "block_order": [
+        "item_q7UaUj",
         "item_8tfTYM",
         "item_VBaGrf",
         "item_8UwzWM"
