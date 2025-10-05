@@ -180,6 +180,7 @@
         "item_NhgpMH": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/AVISMASQUE5.webp",
             "column_size": "3",
             "title": "Veronica M.",
             "heading_tag": "h4",
@@ -192,6 +193,7 @@
         "item_LaNxcz": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/6839ade55af232f9582b989305e1953d.avif",
             "column_size": "3",
             "title": "Aurélia G.",
             "heading_tag": "h4",
@@ -204,6 +206,7 @@
         "item_wqGqdw": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/bfeb76640c050c8dad669c13e55ea3b0.webp",
             "column_size": "3",
             "title": "Francky A.",
             "heading_tag": "h4",
@@ -216,6 +219,7 @@
         "item_V63TLT": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/453bbfd0cfe38d7ca6e657b8a5a32f06.avif",
             "column_size": "3",
             "title": "Olivia V.",
             "heading_tag": "h4",
