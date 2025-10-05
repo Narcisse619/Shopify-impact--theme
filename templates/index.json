@@ -450,6 +450,22 @@
         "input_text_color": ""
       }
     },
+    "scrolling_text_477TmX": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Le Skinova Beauty Mask est Made in Korea. Vegan . Cruelty Free . Sans Parfum . Sans Allergènes",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 14,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "video_testimonials_AYRrTm": {
       "type": "video-testimonials",
       "blocks": {
@@ -722,6 +738,7 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
+    "scrolling_text_477TmX",
     "video_testimonials_AYRrTm",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
