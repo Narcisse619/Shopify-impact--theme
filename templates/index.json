@@ -461,7 +461,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -564,8 +564,8 @@
         "item_Nw6qHg": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": ""
+            "title": "Puis-je utiliser le masque en même temps que mes autres produits de soin ?",
+            "content": "<p>Oui, notre masque peut être intégré à votre routine de soins existante. Cependant, nous recommandons de tester les nouveaux produits pour s'assurer qu'ils sont compatibles avec votre peau.<br/><br/></p>"
           }
         },
         "item_7xaUMN": {
