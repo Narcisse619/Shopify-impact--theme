@@ -649,7 +649,7 @@
         "values_eXNFUN": {
           "type": "values",
           "settings": {
-            "product": "",
+            "product": "les-autres-marques",
             "value_1": "<p>❌</p>",
             "value_2": "<p>❌</p>",
             "value_3": "<p>❌</p>",
@@ -689,7 +689,7 @@
         "button_text": "Je veux ma peau éclatante ! →",
         "button_url": "shopify://products/mask",
         "text_position": "center",
-        "max_rows": 5,
+        "max_rows": 1,
         "view_all_text": "",
         "view_less_text": "",
         "view_product": "",
