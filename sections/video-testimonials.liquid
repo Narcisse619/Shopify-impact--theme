@@ -1,0 +1,227 @@
+{% comment %}
+  Section: Vidéos Témoignages
+  Utilisation: Ajouter ce fichier dans sections/ de votre thème
+{% endcomment %}
+
+<style>
+  .video-testimonials {
+    padding: 60px 20px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .video-testimonials__title {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    color: {{ section.settings.title_color }};
+  }
+
+  .video-testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .video-testimonials__item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 9/16;
+    background: #000;
+  }
+
+  .video-testimonials__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-testimonials__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .video-testimonials__item:hover .video-testimonials__overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .video-testimonials__play-button {
+    width: 80px;
+    height: 80px;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+  }
+
+  .video-testimonials__item:hover .video-testimonials__play-button {
+    transform: scale(1.1);
+  }
+
+  .video-testimonials__play-icon {
+    width: 0;
+    height: 0;
+    border-left: 25px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-left: 5px;
+  }
+
+  .video-testimonials__caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .video-testimonials__title {
+      font-size: 32px;
+    }
+
+    .video-testimonials__grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+</style>
+
+<div class="video-testimonials">
+  <h2 class="video-testimonials__title">{{ section.settings.title }}</h2>
+  
+  <div class="video-testimonials__grid">
+    {% for block in section.blocks %}
+      <div class="video-testimonials__item" {{ block.shopify_attributes }}>
+        <video 
+          class="video-testimonials__video"
+          src="{{ block.settings.video_url }}"
+          playsinline
+          loop
+          muted
+          {% if block.settings.autoplay %}autoplay{% endif %}
+        ></video>
+        
+        {% unless block.settings.autoplay %}
+          <div class="video-testimonials__overlay" onclick="playVideo(this)">
+            <div class="video-testimonials__play-button">
+              <div class="video-testimonials__play-icon"></div>
+            </div>
+          </div>
+        {% endunless %}
+        
+        {% if block.settings.caption != blank %}
+          <div class="video-testimonials__caption">
+            {{ block.settings.caption }}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  function playVideo(overlay) {
+    const video = overlay.previousElementSibling;
+    
+    if (video.paused) {
+      video.play();
+      video.muted = false;
+      overlay.style.display = 'none';
+    } else {
+      video.pause();
+      overlay.style.display = 'flex';
+    }
+    
+    video.addEventListener('ended', function() {
+      overlay.style.display = 'flex';
+    });
+  }
+</script>
+
+{% schema %}
+{
+  "name": "Vidéos Témoignages",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "ELLES L'ADORENT"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Vidéo",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "URL de la vidéo",
+          "info": "Téléchargez votre vidéo dans Contenu > Fichiers et copiez l'URL ici"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Légende (optionnel)"
+        },
+        {
+          "type": "checkbox",
+          "id": "autoplay",
+          "label": "Lecture automatique",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Vidéos Témoignages",
+      "blocks": [
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        },
+        {
+          "type": "video"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
