@@ -166,7 +166,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Camille S.",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
@@ -178,7 +178,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Veronica M.",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
@@ -190,7 +190,67 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Aurélia G.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_wqGqdw": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Francky A.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_V63TLT": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Olivia V.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_PmE64Q": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Flore D.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_QxmJ4W": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Thérésa H.",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_4baV3R": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Claire Q.",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
@@ -202,7 +262,12 @@
       "block_order": [
         "item_ACYMhN",
         "item_NhgpMH",
-        "item_LaNxcz"
+        "item_LaNxcz",
+        "item_wqGqdw",
+        "item_V63TLT",
+        "item_PmE64Q",
+        "item_QxmJ4W",
+        "item_4baV3R"
       ],
       "name": "Multi-column",
       "settings": {
