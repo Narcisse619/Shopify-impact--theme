@@ -400,11 +400,11 @@
             "payment_button_text_color": ""
           }
         },
-        "image_8fGUwW": {
+        "image_gfhPbC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/cOSMOPOLITAN-removebg-preview.png",
-            "alignment": "start",
+            "image": "shopify://shop_images/TTTT.avif",
+            "alignment": "center",
             "max_width": 150
           }
         },
@@ -428,7 +428,7 @@
         "quantity_selector_4UPWMw",
         "image_fUaaHH",
         "buy_buttons_HQXdke",
-        "image_8fGUwW",
+        "image_gfhPbC",
         "pickup_availability_nnAwX7"
       ],
       "name": "Featured product",
@@ -456,7 +456,7 @@
         "tab_7z4J3r": {
           "type": "tab",
           "settings": {
-            "title": "Tab 1",
+            "title": "Comment utiliser le Skinova Beauty Mask ?",
             "content": "<p>Use this text to share information about your brand with your customers.</p>",
             "page": ""
           }
@@ -464,7 +464,7 @@
         "tab_fbYGzL": {
           "type": "tab",
           "settings": {
-            "title": "Tab 2",
+            "title": "Quand vais-je voir les résultats ?",
             "content": "<p>Describe a product, share announcements, or welcome customers to your store.</p>",
             "page": ""
           }
@@ -472,7 +472,23 @@
         "tab_PqDJxQ": {
           "type": "tab",
           "settings": {
-            "title": "Tab 3",
+            "title": "Ingrédients",
+            "content": "<ul><li><strong>Eau purifiée</strong> : Pour une base douce et hydratante.</li><li><strong>Collagène hydrolysé </strong>: Aide à raffermir et à revitaliser la peau en stimulant la production naturelle de collagène.</li><li><strong>Filtrat de ferment Galactomyces </strong>: Un antioxydant puissant qui améliore la clarté et la texture de la peau.</li><li><strong>Glycérine</strong> : hydrate en profondeur et maintient l'hydratation de la peau.</li><li><strong>Niacinamide </strong>: unifie le teint, réduit les pores et illumine la peau.</li><li><strong>Allantoïne</strong> : Apaise et régénère la peau, idéal pour les peaux sensibles.</li><li><strong>Chondrus Crispus</strong> (algue rouge) : Nourrit et hydrate la peau, tout en lui apportant des minéraux essentiels.</li><li><strong>Acides aminés</strong> (Alanine, Serine, Glycine, etc.) : Renforcent et revitalisent la peau en profondeur.</li><li><strong>Hyaluronates de sodium</strong> : Hydratent et repulpent intensément la peau pour un effet lissant immédiat.</li><li><strong>Lactate de sodium </strong>: Aide à maintenir l'hydratation et l'équilibre du pH de la peau.</li><li><strong>Hydroxyéthylcellulose</strong> : Procure une texture agréable et facile à appliquer.<br/><br/>Notre formule est conçue pour offrir un soin complet et naturel à la peau, en lui apportant tous les nutriments dont elle a besoin pour paraître jeune et radieuse. Chaque ingrédient est soigneusement sélectionné pour ses propriétés bénéfiques, garantissant une <strong>expérience de soin luxueuse et efficace.</strong></li></ul>",
+            "page": ""
+          }
+        },
+        "tab_kdmRPt": {
+          "type": "tab",
+          "settings": {
+            "title": "Service client 7J/7",
+            "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
+            "page": ""
+          }
+        },
+        "tab_NDEcL3": {
+          "type": "tab",
+          "settings": {
+            "title": "Essayez-le 30 jours gratuitement",
             "content": "<p>Share information about your shipping rates, return policy or contact information.</p>",
             "page": ""
           }
@@ -481,7 +497,9 @@
       "block_order": [
         "tab_7z4J3r",
         "tab_fbYGzL",
-        "tab_PqDJxQ"
+        "tab_PqDJxQ",
+        "tab_kdmRPt",
+        "tab_NDEcL3"
       ],
       "name": "Tabs",
       "settings": {
