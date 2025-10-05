@@ -619,6 +619,13 @@
             "content": "<p>Oui. Il est idéal dès <strong>25 ans</strong> pour prévenir la perte de collagène, mais également pour les peaux matures cherchant à retrouver fermeté et éclat.<br/><br/></p>"
           }
         },
+        "item_RedceC": {
+          "type": "item",
+          "settings": {
+            "title": "Où est fabriqué le masque ?",
+            "content": "<p>98 % d’ingrédients d’origine naturelle, cruelty-free, formulé dans nos laboratoires certifiés en Corée, approuvé EU.<br/><br/></p>"
+          }
+        },
         "item_7xaUMN": {
           "type": "item",
           "settings": {
@@ -655,6 +662,7 @@
         "item_8UwzWM",
         "item_Nw6qHg",
         "item_XEq7UC",
+        "item_RedceC",
         "item_7xaUMN",
         "item_wDeJPj",
         "item_TjfRf4",
