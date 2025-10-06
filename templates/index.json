@@ -686,13 +686,69 @@
             "title": "Mon teint sera-t-il vraiment plus lumineux et jeune ?",
             "content": "<p>Oui, préparez-vous à un éclat que vous allez adorer ! Notre formule au bio-collagène revitalise et illumine votre peau, lui offrant une apparence fraîche et reposée.<br/></p>"
           }
+        },
+        "item_g3FdCk": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle est la différence avec un masque classique ?",
+            "content": "<p>Le Skinova Beauty Mask contient <strong>40 g d’actifs hautement concentrés</strong> et utilise une <strong>technologie hydrogel</strong> qui maximise la pénétration des ingrédients dans la peau, contrairement aux masques classiques.<br/><br/></p>"
+          }
+        },
+        "item_YVYber": {
+          "type": "item",
+          "settings": {
+            "title": "Est-il adapté à toutes les tranches d’âge ?",
+            "content": "<p>Oui. Il est idéal dès <strong>25 ans</strong> pour prévenir la perte de collagène, mais également pour les peaux matures cherchant à retrouver fermeté et éclat.<br/><br/></p>"
+          }
+        },
+        "item_AmQ3tM": {
+          "type": "item",
+          "settings": {
+            "title": "Où est fabriqué le masque ?",
+            "content": "<p>Le Skinova Beauty Mask est <strong>formulé et testé en Corée</strong>, selon les normes européennes les plus strictes 🇰🇷🇪🇺.</p>"
+          }
+        },
+        "item_eG8nBp": {
+          "type": "item",
+          "settings": {
+            "title": "Quels sont les bienfaits pour ma peau ?",
+            "content": "<p>Ce masque offre une hydratation intense, réduit l'apparence des ridules et raffermit votre peau, lui donnant un éclat de jeunesse incomparable. Sentez la différence dès la première application.<br/><br/></p>"
+          }
+        },
+        "item_bmiice": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_9DwaU9": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_P7mV4q": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
         }
       },
       "block_order": [
         "item_8wUiiB",
         "item_JPKDq7",
         "item_phbbEt",
-        "item_96Aieg"
+        "item_96Aieg",
+        "item_g3FdCk",
+        "item_YVYber",
+        "item_AmQ3tM",
+        "item_eG8nBp",
+        "item_bmiice",
+        "item_9DwaU9",
+        "item_P7mV4q"
       ],
       "name": "FAQ",
       "settings": {
