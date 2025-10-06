@@ -590,6 +590,75 @@
         "heading_gradient": ""
       }
     },
+    "section_nous_vs_eux_xWJi96": {
+      "type": "section-nous-vs-eux",
+      "blocks": {
+        "comparison_row_TT77Ct": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Hydratation profonde",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_UxehX4": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Ingrédients naturels",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_qYJwdc": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Résultat anti-âge",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_4Nyjwe": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Sensation rafraîchissante",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_T8dgDA": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Peau apaisée",
+            "nous_has": true,
+            "eux_has": false
+          }
+        }
+      },
+      "block_order": [
+        "comparison_row_TT77Ct",
+        "comparison_row_UxehX4",
+        "comparison_row_qYJwdc",
+        "comparison_row_4Nyjwe",
+        "comparison_row_T8dgDA"
+      ],
+      "name": "Nous vs Eux",
+      "settings": {
+        "title": "Pourquoi Skinova Beauty Mask est-il le numéro 1 ?",
+        "column_nous": "Nous",
+        "column_eux": "Eux",
+        "background_color": "#FFFFFF",
+        "title_color": "#2D2D2D",
+        "nous_color": "#5FB69A",
+        "cross_color": "#E53935",
+        "title_size": 40,
+        "header_size": 28,
+        "feature_size": 18,
+        "container_width": 900,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "enable_hover": false
+      }
+    },
     "feature_chart_fxtkMU": {
       "type": "feature-chart",
       "blocks": {
@@ -859,6 +928,7 @@
     "video_testimonials_AYRrTm",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
+    "section_nous_vs_eux_xWJi96",
     "feature_chart_fxtkMU",
     "faq_gUwHgn",
     "contact_7xcgtb"
