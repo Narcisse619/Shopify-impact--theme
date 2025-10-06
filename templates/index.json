@@ -1094,20 +1094,6 @@
             "title": "Quels sont les délais de livraison ?",
             "content": "<p>Les délais moyens de livraison sont de 6<strong> à 12 jours ouvrés</strong>, selon votre pays.<br/>Chaque commande est préparée avec soin et expédiée depuis notre entrepôt. Vous recevrez un <strong>numéro de suivi</strong> dès l’expédition.</p>"
           }
-        },
-        "item_AhmyTM": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
-        },
-        "item_fbkN7z": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
         }
       },
       "block_order": [
@@ -1127,9 +1113,7 @@
         "item_7k8jBM",
         "item_3CNxPa",
         "item_Qn8LwH",
-        "item_jUWDnj",
-        "item_AhmyTM",
-        "item_fbkN7z"
+        "item_jUWDnj"
       ],
       "name": "FAQ",
       "settings": {
