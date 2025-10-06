@@ -718,6 +718,42 @@
         "text_color": ""
       }
     },
+    "impact_text_qTC8zF": {
+      "type": "impact-text",
+      "blocks": {
+        "item_88yJFt": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Satisfait ou remboursé sous 30 jours",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_88yJFt"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -904,6 +940,7 @@
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
     "multi_column_CzcHcX",
+    "impact_text_qTC8zF",
     "faq_jkrpcC",
     "contact_7xcgtb"
   ]
