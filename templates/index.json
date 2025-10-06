@@ -656,7 +656,7 @@
         "column_nous": "Nous",
         "column_eux": "Eux",
         "background_color": "#FFFFFF",
-        "title_color": "#2D2D2D",
+        "title_color": "#000000",
         "nous_color": "#5FB69A",
         "cross_color": "#E53935",
         "title_size": 40,
