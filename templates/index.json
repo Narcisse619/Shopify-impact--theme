@@ -679,12 +679,20 @@
             "title": "Puis-je utiliser le masque en même temps que mes autres produits de soin ?",
             "content": "<p>Oui, notre peut être intégré à votre routine de soins existante. Cependant, nous recommandons de tester les nouveaux produits pour s'assurer qu'ils sont compatibles avec votre peau.<br/><br/></p>"
           }
+        },
+        "item_96Aieg": {
+          "type": "item",
+          "settings": {
+            "title": "Mon teint sera-t-il vraiment plus lumineux et jeune ?",
+            "content": "<p>Oui, préparez-vous à un éclat que vous allez adorer ! Notre formule au bio-collagène revitalise et illumine votre peau, lui offrant une apparence fraîche et reposée.<br/></p>"
+          }
         }
       },
       "block_order": [
         "item_8wUiiB",
         "item_JPKDq7",
-        "item_phbbEt"
+        "item_phbbEt",
+        "item_96Aieg"
       ],
       "name": "FAQ",
       "settings": {
