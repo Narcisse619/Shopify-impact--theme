@@ -721,11 +721,35 @@
     "impact_text_qTC8zF": {
       "type": "impact-text",
       "blocks": {
+        "item_ULwXkP": {
+          "type": "item",
+          "settings": {
+            "title": "92%",
+            "subheading": "Peau plus hydratée et fraîche",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
         "item_88yJFt": {
           "type": "item",
           "settings": {
-            "title": "100%",
-            "subheading": "Satisfait ou remboursé sous 30 jours",
+            "title": "88%",
+            "subheading": "Teint visiblement plus éclatant",
+            "content": "",
+            "button_text": "Je veux ma peau éclatante",
+            "button_url": "shopify://products/mask",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_89yK46": {
+          "type": "item",
+          "settings": {
+            "title": "85%",
+            "subheading": "Rides et ridules visiblement lissées",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -735,7 +759,9 @@
         }
       },
       "block_order": [
-        "item_88yJFt"
+        "item_ULwXkP",
+        "item_88yJFt",
+        "item_89yK46"
       ],
       "name": "Impact text",
       "settings": {
