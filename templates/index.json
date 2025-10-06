@@ -951,39 +951,6 @@
         "text_color": ""
       }
     },
-    "multi_column_VLyY7e": {
-      "type": "multi-column",
-      "blocks": {
-        "item_hMMxxX": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "",
-            "heading_tag": "h1",
-            "content": "",
-            "link_url": "shopify://products/mask",
-            "link_text": "Essayez sans rique pendant 30 jours",
-            "link_style": "button"
-          }
-        }
-      },
-      "block_order": [
-        "item_hMMxxX"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -1176,7 +1143,6 @@
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
     "rich_text_PkqGLz",
-    "multi_column_VLyY7e",
     "faq_jkrpcC",
     "contact_7xcgtb"
   ]
