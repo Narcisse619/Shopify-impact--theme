@@ -466,6 +466,61 @@
         "text_gradient": ""
       }
     },
+    "features_checkmarks_mTNGLc": {
+      "type": "features-checkmarks",
+      "blocks": {
+        "feature_hQdmmM": {
+          "type": "feature",
+          "settings": {
+            "text": "Hydratation Intense"
+          }
+        },
+        "feature_Gny47U": {
+          "type": "feature",
+          "settings": {
+            "text": "+98% naturel"
+          }
+        },
+        "feature_gepQDc": {
+          "type": "feature",
+          "settings": {
+            "text": "Rides & Ridules"
+          }
+        },
+        "feature_pd8hmy": {
+          "type": "feature",
+          "settings": {
+            "text": "Tâches Pigmentaires"
+          }
+        }
+      },
+      "block_order": [
+        "feature_hQdmmM",
+        "feature_Gny47U",
+        "feature_gepQDc",
+        "feature_pd8hmy"
+      ],
+      "name": "Avantages Checkmarks",
+      "settings": {
+        "container_width": 800,
+        "columns_desktop": 2,
+        "columns_mobile": "2",
+        "gap": 25,
+        "gap_mobile": 15,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "icon_size": 50,
+        "icon_size_mobile": 30,
+        "icon_spacing": 10,
+        "icon_bg_color": "#000000",
+        "icon_color": "#FFFFFF",
+        "text_size": 18,
+        "text_size_mobile": 14,
+        "text_weight": "400",
+        "text_color": "#000000",
+        "background_color": "#FFFFFF"
+      }
+    },
     "video_carousel_bxMde8": {
       "type": "video-carousel",
       "blocks": {
@@ -986,6 +1041,7 @@
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
     "scrolling_text_477TmX",
+    "features_checkmarks_mTNGLc",
     "video_carousel_bxMde8",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
