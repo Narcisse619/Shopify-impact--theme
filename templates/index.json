@@ -1077,6 +1077,20 @@
         "item_3CNxPa": {
           "type": "item",
           "settings": {
+            "title": "Le produit est-il vegan et cruelty-free ?",
+            "content": "<p>Absolument, notre est <strong>100 % vegan</strong>, <strong>cruelty-free</strong>, <strong>sans parfum</strong> et <strong>sans allergènes</strong>, pour allier <strong>efficacité et respect de la peau et de la planète</strong>.</p>"
+          }
+        },
+        "item_Qn8LwH": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_jUWDnj": {
+          "type": "item",
+          "settings": {
             "title": "Question",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
@@ -1097,7 +1111,9 @@
         "item_waPng4",
         "item_aiNn8F",
         "item_7k8jBM",
-        "item_3CNxPa"
+        "item_3CNxPa",
+        "item_Qn8LwH",
+        "item_jUWDnj"
       ],
       "name": "FAQ",
       "settings": {
