@@ -656,6 +656,59 @@
         "enable_hover": true
       }
     },
+    "faq_jkrpcC": {
+      "type": "faq",
+      "blocks": {
+        "item_8wUiiB": {
+          "type": "item",
+          "settings": {
+            "title": "À quelle fréquence dois-je utiliser le masque Bio-Collagène ?",
+            "content": "<p>Nous recommandons d'utiliser le masque 2 à 3 fois par semaine pour des résultats optimaux. Vous pouvez toutefois adapter la fréquence d'utilisation aux besoins et à la sensibilité de votre peau.<br/><br/></p>"
+          }
+        },
+        "item_JPKDq7": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je utiliser ce masque sur une peau sensible ?",
+            "content": "<p>Oui, le masque Skinova Beauty Mask est hypoallergénique et formulé avec des ingrédients non toxiques et non irritants, ce qui le rend adapté aux types de peau les plus sensibles.</p>"
+          }
+        },
+        "item_phbbEt": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_8wUiiB",
+        "item_JPKDq7",
+        "item_phbbEt"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "contact_7xcgtb": {
       "type": "contact",
       "name": "Contact form",
@@ -692,6 +745,7 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
+    "faq_jkrpcC",
     "contact_7xcgtb"
   ]
 }
