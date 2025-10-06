@@ -732,6 +732,34 @@
         "item_P7mV4q": {
           "type": "item",
           "settings": {
+            "title": "La livraison prend combien de temps ?",
+            "content": "<p>Le délai de livraison est généralement compris entre 6 et 12 jours ouvrés, <br/><br/></p>"
+          }
+        },
+        "item_waPng4": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_aiNn8F": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_7k8jBM": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_3CNxPa": {
+          "type": "item",
+          "settings": {
             "title": "Question",
             "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
           }
@@ -748,7 +776,11 @@
         "item_eG8nBp",
         "item_bmiice",
         "item_9DwaU9",
-        "item_P7mV4q"
+        "item_P7mV4q",
+        "item_waPng4",
+        "item_aiNn8F",
+        "item_7k8jBM",
+        "item_3CNxPa"
       ],
       "name": "FAQ",
       "settings": {
