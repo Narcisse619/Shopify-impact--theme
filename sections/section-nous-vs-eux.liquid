@@ -1,0 +1,443 @@
+<!-- 
+  SECTION SHOPIFY PERSONNALISABLE : NOUS VS EUX
+  Nom du fichier : section-nous-vs-eux.liquid
+  
+  INSTALLATION :
+  1. Thèmes > Modifier le code
+  2. Sections > Ajouter une section
+  3. Nommer : section-nous-vs-eux.liquid
+  4. Coller ce code
+  5. Sauvegarder
+  6. Aller dans Personnaliser > Ajouter une section > "Nous vs Eux"
+-->
+
+<style>
+    .nous-eux-section-{{ section.id }} {
+        padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+        background: {{ section.settings.background_color }};
+    }
+
+    .nous-eux-container-{{ section.id }} {
+        max-width: {{ section.settings.container_width }}px;
+        margin: 0 auto;
+    }
+
+    .nous-eux-title-{{ section.id }} {
+        text-align: center;
+        font-size: {{ section.settings.title_size }}px;
+        margin-bottom: 50px;
+        color: {{ section.settings.title_color }};
+        font-weight: 700;
+    }
+
+    .comparison-table-{{ section.id }} {
+        background: #F5F5F5;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .comparison-header-{{ section.id }} {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        background: transparent;
+        padding: 0;
+    }
+
+    .header-cell-{{ section.id }} {
+        padding: 30px 20px;
+        text-align: center;
+        font-size: {{ section.settings.header_size }}px;
+        font-weight: 700;
+        color: #2D2D2D;
+    }
+
+    .header-cell-{{ section.id }}.empty {
+        background: transparent;
+    }
+
+    .header-cell-{{ section.id }}.nous {
+        background: {{ section.settings.nous_color }};
+        color: white;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .header-cell-{{ section.id }}.eux {
+        background: transparent;
+    }
+
+    .comparison-row-{{ section.id }} {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: center;
+        background: white;
+        margin: 0;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+    .comparison-row-{{ section.id }}:last-child {
+        border-bottom: none;
+    }
+
+    .feature-cell-{{ section.id }} {
+        padding: 35px 30px;
+        font-size: {{ section.settings.feature_size }}px;
+        font-weight: 500;
+        color: #2D2D2D;
+        background: white;
+    }
+
+    .check-cell-{{ section.id }} {
+        padding: 35px 20px;
+        text-align: center;
+    }
+
+    .check-cell-{{ section.id }}.nous {
+        background: {{ section.settings.nous_color }};
+    }
+
+    .check-cell-{{ section.id }}.eux {
+        background: white;
+    }
+
+    .check-icon-{{ section.id }} {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .check-icon-{{ section.id }}.check {
+        background: white;
+        color: {{ section.settings.nous_color }};
+    }
+
+    .check-icon-{{ section.id }}.cross {
+        background: {{ section.settings.cross_color }};
+        color: white;
+    }
+
+    {% if section.settings.enable_hover %}
+    .comparison-row-{{ section.id }} {
+        transition: transform 0.2s ease;
+    }
+
+    .comparison-row-{{ section.id }}:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        z-index: 1;
+    }
+    {% endif %}
+
+    @media (max-width: 768px) {
+        .nous-eux-title-{{ section.id }} {
+            font-size: calc({{ section.settings.title_size }}px * 0.7);
+            margin-bottom: 30px;
+        }
+
+        .comparison-header-{{ section.id }},
+        .comparison-row-{{ section.id }} {
+            grid-template-columns: 1.5fr 1fr 1fr;
+        }
+
+        .header-cell-{{ section.id }} {
+            padding: 20px 10px;
+            font-size: calc({{ section.settings.header_size }}px * 0.75);
+        }
+
+        .feature-cell-{{ section.id }} {
+            padding: 25px 15px;
+            font-size: calc({{ section.settings.feature_size }}px * 0.85);
+        }
+
+        .check-cell-{{ section.id }} {
+            padding: 25px 10px;
+        }
+
+        .check-icon-{{ section.id }} {
+            width: 40px;
+            height: 40px;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .comparison-header-{{ section.id }},
+        .comparison-row-{{ section.id }} {
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .header-cell-{{ section.id }} {
+            font-size: calc({{ section.settings.header_size }}px * 0.6);
+            padding: 15px 8px;
+        }
+
+        .feature-cell-{{ section.id }} {
+            font-size: calc({{ section.settings.feature_size }}px * 0.75);
+            padding: 20px 12px;
+        }
+
+        .check-icon-{{ section.id }} {
+            width: 35px;
+            height: 35px;
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<div class="nous-eux-section-{{ section.id }}">
+    <div class="nous-eux-container-{{ section.id }}">
+        
+        {% if section.settings.title != blank %}
+        <h2 class="nous-eux-title-{{ section.id }}">{{ section.settings.title }}</h2>
+        {% endif %}
+
+        <div class="comparison-table-{{ section.id }}">
+            
+            <!-- En-tête du tableau -->
+            <div class="comparison-header-{{ section.id }}">
+                <div class="header-cell-{{ section.id }} empty"></div>
+                <div class="header-cell-{{ section.id }} nous">{{ section.settings.column_nous }}</div>
+                <div class="header-cell-{{ section.id }} eux">{{ section.settings.column_eux }}</div>
+            </div>
+
+            <!-- Lignes de comparaison -->
+            {% for block in section.blocks %}
+                <div class="comparison-row-{{ section.id }}" {{ block.shopify_attributes }}>
+                    <div class="feature-cell-{{ section.id }}">{{ block.settings.feature_text }}</div>
+                    <div class="check-cell-{{ section.id }} nous">
+                        {% if block.settings.nous_has == true %}
+                            <span class="check-icon-{{ section.id }} check">✓</span>
+                        {% else %}
+                            <span class="check-icon-{{ section.id }} cross">✕</span>
+                        {% endif %}
+                    </div>
+                    <div class="check-cell-{{ section.id }} eux">
+                        {% if block.settings.eux_has == true %}
+                            <span class="check-icon-{{ section.id }} check">✓</span>
+                        {% else %}
+                            <span class="check-icon-{{ section.id }} cross">✕</span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Nous vs Eux",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre de la section",
+      "default": "Pourquoi Nous Choisir ?"
+    },
+    {
+      "type": "header",
+      "content": "En-têtes des colonnes"
+    },
+    {
+      "type": "text",
+      "id": "column_nous",
+      "label": "Texte colonne 'Nous'",
+      "default": "Nous"
+    },
+    {
+      "type": "text",
+      "id": "column_eux",
+      "label": "Texte colonne 'Eux'",
+      "default": "Eux"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#2D2D2D"
+    },
+    {
+      "type": "color",
+      "id": "nous_color",
+      "label": "Couleur colonne 'Nous'",
+      "default": "#5FB69A",
+      "info": "Pour rose/pêche utilisez #E8ACA0"
+    },
+    {
+      "type": "color",
+      "id": "cross_color",
+      "label": "Couleur des croix (✕)",
+      "default": "#E53935"
+    },
+    {
+      "type": "header",
+      "content": "Tailles de texte"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Taille du titre",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "header_size",
+      "min": 16,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Taille en-têtes colonnes",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "feature_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Taille texte caractéristiques",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Dimensions"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Largeur du conteneur",
+      "default": 900
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Espacement haut",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Espacement bas",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Options"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover",
+      "label": "Activer effet au survol",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "comparison_row",
+      "name": "Ligne de comparaison",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature_text",
+          "label": "Texte de la caractéristique",
+          "default": "Caractéristique"
+        },
+        {
+          "type": "checkbox",
+          "id": "nous_has",
+          "label": "Nous avons cette caractéristique",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "eux_has",
+          "label": "Eux ont cette caractéristique",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Nous vs Eux",
+      "category": "Comparaison",
+      "blocks": [
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Hydratation profonde",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Ingrédients naturels",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Résultat anti-âge",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Sensation rafraîchissante",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Peau apaisée",
+            "nous_has": true,
+            "eux_has": false
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
