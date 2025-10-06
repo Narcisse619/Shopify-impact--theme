@@ -1129,7 +1129,7 @@
         "heading_gradient": "",
         "contact_background": "",
         "contact_text_color": "",
-        "button_background": "",
+        "button_background": "#f0028f",
         "button_text_color": ""
       }
     }
