@@ -897,7 +897,7 @@
         "richtext_QPx4pb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Dès l’âge de<strong>25 ans</strong>, le niveau naturel de collagène de la peau commence à diminuer. Cette perte progressive entraîne l’apparition des <strong>premières ridules</strong>, une<strong>perte de fermeté</strong>et un<strong>teint plus terne</strong>.</p>"
+            "content": "<p>Dès l’âge de<strong>25 ans</strong>, le niveau naturel de collagène de la peau commence à diminuer. Cette perte progressive entraîne l’apparition des <strong>premières ridules</strong>, une<strong>perte de fermeté</strong>et un<strong>teint plus terne</strong>.</p><p>C’est pourquoi il est essentiel de<strong>réintroduire du collagène</strong>: pour restaurer l’élasticité, lisser les premiers signes de l’âge et révéler une peau plus<strong>rebondie, ferme et lumineuse naturellement</strong>.<br/><br/></p>"
           }
         }
       },
@@ -916,6 +916,39 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 31
+      }
+    },
+    "rich_text_PkqGLz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Rfrzai": {
+          "type": "heading",
+          "settings": {
+            "text": "Aucun risque",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_zCL43L": {
+          "type": "richtext",
+          "settings": {
+            "content": "<h3>Essayez notre masque en toute confiance avec notre garantie de remboursement de 30 jours !</h3><p>Les spécialistes de la peau, les dermatologues et nos clients en témoignent : LiftingMask offre des résultats visibles !</p><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours.</p><p>Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Rfrzai",
+        "richtext_zCL43L"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "faq_jkrpcC": {
@@ -1109,6 +1142,7 @@
     "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
+    "rich_text_PkqGLz",
     "faq_jkrpcC",
     "contact_7xcgtb"
   ]
