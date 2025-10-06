@@ -681,8 +681,8 @@
             "heading_tag": "h4",
             "content": "<p>Notre ingrédient phare — <strong>40 g par masque</strong> — possède une structure unique qui <strong>pénètre en profondeur</strong>, pour <strong>repulper, raffermir et lifter visiblement</strong> la peau, améliorant <strong>l’élasticité et la tonicité</strong> du visage dès la première utilisation.<br/><br/></p>",
             "link_url": "shopify://products/mask",
-            "link_text": "Je veux ma peau éclatante !",
-            "link_style": "link"
+            "link_text": "Je veux ma peau éclatante ! →",
+            "link_style": "button"
           }
         },
         "item_wUCrXA": {
