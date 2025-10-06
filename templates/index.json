@@ -897,7 +897,7 @@
         "richtext_QPx4pb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Dès l’âge de<strong>25 ans</strong>, le niveau naturel de collagène de la peau commence à diminuer. Cette perte progressive entraîne l’apparition des<strong>premières ridules</strong>, une<strong>perte de fermeté</strong>et un<strong>teint plus terne</strong>.</p>"
           }
         }
       },
@@ -910,6 +910,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/B3_300x300_crop_center_d1c68535-8cc0-4e51-a609-6670d9b28523.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
