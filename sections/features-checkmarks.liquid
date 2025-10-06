@@ -1,0 +1,319 @@
+{% comment %}
+  Section: Avantages avec Checkmarks
+  Utilisation: Ajouter ce fichier dans sections/ de votre thème
+{% endcomment %}
+
+<style>
+  .features-checkmarks {
+    padding: {{ section.settings.padding_top }}px 20px {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .features-checkmarks__container {
+    max-width: {{ section.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  .features-checkmarks__grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    gap: {{ section.settings.gap }}px;
+  }
+
+  .features-checkmarks__item {
+    display: flex;
+    align-items: center;
+    gap: {{ section.settings.icon_spacing }}px;
+  }
+
+  .features-checkmarks__icon {
+    flex-shrink: 0;
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    background-color: {{ section.settings.icon_bg_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .features-checkmarks__icon svg {
+    width: 60%;
+    height: 60%;
+    stroke: {{ section.settings.icon_color }};
+  }
+
+  .features-checkmarks__text {
+    font-size: {{ section.settings.text_size }}px;
+    color: {{ section.settings.text_color }};
+    font-weight: {{ section.settings.text_weight }};
+    line-height: 1.4;
+  }
+
+  @media (max-width: 768px) {
+    .features-checkmarks__grid {
+      grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
+      gap: {{ section.settings.gap_mobile }}px;
+    }
+
+    .features-checkmarks__text {
+      font-size: {{ section.settings.text_size_mobile }}px;
+    }
+
+    .features-checkmarks__icon {
+      width: {{ section.settings.icon_size_mobile }}px;
+      height: {{ section.settings.icon_size_mobile }}px;
+    }
+  }
+</style>
+
+<div class="features-checkmarks">
+  <div class="features-checkmarks__container">
+    <div class="features-checkmarks__grid">
+      {% for block in section.blocks %}
+        <div class="features-checkmarks__item" {{ block.shopify_attributes }}>
+          <div class="features-checkmarks__icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="features-checkmarks__text">
+            {{ block.settings.text }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Avantages Checkmarks",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Largeur du conteneur (px)",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Colonnes (Desktop)",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Colonnes (Mobile)",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 colonne"
+        },
+        {
+          "value": "2",
+          "label": "2 colonnes"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Espacement entre les éléments (Desktop)",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Espacement entre les éléments (Mobile)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding haut (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bas (px)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Icône"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Taille de l'icône (Desktop)",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "label": "Taille de l'icône (Mobile)",
+      "min": 30,
+      "max": 60,
+      "step": 5,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "icon_spacing",
+      "label": "Espacement icône-texte",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "icon_bg_color",
+      "label": "Couleur de fond de l'icône",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Couleur du check",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Texte"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille du texte (Desktop)",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Taille du texte (Mobile)",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Poids du texte",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Moyen"
+        },
+        {
+          "value": "600",
+          "label": "Semi-gras"
+        },
+        {
+          "value": "700",
+          "label": "Gras"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#FFFFFF"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Avantage",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte",
+          "default": "Votre avantage ici"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avantages Checkmarks",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "text": "Hydratation Intense"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "+98% naturel"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "Rides & Ridules"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "text": "Tâches Pigmentaires"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
