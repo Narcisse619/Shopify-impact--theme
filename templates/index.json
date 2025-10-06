@@ -575,7 +575,7 @@
           "type": "tab",
           "settings": {
             "title": "Comment utiliser le Skinova Beauty Mask ?",
-            "content": "<h3><strong>Étape 1 : Préparez votre peau</strong></h3><ul><li>Nettoyez votre visage avec un <strong>nettoyant doux</strong> pour éliminer maquillage et impuretés.<br/></li><li>Séchez délicatement avec une serviette propre afin que la peau soit prête à absorber le collagène et les actifs hydratants.</li></ul><h3><strong>Étape 2 : Appliquez le masque en deux parties</strong></h3><ul><li>Le Skinova™ Beauty Mask se compose de <strong>deux parties</strong> : une pour <strong>la moitié supérieure du visage</strong> et l’autre pour <strong>la moitié inférieure</strong>.<br/></li><li>Appliquez chaque partie séparément, en <strong>ajustant pour couvrir parfaitement</strong> le front, les joues, le menton et le contour des yeux.<br/></li><li>Appuyez légèrement pour que le masque <strong>adhère parfaitement</strong>, comme une seconde peau.</li></ul><h3><strong>Étape 3 : Laissez agir 3 à 4 heures</strong></h3><ul><li>Pendant la pose, le masque <strong>devient transparent</strong> lorsque la peau absorbe les actifs.<br/></li><li>Profitez de ce temps pour vous détendre pendant que le <strong>bio-collagène, l’acide hyaluronique et le niacinamide</strong> agissent en profondeur.<br/></li><li>Dès la première utilisation, vous constaterez <strong>une amélioration visible de la fermeté, de l’éclat et de la texture de la peau</strong>.<br/></li></ul><h3><strong>Étape 4 : Retirez et massez</strong></h3><ul><li>Retirez délicatement chaque partie du masque.<br/></li><li>Massez le <strong>sérum restant</strong> sur tout le visage jusqu’à absorption complète.<br/></li><li><strong>Ne rincez pas</strong>, puis appliquez votre sérum ou crème habituelle pour <strong>prolonger les effets</strong>.<br/></li></ul><p>💡 <strong>Astuce :</strong> utilisez le masque <strong>1 à 2 fois par semaine</strong> pour des résultats durables et une peau visiblement plus ferme, repulpée et éclatante.</p>",
+            "content": "<h3><strong>Étape 1 : Préparez votre peau</strong></h3><ul><li>Nettoyez votre visage avec un <strong>nettoyant doux</strong> pour éliminer maquillage et impuretés.<br/></li><li>Séchez délicatement avec une serviette propre afin que la peau soit prête à absorber le collagène et les actifs hydratants.</li></ul><h3><strong>Étape 2 : Appliquez le masque en deux parties</strong></h3><ul><li>Le Skinova Beauty Mask se compose de <strong>deux parties</strong> : une pour <strong>la moitié supérieure du visage</strong> et l’autre pour <strong>la moitié inférieure</strong>.<br/></li><li>Appliquez chaque partie séparément, en <strong>ajustant pour couvrir parfaitement</strong> le front, les joues, le menton et le contour des yeux.<br/></li><li>Appuyez légèrement pour que le masque <strong>adhère parfaitement</strong>, comme une seconde peau.</li></ul><h3><strong>Étape 3 : Laissez agir 3 à 4 heures</strong></h3><ul><li>Pendant la pose, le masque <strong>devient transparent</strong> lorsque la peau absorbe les actifs.<br/></li><li>Profitez de ce temps pour vous détendre pendant que le <strong>bio-collagène, l’acide hyaluronique et le niacinamide</strong> agissent en profondeur.<br/></li><li>Dès la première utilisation, vous constaterez <strong>une amélioration visible de la fermeté, de l’éclat et de la texture de la peau</strong>.<br/></li></ul><h3><strong>Étape 4 : Retirez et massez</strong></h3><ul><li>Retirez délicatement chaque partie du masque.<br/></li><li>Massez le <strong>sérum restant</strong> sur tout le visage jusqu’à absorption complète.<br/></li><li><strong>Ne rincez pas</strong>, puis appliquez votre sérum ou crème habituelle pour <strong>prolonger les effets</strong>.<br/></li></ul><p>💡 <strong>Astuce :</strong> utilisez le masque <strong>1 à 2 fois par semaine</strong> pour des résultats durables et une peau visiblement plus ferme, repulpée et éclatante.</p>",
             "page": ""
           }
         },
@@ -860,6 +860,36 @@
         "drag_cursor_color": "#000000"
       }
     },
+    "multiple_images_with_text_nprHPF": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_YzFcTH": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Dr. Marie Mendez",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_YzFcTH"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -1049,6 +1079,7 @@
     "multi_column_CzcHcX",
     "impact_text_qTC8zF",
     "before_after_image_CCpfJP",
+    "multiple_images_with_text_nprHPF",
     "faq_jkrpcC",
     "contact_7xcgtb"
   ]
