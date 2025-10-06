@@ -622,10 +622,18 @@
           "settings": {
             "feature_text": "Sensation rafraîchissante",
             "nous_has": true,
-            "eux_has": false
+            "eux_has": true
           }
         },
         "comparison_row_T8dgDA": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Origines inconnues",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_4RMKgK": {
           "type": "comparison_row",
           "settings": {
             "feature_text": "Peau apaisée",
@@ -639,7 +647,8 @@
         "comparison_row_UxehX4",
         "comparison_row_qYJwdc",
         "comparison_row_4Nyjwe",
-        "comparison_row_T8dgDA"
+        "comparison_row_T8dgDA",
+        "comparison_row_4RMKgK"
       ],
       "name": "Nous vs Eux",
       "settings": {
