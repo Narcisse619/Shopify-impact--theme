@@ -1063,8 +1063,8 @@
         "item_aiNn8F": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Combien de masques contient une boîte ?",
+            "content": "<p>Chaque boîte contient <strong>4 masques individuels prêts à l’emploi</strong>, parfaits pour une <strong>cure hebdomadaire d’un mois</strong> ou pour <strong>une routine anti-âge ciblée</strong>.</p>"
           }
         },
         "item_7k8jBM": {
