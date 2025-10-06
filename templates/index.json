@@ -676,8 +676,8 @@
         "item_phbbEt": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Puis-je utiliser le masque en même temps que mes autres produits de soin ?",
+            "content": "<p>Oui, notre peut être intégré à votre routine de soins existante. Cependant, nous recommandons de tester les nouveaux produits pour s'assurer qu'ils sont compatibles avec votre peau.<br/><br/></p>"
           }
         }
       },
