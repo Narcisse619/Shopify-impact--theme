@@ -1084,8 +1084,8 @@
         "item_Qn8LwH": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Puis-je modifier ou annuler ma commande après l’avoir passée ?",
+            "content": "<p>Oui, vous disposez d’un <strong>délai de 24 heures</strong> après la commande pour la modifier ou l’annuler.<br/>Passé ce délai, elle sera déjà en cours de préparation et <strong>ne pourra plus être modifiée</strong>, afin de garantir une expédition rapide.<br/><br/></p>"
           }
         },
         "item_jUWDnj": {
