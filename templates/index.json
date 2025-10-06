@@ -786,8 +786,10 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Before/after",
-        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
+        "title": "Qu'attendez-vous ?",
+        "content": "<p>Découvrez l'éclat naturel</p>",
+        "before_image": "shopify://shop_images/Untitled_design_35_430x_1.jpg",
+        "after_image": "shopify://shop_images/6_e6c68bde-2a27-48a5-bbf6-b8e3729c07ff_430x_1.jpg",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "top",
