@@ -665,7 +665,7 @@
         "container_width": 900,
         "padding_top": 60,
         "padding_bottom": 60,
-        "enable_hover": false
+        "enable_hover": true
       }
     },
     "feature_chart_fxtkMU": {
