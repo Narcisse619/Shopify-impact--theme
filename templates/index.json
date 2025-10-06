@@ -958,9 +958,9 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Aucun risque",
+            "title": "",
             "heading_tag": "h1",
-            "content": "<h4>Essayez notre masque en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours.</p><p>Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>",
+            "content": "",
             "link_url": "shopify://products/mask",
             "link_text": "Essayez sans rique pendant 30 jours",
             "link_style": "button"
