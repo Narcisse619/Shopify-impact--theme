@@ -459,7 +459,7 @@
         "text_size": "small",
         "text_style": "fill",
         "scrolling_mode": "auto",
-        "scrolling_speed": 14,
+        "scrolling_speed": 5,
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -528,7 +528,7 @@
           "type": "tab",
           "settings": {
             "title": "Quand vais-je voir les résultats ?",
-            "content": "<p>Dès la première application, la peau paraît plus hydratée, repulpée et éclatante. Après <strong>2 à 3 semaines d’utilisation régulière</strong>, les rides et taches pigmentaires s’estompent visiblement.  C'est un investissement beauté qui porte ses fruits sans attendre.<br/><br/><br/><br/></p>",
+            "content": "<p>Dès la première application, la peau paraît plus hydratée, repulpée et éclatante. Après <strong>2 à 3 semaines d’utilisation régulière</strong>, les rides et taches pigmentaires s’estompent visiblement.  C'est un investissement beauté qui porte ses fruits sans attendre.</p>",
             "page": ""
           }
         },
@@ -643,10 +643,10 @@
         "title": "Pourquoi Skinova Beauty Mask est-il le numéro 1 ?",
         "column_nous": "Nous",
         "column_eux": "Eux",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "title_color": "#000000",
-        "nous_color": "#5FB69A",
-        "cross_color": "#E53935",
+        "nous_color": "#5fb69a",
+        "cross_color": "#e53935",
         "title_size": 40,
         "header_size": 28,
         "feature_size": 18,
