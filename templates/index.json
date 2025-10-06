@@ -739,8 +739,8 @@
         "item_waPng4": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Ce masque convient-il à ma peau sensible et sèche ?",
+            "content": "<p>Absolument ! Notre formule au bio-collagène est douce et hydratante, parfaite pour les peaux sèches et sensibles. Elle nourrit en profondeur sans irriter, vous laissant un teint frais et apaisé, naturellement.<br/><br/></p>"
           }
         },
         "item_aiNn8F": {
