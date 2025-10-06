@@ -41,21 +41,13 @@
             "text": "Offre limitée -50%",
             "url": ""
           }
-        },
-        "message_aUXaj9": {
-          "type": "message",
-          "settings": {
-            "text": "Announce something here",
-            "url": ""
-          }
         }
       },
       "block_order": [
         "message_Pzcpfb",
         "message",
         "message_87Tzkz",
-        "message_bnT9Ed",
-        "message_aUXaj9"
+        "message_bnT9Ed"
       ],
       "settings": {
         "enable_sticky": false,
