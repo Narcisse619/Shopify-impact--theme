@@ -529,12 +529,12 @@
         "icon_size_mobile": 30,
         "icon_spacing": 10,
         "icon_bg_color": "#000000",
-        "icon_color": "#FFFFFF",
+        "icon_color": "#ffffff",
         "text_size": 18,
         "text_size_mobile": 14,
         "text_weight": "400",
         "text_color": "#000000",
-        "background_color": "#FFFFFF"
+        "background_color": "#ffffff"
       }
     },
     "scrolling_text_477TmX": {
@@ -891,6 +891,32 @@
         "button_text_color": ""
       }
     },
+    "image_with_text_overlay_LiVhKt": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_QPx4pb": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_QPx4pb"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -1081,6 +1107,7 @@
     "impact_text_qTC8zF",
     "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
+    "image_with_text_overlay_LiVhKt",
     "faq_jkrpcC",
     "contact_7xcgtb"
   ]
