@@ -794,8 +794,8 @@
             "title": "88%",
             "subheading": "Teint visiblement plus éclatant",
             "content": "",
-            "button_text": "Je veux ma peau éclatante",
-            "button_url": "shopify://products/mask",
+            "button_text": "",
+            "button_url": "",
             "animate_impact_text": true,
             "animate_impact_text_duration": 2
           }
