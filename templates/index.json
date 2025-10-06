@@ -466,50 +466,6 @@
         "text_gradient": ""
       }
     },
-    "video_testimonials_AYRrTm": {
-      "type": "video-testimonials",
-      "blocks": {
-        "video_PXyK3C": {
-          "type": "video",
-          "settings": {
-            "video": "",
-            "caption": "",
-            "autoplay": true
-          }
-        },
-        "video_pMhyGr": {
-          "type": "video",
-          "settings": {
-            "video": "",
-            "caption": "",
-            "autoplay": true
-          }
-        },
-        "video_V8dUr6": {
-          "type": "video",
-          "settings": {
-            "video": "",
-            "caption": "",
-            "autoplay": true
-          }
-        }
-      },
-      "block_order": [
-        "video_PXyK3C",
-        "video_pMhyGr",
-        "video_V8dUr6"
-      ],
-      "name": "Vidéos Témoignages",
-      "settings": {
-        "title": "",
-        "title_color": "#000000",
-        "background_color": "#ffffff",
-        "video_width": 250,
-        "video_height": 480,
-        "border_radius": 15,
-        "autoplay_carousel": true
-      }
-    },
     "video_carousel_bxMde8": {
       "type": "video-carousel",
       "blocks": {
@@ -518,10 +474,24 @@
           "settings": {
             "video_url": "https://cdn.shopify.com/videos/c/o/v/f72180c54f584a6bab2a2c61cfbe3182.mp4"
           }
+        },
+        "video_block_YwhNWm": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f72180c54f584a6bab2a2c61cfbe3182.mp4"
+          }
+        },
+        "video_block_d7pwfB": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/f72180c54f584a6bab2a2c61cfbe3182.mp4"
+          }
         }
       },
       "block_order": [
-        "video_block_MN4ay8"
+        "video_block_MN4ay8",
+        "video_block_YwhNWm",
+        "video_block_d7pwfB"
       ],
       "name": "Carrousel de vidéos",
       "settings": {
@@ -718,7 +688,6 @@
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
     "scrolling_text_477TmX",
-    "video_testimonials_AYRrTm",
     "video_carousel_bxMde8",
     "slideshow_8yx3ir",
     "tabs_LycG4c",
