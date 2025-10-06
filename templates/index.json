@@ -180,7 +180,7 @@
         "item_ACYMhN": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-03_at_04.56.52.webp",
+            "image": "shopify://shop_images/prCZL8XGO.jpg",
             "column_size": "3",
             "title": "Nathalie C.",
             "heading_tag": "h4",
@@ -474,7 +474,7 @@
           "settings": {
             "video": "",
             "caption": "",
-            "autoplay": false
+            "autoplay": true
           }
         },
         "video_pMhyGr": {
@@ -482,7 +482,7 @@
           "settings": {
             "video": "",
             "caption": "",
-            "autoplay": false
+            "autoplay": true
           }
         },
         "video_V8dUr6": {
@@ -490,7 +490,7 @@
           "settings": {
             "video": "",
             "caption": "",
-            "autoplay": false
+            "autoplay": true
           }
         }
       },
