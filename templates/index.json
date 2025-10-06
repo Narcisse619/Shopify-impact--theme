@@ -945,7 +945,7 @@
             "size": "lg",
             "text": "Essayez sans risque pendant 30 jours",
             "url": "shopify://products/mask",
-            "background": "",
+            "background": "#ff3fb0",
             "text_color": ""
           }
         }
