@@ -22,7 +22,7 @@
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#f0028f",
-            "icon_color": "",
+            "icon_color": "#ffffff",
             "title": "Paiement Sécurisé",
             "content": ""
           }
@@ -35,7 +35,7 @@
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#f0028f",
-            "icon_color": "",
+            "icon_color": "#ffffff",
             "title": "Livraison Gratuite",
             "content": ""
           }
@@ -48,7 +48,7 @@
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#f0028f",
-            "icon_color": "",
+            "icon_color": "#ffffff",
             "title": "Satisfait ou Rembousé",
             "content": ""
           }
@@ -61,7 +61,7 @@
             "icon_width": 32,
             "icon_background_type": "circle",
             "icon_background": "#f0028f",
-            "icon_color": "",
+            "icon_color": "#ffffff",
             "title": "Service Client 7j/7",
             "content": ""
           }
