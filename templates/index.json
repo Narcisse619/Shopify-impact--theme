@@ -666,7 +666,7 @@
             "column_size": "3",
             "title": "Complexe d’Acide Hyaluronique",
             "heading_tag": "h4",
-            "content": "",
+            "content": "<p>Un <strong>trio d’actifs ultra-performants</strong> qui inonde la peau d’eau, restaure son élasticité et repulpe les volumes pour un <strong>teint souple, rebondi et éclatant</strong>, comme après un soin professionnel.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -675,10 +675,11 @@
         "item_V6jmRm": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/shutterstock_2156157297_1_66286fe6-6226-44ce-a7a7-a60e99ce1796.webp",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Niacinamide",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Notre ingrédient phare — <strong>40 g par masque</strong> — possède une structure unique qui <strong>pénètre en profondeur</strong>, pour <strong>repulper, raffermir et lifter visiblement</strong> la peau, améliorant <strong>l’élasticité et la tonicité</strong> du visage dès la première utilisation.<br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -688,7 +689,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Collagène Faible Poids Moléculaire",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
