@@ -949,6 +949,33 @@
         "overlay_opacity": 31
       }
     },
+    "image_with_text_overlay_yFDgQM": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "richtext_9eRNY7": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Dès l’âge de <strong>25 ans</strong>, le niveau naturel de collagène de la peau commence à diminuer. Cette perte progressive entraîne l’apparition des <strong>premières ridules</strong>, une <strong>perte de fermeté </strong>et un <strong>teint plus terne</strong>.</p><p>C’est pourquoi il est essentiel de <strong>réintroduire du collagène</strong>: pour restaurer l’élasticité, lisser les premiers signes de l’âge et révéler une peau plus <strong>rebondie, ferme et lumineuse naturellement</strong>.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_9eRNY7"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/gempages_498052284261860488-930ba6ac-e116-4804-930b-1b0342ee2a3b_768x768_d3bfede5-6924-4a3b-b7c6-6bc04c74075f.gif",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 31
+      }
+    },
     "rich_text_PkqGLz": {
       "type": "rich-text",
       "blocks": {
@@ -1242,6 +1269,7 @@
     "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
+    "image_with_text_overlay_yFDgQM",
     "rich_text_PkqGLz",
     "faq_jkrpcC",
     "contact_7xcgtb",
