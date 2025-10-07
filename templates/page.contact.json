@@ -20,7 +20,7 @@
       "type": "contact",
       "settings": {
         "full_width": true,
-        "subheading": "Nous contacter",
+        "subheading": "",
         "title": "Avez-vous une question ?",
         "content": "",
         "text_position": "start",
