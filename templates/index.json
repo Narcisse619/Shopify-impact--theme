@@ -559,7 +559,7 @@
         "icon_size": 35,
         "icon_size_mobile": 30,
         "icon_spacing": 10,
-        "icon_bg_color": "#f0028f",
+        "icon_bg_color": "#dc5b73",
         "icon_color": "#ffffff",
         "text_size": 18,
         "text_size_mobile": 14,
@@ -731,8 +731,8 @@
         "column_eux": "Eux",
         "background_color": "#ffffff",
         "title_color": "#000000",
-        "nous_color": "#f0028f",
-        "cross_color": "#f0028f",
+        "nous_color": "#dc5b73",
+        "cross_color": "#dc5b73",
         "title_size": 40,
         "header_size": 28,
         "feature_size": 18,
@@ -1176,7 +1176,7 @@
         "heading_gradient": "",
         "contact_background": "",
         "contact_text_color": "",
-        "button_background": "#f0028f",
+        "button_background": "#dc5b73",
         "button_text_color": ""
       }
     },
