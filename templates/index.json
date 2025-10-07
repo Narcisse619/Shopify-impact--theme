@@ -1071,7 +1071,7 @@
           "type": "item",
           "settings": {
             "title": "La livraison prend combien de temps ?",
-            "content": "<p>La livraison est gratuite et est généralement compris entre 6 et 12 jours ouvrés, </p>"
+            "content": "<p>La livraison est gratuite et est généralement compris entre 6 et 12 jours ouvrés.</p>"
           }
         },
         "item_waPng4": {
