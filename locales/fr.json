@@ -427,11 +427,6 @@
   "shopify": {
     "links": {
       "powered_by_shopify": " "
-    },
-    "checkout": {
-      "order_summary": {
-        "vat_label_html": " "
-      }
     }
   }
 }
