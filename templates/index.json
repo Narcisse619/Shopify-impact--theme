@@ -492,6 +492,12 @@
           "settings": {
             "video_url": "https://cdn.shopify.com/videos/c/o/v/2a40a27844d64e828344f1cd13c849fe.mp4"
           }
+        },
+        "video_block_JnG4rR": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/56b5f1cb36f34d859217e42edf83e370.mp4"
+          }
         }
       },
       "block_order": [
@@ -499,11 +505,12 @@
         "video_block_d7pwfB",
         "video_block_MN4ay8",
         "video_block_UnLNBJ",
-        "video_block_CLHRqE"
+        "video_block_CLHRqE",
+        "video_block_JnG4rR"
       ],
       "name": "Carrousel de vidéos",
       "settings": {
-        "title": "https://cdn.shopify.com/videos/c/o/v/56b5f1cb36f34d859217e42edf83e370.mp4"
+        "title": ""
       }
     },
     "features_checkmarks_mTNGLc": {
