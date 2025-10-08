@@ -1180,9 +1180,9 @@
       "name": "Contact form",
       "settings": {
         "full_width": true,
-        "subheading": "Notre service clientèle est disponible 7 jours sur 7.Temps de réponse moyen : 4h",
+        "subheading": "",
         "title": "Avez-vous des questions ?",
-        "content": "",
+        "content": "<p>Notre service clientèle est disponible 7 jours sur 7.Temps de réponse moyen : 4h<br/><br/></p>",
         "text_position": "center",
         "contact_form_size": "large",
         "background": "",
