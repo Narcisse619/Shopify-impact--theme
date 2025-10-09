@@ -40,7 +40,7 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  <div class="product" >
+  <div class="product" id="produit" >
     {%- if section.settings.product != blank -%}
       {%- if section.settings.product.media.size > 0 -%}
         {%- render 'product-gallery', product: section.settings.product -%}
@@ -90,7 +90,7 @@
               </div>
 
             {%- when 'quantity_selector' -%}
-              <div class="product-info__quantity-selector {{ block.shopify_attributes }}" id="produit">
+              <div class="product-info__quantity-selector {{ block.shopify_attributes }}">
                 <div class="form-control">
                   <label for="{{ product_form_id }}-quantity" class="block-label text-subdued">{{- 'product.quantity.label' | t -}}:</label>
 
