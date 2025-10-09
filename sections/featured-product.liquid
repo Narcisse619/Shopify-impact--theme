@@ -40,7 +40,7 @@
 </style>
 
 <div {% render 'section-properties', tight: true %}>
-  <div class="product">
+  <div class="product" id="produit">
     {%- if section.settings.product != blank -%}
       {%- if section.settings.product.media.size > 0 -%}
         {%- render 'product-gallery', product: section.settings.product -%}
@@ -73,7 +73,7 @@
               <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
 
             {%- when 'price' -%}
-              <div class="product-info__price" id="produit">
+              <div class="product-info__price">
                 <price-list class="price-list price-list--lg">
                   <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
                 </price-list>
