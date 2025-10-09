@@ -981,7 +981,7 @@
             "style": "fill",
             "size": "lg",
             "text": "Achetez maintenant — Sans risque pendant 30 jours",
-            "url": "shopify://products/mask",
+            "url": "#produit",
             "background": "#00a341",
             "text_color": ""
           }
