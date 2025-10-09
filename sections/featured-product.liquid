@@ -61,7 +61,7 @@
         </div>
       </product-gallery>
 
-      <safe-sticky class="product-info" id="produit">
+      <safe-sticky class="product-info" >
         {%- capture product_form_id -%}featured-product-form-{{ section.id }}{%- endcapture -%}
 
         {%- for block in section.blocks -%}
@@ -73,7 +73,7 @@
               <h2 class="product-info__title {{ block.settings.heading_tag }}" {{ block.shopify_attributes }}>{{ 'general.on_boarding.product_title' | t }}</h2>
 
             {%- when 'price' -%}
-              <div class="product-info__price">
+              <div class="product-info__price" id="produit">
                 <price-list class="price-list price-list--lg">
                   <sale-price class="text-lg">{{ 4000 | money }}</sale-price>
                 </price-list>
