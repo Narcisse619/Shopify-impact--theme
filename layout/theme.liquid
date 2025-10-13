@@ -102,4 +102,42 @@ src="https://www.facebook.com/tr?id=4135827473358495&ev=PageView&noscript=1"
       {%- endif -%}
     </main>
   </body>
+  <script>
+(function() {
+  // Intercepter TOUTES les requêtes d'ajout au panier
+  const originalFetch = window.fetch;
+  window.fetch = function(...args) {
+    const [url, options] = args;
+    
+    // Si c'est une requête d'ajout au panier
+    if (url && url.includes('/cart/add')) {
+      return originalFetch.apply(this, args).then(response => {
+        if (response.ok) {
+          // Rediriger immédiatement vers le checkout
+          window.location.href = '/checkout';
+          // Retourner une promesse qui ne se résout jamais pour bloquer le reste
+          return new Promise(() => {});
+        }
+        return response;
+      });
+    }
+    
+    // Pour toutes les autres requêtes, comportement normal
+    return originalFetch.apply(this, args);
+  };
+  
+  // Intercepter aussi les événements personnalisés du thème
+  document.addEventListener('variant:add', function(event) {
+    event.stopImmediatePropagation();
+    window.location.href = '/checkout';
+  }, true);
+  
+  document.addEventListener('cart:change', function(event) {
+    if (event.detail && event.detail.baseEvent === 'variant:add') {
+      event.stopImmediatePropagation();
+      window.location.href = '/checkout';
+    }
+  }, true);
+})();
+</script>
 </html>
