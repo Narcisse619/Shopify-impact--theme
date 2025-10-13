@@ -21,7 +21,6 @@
         },
         "cart_note": {
           "type": "cart_note",
-          "disabled": true,
           "settings": {}
         },
         "checkout_button": {
