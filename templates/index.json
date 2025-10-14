@@ -359,12 +359,6 @@
           "type": "separator",
           "settings": {}
         },
-        "description_fKgjTD": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
         "variant_picker_kPgeML": {
           "type": "variant_picker",
           "settings": {
@@ -426,7 +420,6 @@
         "price_hw7E6H",
         "rating_dwp8Cr",
         "separator_4t7nkP",
-        "description_fKgjTD",
         "variant_picker_kPgeML",
         "quantity_selector_4UPWMw",
         "kaching_bundles_app_block_BaT4ba",
