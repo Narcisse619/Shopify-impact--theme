@@ -555,6 +555,7 @@
         "feature_gepQDc",
         "feature_pd8hmy"
       ],
+      "disabled": true,
       "name": "Avantages Checkmarks",
       "settings": {
         "container_width": 700,
