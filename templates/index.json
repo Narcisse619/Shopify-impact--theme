@@ -180,6 +180,19 @@
     "multi_column_37zq9U": {
       "type": "multi-column",
       "blocks": {
+        "item_wqGqdw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/bfeb76640c050c8dad669c13e55ea3b0.webp",
+            "column_size": "3",
+            "title": "Amélia G.",
+            "heading_tag": "h4",
+            "content": "<p>J’ai testé de nombreuses crèmes anti-âge, mais ce masque est le seul qui a vraiment fait la différence. Après quelques applications, mes rides sont moins marquées et ma peau est plus ferme. J’aurais aimé le découvrir plus tôt.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
         "item_ACYMhN": {
           "type": "item",
           "settings": {
@@ -258,19 +271,6 @@
             "link_style": "link"
           }
         },
-        "item_wqGqdw": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/bfeb76640c050c8dad669c13e55ea3b0.webp",
-            "column_size": "3",
-            "title": "Amélia G.",
-            "heading_tag": "h4",
-            "content": "<p>J’ai testé de nombreuses crèmes anti-âge, mais ce masque est le seul qui a vraiment fait la différence. Après quelques applications, mes rides sont moins marquées et ma peau est plus ferme. J’aurais aimé le découvrir plus tôt.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_V63TLT": {
           "type": "item",
           "settings": {
@@ -299,13 +299,13 @@
         }
       },
       "block_order": [
+        "item_wqGqdw",
         "item_ACYMhN",
         "item_NePLrr",
         "item_NhgpMH",
         "item_PmE64Q",
         "item_4baV3R",
         "item_LaNxcz",
-        "item_wqGqdw",
         "item_V63TLT",
         "item_QxmJ4W"
       ],
