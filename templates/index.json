@@ -183,6 +183,19 @@
         "item_ACYMhN": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/photo_2025-10-15_20-48-43.jpg",
+            "column_size": "3",
+            "title": "Céline Moreau",
+            "heading_tag": "h4",
+            "content": "<p>Dès la première utilisation, j’ai ressenti un effet tenseur incroyable. Ma peau est plus souple et mes ridules autour des yeux sont visiblement atténuées. Je recommande à toutes celles qui veulent un soin efficace sans passer par des injections.<br/><br/></p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_NePLrr": {
+          "type": "item",
+          "settings": {
             "image": "shopify://shop_images/prCZL8XGO.jpg",
             "column_size": "3",
             "title": "Nathalie C.",
@@ -287,6 +300,7 @@
       },
       "block_order": [
         "item_ACYMhN",
+        "item_NePLrr",
         "item_NhgpMH",
         "item_PmE64Q",
         "item_4baV3R",
