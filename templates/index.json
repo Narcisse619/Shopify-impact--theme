@@ -800,68 +800,6 @@
         "text_color": ""
       }
     },
-    "impact_text_qTC8zF": {
-      "type": "impact-text",
-      "blocks": {
-        "item_ULwXkP": {
-          "type": "item",
-          "settings": {
-            "title": "92%",
-            "subheading": "Peau plus hydratée et fraîche",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_88yJFt": {
-          "type": "item",
-          "settings": {
-            "title": "88%",
-            "subheading": "Teint visiblement plus éclatant",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_89yK46": {
-          "type": "item",
-          "settings": {
-            "title": "85%",
-            "subheading": "Rides et ridules visiblement lissées",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_ULwXkP",
-        "item_88yJFt",
-        "item_89yK46"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": false,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "before_after_image_CCpfJP": {
       "type": "before-after-image",
       "name": "Before/after image",
@@ -1234,7 +1172,6 @@
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
     "multi_column_CzcHcX",
-    "impact_text_qTC8zF",
     "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
