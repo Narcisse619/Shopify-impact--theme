@@ -464,12 +464,6 @@
     "video_carousel_bxMde8": {
       "type": "video-carousel",
       "blocks": {
-        "video_block_xJNT43": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/5204f3ac366e4cd791d4e86224806dd8.mp4"
-          }
-        },
         "video_block_JnG4rR": {
           "type": "video_block",
           "settings": {
@@ -502,7 +496,6 @@
         }
       },
       "block_order": [
-        "video_block_xJNT43",
         "video_block_JnG4rR",
         "video_block_YwhNWm",
         "video_block_d7pwfB",
