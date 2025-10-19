@@ -28,6 +28,13 @@
             "url": ""
           }
         },
+        "message_JAm9mH": {
+          "type": "message",
+          "settings": {
+            "text": "Paiement en 3 fois avec Klarna sans frais disponible",
+            "url": ""
+          }
+        },
         "message_87Tzkz": {
           "type": "message",
           "settings": {
@@ -41,21 +48,14 @@
             "text": "Offre limitée -50%",
             "url": ""
           }
-        },
-        "message_JAm9mH": {
-          "type": "message",
-          "settings": {
-            "text": "Paiement en 3 fois avec Klarna sans frais disponible",
-            "url": ""
-          }
         }
       },
       "block_order": [
         "message_Pzcpfb",
         "message",
+        "message_JAm9mH",
         "message_87Tzkz",
-        "message_bnT9Ed",
-        "message_JAm9mH"
+        "message_bnT9Ed"
       ],
       "settings": {
         "enable_sticky": false,
