@@ -1061,7 +1061,7 @@
           "type": "item",
           "settings": {
             "title": "Puis-je payer en plusieurs fois ?",
-            "content": "<p>Absolument, nous disposons de klarna sur SKINOVA qui vous permet de faire un paiement en 3 fois ou 4 fois 100 % sécurisé et sans frais. Pour utiliser klarna, vous pouvez le sélectionné comme méthode de paiement sur la page de paiement et bien sûr vous recevrez normalement votre masque comme tous les autres clients en temps et en heure.</p>"
+            "content": "<p>Absolument, nous disposons de <strong>klarna</strong> sur notre boutique qui vous permet de payer en 3 fois ou 4 fois 100 % sécurisé et sans frais. Pour utiliser klarna, vous pouvez le sélectionné comme méthode de paiement sur la page de paiement et bien sûr vous recevez normalement votre masque comme tous les autres clients en temps et en heure.</p>"
           }
         }
       },
