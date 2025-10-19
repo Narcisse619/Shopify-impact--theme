@@ -1056,6 +1056,13 @@
             "title": "Livraison gratuite ?",
             "content": "<p>Nous vous livrons votre Masque gratuitement à domicile.</p>"
           }
+        },
+        "item_dhtgp3": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je payer en plusieurs fois ?",
+            "content": "<p>Absolument, nous disposons de klarna sur SKINOVA qui vous permet de faire un paiement en 3 fois ou 4 fois 100 % sécurisé et sans frais. Pour utiliser klarna, vous pouvez le sélectionné comme méthode de paiement sur la page de paiement et bien sûr vous recevrez normalement votre masque comme tous les autres clients en temps et en heure.</p>"
+          }
         }
       },
       "block_order": [
@@ -1076,7 +1083,8 @@
         "item_3CNxPa",
         "item_Qn8LwH",
         "item_jUWDnj",
-        "item_ybPhdh"
+        "item_ybPhdh",
+        "item_dhtgp3"
       ],
       "name": "FAQ",
       "settings": {
