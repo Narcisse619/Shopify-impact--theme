@@ -109,7 +109,7 @@
           "settings": {
             "title": "Nous contacter",
             "content": "<p>Service client : contact@theskinovabeauty.com</p><p>Horaires d’ouverture : Lundi – Vendredi : 8h00 à 18h00 / Samedi et Dimanche : 9h00 à 16h00</p>",
-            "enable_follow_on_shop": true
+            "enable_follow_on_shop": false
           }
         }
       },
