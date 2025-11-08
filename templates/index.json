@@ -539,27 +539,27 @@
     "tabs_LycG4c": {
       "type": "tabs",
       "blocks": {
-        "tab_7z4J3r": {
+        "tab_cdhAME": {
           "type": "tab",
           "settings": {
-            "title": "Comment utiliser le Skinova Beauty Mask ?",
-            "content": "<h3><strong>Étape 1 : Préparez votre peau</strong></h3><ul><li>Nettoyez votre visage avec un <strong>nettoyant doux</strong> pour éliminer maquillage et impuretés.<br/></li><li>Séchez délicatement votre visage avec une serviette propre afin que la peau soit prête à absorber le collagène et les actifs hydratants.</li></ul><h3><strong>Étape 2 : Appliquez le masque en deux parties</strong></h3><ul><li>Le Skinova Beauty Mask se compose de <strong>deux parties</strong> : une pour <strong>la moitié supérieure du visage</strong> et l’autre pour <strong>la moitié inférieure</strong>.<br/></li><li>Appliquez chaque partie séparément, en <strong>ajustant pour couvrir parfaitement</strong> le front, les joues, le menton et le contour des yeux.<br/></li><li>Appuyez légèrement pour que le masque <strong>adhère parfaitement</strong>, comme une seconde peau.</li></ul><h3><strong>Étape 3 : Laissez agir 3 à 4 heures</strong></h3><ul><li>Pendant la pose, le masque <strong>devient transparent</strong> lorsque la peau absorbe les actifs.<br/></li><li>Profitez de ce temps pour vous détendre pendant que le <strong>bio-collagène, l’acide hyaluronique et le niacinamide</strong> agissent en profondeur.<br/></li><li>Dès la première utilisation, vous constaterez <strong>une amélioration visible de la fermeté, de l’éclat et de la texture de la peau</strong>.</li></ul><h3><strong>Étape 4 : Retirez et massez</strong></h3><ul><li>Retirez délicatement chaque partie du masque.<br/></li><li>Massez le <strong>sérum restant</strong> sur tout le visage jusqu’à absorption complète.</li></ul><p></p><ul><li><strong>Ne rincez pas</strong>, puis appliquez votre sérum ou crème habituelle pour <strong>prolonger les effets</strong>.</li></ul><p>💡 <strong>Astuce :</strong> utilisez le masque<strong> 1 à 2 fois par semaine</strong> pour des résultats durables et une peau visiblement plus ferme, repulpée et éclatante.</p>",
+            "title": "Tab",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
-        "tab_fbYGzL": {
+        "tab_hMf3C3": {
           "type": "tab",
           "settings": {
-            "title": "Quand vais-je voir les résultats ?",
-            "content": "<p>Dès la première application, la peau paraît plus hydratée, repulpée et éclatante. Après <strong>2 à 3 semaines d’utilisation régulière</strong>, les rides et taches pigmentaires s’estompent visiblement.  C'est un investissement beauté qui porte ses fruits sans attendre.</p>",
+            "title": "Tab",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
-        "tab_PqDJxQ": {
+        "tab_rzGDFR": {
           "type": "tab",
           "settings": {
-            "title": "Ingrédients",
-            "content": "<ul><li><strong>Eau purifiée</strong> : Pour une base douce et hydratante.</li><li><strong>Collagène hydrolysé </strong>: Aide à raffermir et à revitaliser la peau en stimulant la production naturelle de collagène.</li><li><strong>Filtrat de ferment Galactomyces </strong>: Un antioxydant puissant qui améliore la clarté et la texture de la peau.</li><li><strong>Glycérine</strong> : hydrate en profondeur et maintient l'hydratation de la peau.</li><li><strong>Niacinamide </strong>: unifie le teint, réduit les pores et illumine la peau.</li><li><strong>Allantoïne</strong> : Apaise et régénère la peau, idéal pour les peaux sensibles.</li><li><strong>Chondrus Crispus</strong> (algue rouge) : Nourrit et hydrate la peau, tout en lui apportant des minéraux essentiels.</li><li><strong>Acides aminés</strong> (Alanine, Serine, Glycine, etc.) : Renforcent et revitalisent la peau en profondeur.</li><li><strong>Hyaluronates de sodium</strong> : Hydratent et repulpent intensément la peau pour un effet lissant immédiat.</li><li><strong>Lactate de sodium </strong>: Aide à maintenir l'hydratation et l'équilibre du pH de la peau.</li><li><strong>Hydroxyéthylcellulose</strong> : Procure une texture agréable et facile à appliquer.<br/><br/>Notre formule est conçue pour offrir un soin complet et naturel à la peau, en lui apportant tous les nutriments dont elle a besoin pour paraître jeune et radieuse. Chaque ingrédient est soigneusement sélectionné pour ses propriétés bénéfiques, garantissant une <strong>expérience de soin luxueuse et efficace.</strong></li></ul>",
+            "title": "Tab",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "page": ""
           }
         },
@@ -575,15 +575,15 @@
           "type": "tab",
           "settings": {
             "title": "Essayez-le 30 jours gratuitement",
-            "content": "<p>Nous sommes convaincus de l’efficacité de notre masque Skinova Beauty Mask. C’est pourquoi nous vous offrons 30 jours d’essai sans risque : Utilisez le masque chez vous pendant 4 semaines. Constatez les premiers résultats dès 7 jours. Si vous n'êtes pas 100% satisfaite, retour gratuit et remboursement intégral.</p>",
+            "content": "",
             "page": ""
           }
         }
       },
       "block_order": [
-        "tab_7z4J3r",
-        "tab_fbYGzL",
-        "tab_PqDJxQ",
+        "tab_cdhAME",
+        "tab_hMf3C3",
+        "tab_rzGDFR",
         "tab_kdmRPt",
         "tab_NDEcL3"
       ],
