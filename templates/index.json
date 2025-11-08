@@ -372,6 +372,7 @@
         "image_fUaaHH": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/7_client_offr.png",
             "alignment": "center",
             "max_width": 500
           }
