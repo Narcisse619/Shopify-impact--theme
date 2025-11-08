@@ -679,43 +679,13 @@
         "enable_hover": true
       }
     },
-    "multiple_images_with_text_nprHPF": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_YzFcTH": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Dr. Élodie M., Dermatologue Esthétique",
-            "content": "<p>“Le Skinova Beauty Mask combine intelligemment le collagène, l’acide hyaluronique et la niacinamide pour offrir une action complète sur la fermeté, l’hydratation et l’éclat de la peau. Sa formule à 98 % d’ingrédients d’origine naturelle respecte même les peaux les plus sensibles. Dès les premières utilisations, on observe une peau plus rebondie, lumineuse et visiblement plus lisse. C’est un soin que je recommande pour toutes celles qui souhaitent préserver la jeunesse de leur peau sans passer par des procédures invasives.”<br/><br/></p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_YzFcTH"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "image_with_text_overlay_LiVhKt": {
       "type": "image-with-text-overlay",
       "blocks": {
         "richtext_QPx4pb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Dès l’âge de <strong>25 ans</strong>, le niveau naturel de collagène de la peau commence à diminuer. Cette perte progressive entraîne l’apparition des <strong>premières ridules</strong>, une <strong>perte de fermeté </strong>et un <strong>teint plus terne</strong>.</p><p>C’est pourquoi il est essentiel de <strong>réintroduire du collagène</strong>: pour restaurer l’élasticité, lisser les premiers signes de l’âge et révéler une peau plus <strong>rebondie, ferme et lumineuse naturellement</strong>.<br/><br/></p>"
+            "content": ""
           }
         }
       },
@@ -733,51 +703,6 @@
         "text_color": "#ffffff",
         "overlay_color": "#1a1a1a",
         "overlay_opacity": 19
-      }
-    },
-    "rich_text_PkqGLz": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_Rfrzai": {
-          "type": "heading",
-          "settings": {
-            "text": "Aucun risque",
-            "heading_tag": "h1",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_zCL43L": {
-          "type": "richtext",
-          "settings": {
-            "content": "<h4>Essayez notre masque en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours.</p><p>Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>"
-          }
-        },
-        "button_gXyVRe": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Achetez maintenant — Sans risque pendant 30 jours",
-            "url": "#produit",
-            "background": "#00a341",
-            "text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "heading_Rfrzai",
-        "richtext_zCL43L",
-        "button_gXyVRe"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "#f8d2d1",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "faq_jkrpcC": {
@@ -893,9 +818,7 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
-    "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
-    "rich_text_PkqGLz",
     "faq_jkrpcC",
     "contact_7xcgtb",
     "175979749349adff91"
