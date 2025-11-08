@@ -674,32 +674,6 @@
         "enable_hover": true
       }
     },
-    "image_with_text_overlay_LiVhKt": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "richtext_QPx4pb": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "richtext_QPx4pb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#1a1a1a",
-        "overlay_opacity": 19
-      }
-    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -813,7 +787,6 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
-    "image_with_text_overlay_LiVhKt",
     "faq_jkrpcC",
     "contact_7xcgtb",
     "175979749349adff91"
