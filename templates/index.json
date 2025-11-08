@@ -674,6 +674,68 @@
         "enable_hover": true
       }
     },
+    "impact_text_HM6cRh": {
+      "type": "impact-text",
+      "blocks": {
+        "item_mFMRwN": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Showcase a benefit of your product",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_NpxTBp": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Showcase a benefit of your product",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        },
+        "item_kYRqwB": {
+          "type": "item",
+          "settings": {
+            "title": "100%",
+            "subheading": "Showcase a benefit of your product",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_mFMRwN",
+        "item_NpxTBp",
+        "item_kYRqwB"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 0.5,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "custom_html_PnpHBT": {
       "type": "custom-html",
       "name": "Custom HTML",
@@ -685,6 +747,40 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
+      }
+    },
+    "media_with_text_aWGyyR": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_LWQP9r": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "link_text": "Achetez maintenant — Sans risque pendant 30 jours",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_LWQP9r"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
       }
     },
     "faq_jkrpcC": {
@@ -800,7 +896,9 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
+    "impact_text_HM6cRh",
     "custom_html_PnpHBT",
+    "media_with_text_aWGyyR",
     "faq_jkrpcC",
     "contact_7xcgtb",
     "175979749349adff91"
