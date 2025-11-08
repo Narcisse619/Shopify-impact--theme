@@ -604,62 +604,62 @@
     "section_nous_vs_eux_xWJi96": {
       "type": "section-nous-vs-eux",
       "blocks": {
-        "comparison_row_TT77Ct": {
+        "comparison_row_6LgRA4": {
           "type": "comparison_row",
           "settings": {
-            "feature_text": "Hydratation profonde",
+            "feature_text": "Caractéristique",
             "nous_has": true,
             "eux_has": false
           }
         },
-        "comparison_row_UxehX4": {
+        "comparison_row_jVYfQP": {
           "type": "comparison_row",
           "settings": {
-            "feature_text": "Ingrédients naturels",
+            "feature_text": "Caractéristique",
             "nous_has": true,
             "eux_has": false
           }
         },
-        "comparison_row_qYJwdc": {
+        "comparison_row_p8KRL7": {
           "type": "comparison_row",
           "settings": {
-            "feature_text": "Résultat anti-âge",
+            "feature_text": "Caractéristique",
             "nous_has": true,
             "eux_has": false
           }
         },
-        "comparison_row_4Nyjwe": {
+        "comparison_row_rFN6ap": {
           "type": "comparison_row",
           "settings": {
-            "feature_text": "Sensation rafraîchissante",
-            "nous_has": true,
-            "eux_has": true
-          }
-        },
-        "comparison_row_T8dgDA": {
-          "type": "comparison_row",
-          "settings": {
-            "feature_text": "Origines inconnues",
+            "feature_text": "Caractéristique",
             "nous_has": true,
             "eux_has": false
           }
         },
-        "comparison_row_4RMKgK": {
+        "comparison_row_fX3wdq": {
           "type": "comparison_row",
           "settings": {
-            "feature_text": "Peau apaisée",
+            "feature_text": "Caractéristique",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_tDV3Em": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Caractéristique",
             "nous_has": true,
             "eux_has": false
           }
         }
       },
       "block_order": [
-        "comparison_row_TT77Ct",
-        "comparison_row_UxehX4",
-        "comparison_row_qYJwdc",
-        "comparison_row_4Nyjwe",
-        "comparison_row_T8dgDA",
-        "comparison_row_4RMKgK"
+        "comparison_row_6LgRA4",
+        "comparison_row_jVYfQP",
+        "comparison_row_p8KRL7",
+        "comparison_row_rFN6ap",
+        "comparison_row_fX3wdq",
+        "comparison_row_tDV3Em"
       ],
       "name": "Nous vs Eux",
       "settings": {
@@ -677,65 +677,6 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "enable_hover": true
-      }
-    },
-    "multi_column_CzcHcX": {
-      "type": "multi-column",
-      "blocks": {
-        "item_LBnb9N": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Acide Hyaluronique",
-            "heading_tag": "h4",
-            "content": "<p>Un <strong>trio d’actifs ultra-performants</strong> qui inonde la peau d’eau, restaure son élasticité et repulpe les volumes pour un <strong>teint souple, rebondi et éclatant</strong>, comme après un soin professionnel.</p>",
-            "link_url": "#produit",
-            "link_text": "Je veux ma peau éclatante ! →",
-            "link_style": "button"
-          }
-        },
-        "item_wUCrXA": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Collagène",
-            "heading_tag": "h4",
-            "content": "<p>Notre ingrédient phare — <strong>40 g par masque</strong> — possède une structure unique qui <strong>pénètre en profondeur</strong>, pour <strong>repulper, raffermir et lifter visiblement</strong> la peau, améliorant <strong>l’élasticité et la tonicité</strong> du visage dès la première utilisation.</p>",
-            "link_url": "#produit",
-            "link_text": "Je veux ma peau éclatante ! →",
-            "link_style": "button"
-          }
-        },
-        "item_V6jmRm": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "Niacinamide",
-            "heading_tag": "h4",
-            "content": "<p>Illumine le teint, <strong>atténue les taches pigmentaires</strong> et resserre les pores, pour une peau <strong>visiblement plus lisse, uniforme et éclatante</strong>, révélant un <strong>effet jeunesse naturel</strong> dès les premières utilisations.</p>",
-            "link_url": "#produit",
-            "link_text": "Je veux ma peau éclatante ! →",
-            "link_style": "button"
-          }
-        }
-      },
-      "block_order": [
-        "item_LBnb9N",
-        "item_wUCrXA",
-        "item_V6jmRm"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "medium",
-        "text_alignment": "center",
-        "subheading": "Tout ce dont votre peau a besoin à portée de main",
-        "title": "Des résultats prouvés, des ingrédients validés par la science",
-        "content": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "before_after_image_CCpfJP": {
@@ -975,7 +916,6 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
-    "multi_column_CzcHcX",
     "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
