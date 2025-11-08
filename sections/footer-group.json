@@ -100,7 +100,7 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "liens-rapides",
+            "menu": "footer-1",
             "show_menu_title": true
           }
         },
