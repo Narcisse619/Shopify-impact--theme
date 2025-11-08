@@ -138,7 +138,7 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Avant/ Après",
+        "title": "Avant/Après",
         "content": "",
         "expand_image": false,
         "text_position": "center",
@@ -213,7 +213,7 @@
             "column_size": "3",
             "title": "Veronica M.",
             "heading_tag": "h4",
-            "content": "<p>Je voyais mes rides s'installer et ma peau perdre son éclat jour après jour. Ce masque a tout changé en seulement 7 jours ! Un teint lissé, rajeuni, et une luminosité que je n'avais plus depuis des années. Mon conseil : n'attendez pas comme je l'ai fait. J'ai perdu 3 semaines précieuses ! Commandez maintenant avant qu'il ne soit trop tard.<br/><br/></p>",
+            "content": "<p><br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -225,7 +225,7 @@
             "column_size": "3",
             "title": "Flore D.",
             "heading_tag": "h4",
-            "content": "<p>Mon teint était si terne et fatigué... Je devais me maquiller pour une simple course. Ce masque au collagène a été un électrochoc ! Dès la première utilisation, ma peau était douce et hydratée. Après trois utilisations, c'est mon entourage qui me demande ce que j'ai changé dans ma routine. J'ai retrouvé un éclat que je pensais avoir perdu pour toujours. <br/></p>",
+            "content": "<p> <br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -237,7 +237,7 @@
             "column_size": "3",
             "title": "Jessica D.",
             "heading_tag": "h4",
-            "content": "<p>Je l'ai acheté en urgence avant un mariage où j'étais témoin. STRESS ! La veille, peau grise et pores dilatés. J'ai testé ce masque en désespoir de cause. RÉSULTAT : Le jour J, ma peau était uniforme, lumineuse et le maquillage a tenu parfaitement toute la journée. Toutes mes amies m'ont demandé le nom de mon institut de beauté. Je n'ai révélé mon secret à personne... jusqu'à aujourd'hui !<br/><br/></p>",
+            "content": "<p><br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -249,7 +249,7 @@
             "column_size": "3",
             "title": "Aurélia G.",
             "heading_tag": "h4",
-            "content": "<p>Je cherchais une solution naturelle pour redonner de l'éclat à mon visage et j'ai trouvé la perle rare. Dès la première application, ma peau a retrouvé une vitalité incroyable. Elle est visiblement plus lisse, lumineuse et paraît plus jeune. Le petit plus, c'est ce sentiment de bien-être après l'avoir utilisé. C'est un vrai moment pour soi, et les résultats sont bluffants !<br/><br/><br/></p>",
+            "content": "<p><br/><br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -261,7 +261,7 @@
             "column_size": "3",
             "title": "Olivia V.",
             "heading_tag": "h4",
-            "content": "<p>Ayant la peau sensible et sujette aux rougeurs, j’ai toujours eu du mal à trouver un soin qui hydrate sans irriter. Ce masque a été une révélation ! Après quelques utilisations, ma peau est beaucoup plus apaisée, les rougeurs ont diminué et mon teint est plus uniforme. Je ne peux plus m’en passer !<br/></p>",
+            "content": "<p><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -273,7 +273,7 @@
             "column_size": "3",
             "title": "Thérésa H.",
             "heading_tag": "h4",
-            "content": "<p>J'utilise ce masque depuis 3 semaines et les résultats sont déjà visibles. Ma peau est plus ferme, plus lumineuse.<br/></p>",
+            "content": "<p><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -431,52 +431,6 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
-      }
-    },
-    "video_carousel_bxMde8": {
-      "type": "video-carousel",
-      "blocks": {
-        "video_block_UnLNBJ": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/2ffdbdc4208040a3bf6c162903824587.mp4"
-          }
-        },
-        "video_block_JnG4rR": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/17b696e9493149599271039ee6e87314.mp4"
-          }
-        },
-        "video_block_MN4ay8": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/88d12e23b5fd4c90976994c52316dd67.mp4"
-          }
-        },
-        "video_block_YwhNWm": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/2321620fd6d0425190dd113adf1dbd2d.mp4"
-          }
-        },
-        "video_block_d7pwfB": {
-          "type": "video_block",
-          "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/8319f1ea44cd4925bd55ac252757a794.mp4"
-          }
-        }
-      },
-      "block_order": [
-        "video_block_UnLNBJ",
-        "video_block_JnG4rR",
-        "video_block_MN4ay8",
-        "video_block_YwhNWm",
-        "video_block_d7pwfB"
-      ],
-      "name": "Carrousel de vidéos",
-      "settings": {
-        "title": ""
       }
     },
     "features_checkmarks_mTNGLc": {
@@ -1001,7 +955,6 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
-    "video_carousel_bxMde8",
     "features_checkmarks_mTNGLc",
     "scrolling_text_477TmX",
     "slideshow_8yx3ir",
