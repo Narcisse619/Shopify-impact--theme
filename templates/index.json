@@ -389,13 +389,26 @@
         "image_gfhPbC": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/TTTT_1.avif",
             "alignment": "center",
             "max_width": 350
+          }
+        },
+        "liquid_aMMqaq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
           }
         },
         "pickup_availability_nnAwX7": {
           "type": "pickup_availability",
           "settings": {}
+        },
+        "liquid_jbEmEw": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<!DOCTYPE html> \n<html lang=\"en\"> \n<head> \n<meta charset=\"UTF-8\"> \n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> \n<style> \n.video-container { \ndisplay: flex; \njustify-content: space-between; \nmargin-top: 20px; \n} \n.video-item { \nwidth: 23%; /* Adjust width to fit four videos in a row */ \nposition: relative; \n} \n.video-item video { \nwidth: 100%; \naspect-ratio: 3 / 4; \n} \n.video-text { \ntext-align: center; \nmargin-top: 10px; \nfont-size: 14px; \n} \n</style> \n<title>Video Sections</title> \n</head> \n<body> \n<div class=\"video-container\"> \n<div class=\"video-item\"> \n<video autoplay muted loop playsinline> \n<source \nsrc=\"https://cdn.shopify.com/videos/c/o/v/364b09a9068a4eee8cecb0499bfd8d0b.mp4\" \ntype=\"video/mp4\"> \n</video> \n<div class=\"video-text\"></div> \n</div> \n<div class=\"video-item\">\n<video autoplay muted loop playsinline> \n<source \nsrc=\"https://cdn.shopify.com/videos/c/o/v/17f30280891442d68104e0cf3935a0b2.mp4\" \ntype=\"video/mp4\"> \n</video> \n<div class=\"video-text\"></div> \n</div> \n<div class=\"video-item\"> \n<video autoplay muted loop playsinline> \n<source \nsrc=\"https://cdn.shopify.com/videos/c/o/v/7c8460a5e10e4b6c800234f8260ca0d6.mp4\" \ntype=\"video/mp4\"> \n</video> \n<div class=\"video-text\"></div> \n</div> \n<div class=\"video-item\"> \n<video autoplay muted loop playsinline> \n<source \nsrc=\"https://cdn.shopify.com/videos/c/o/v/07db216f37864a7fa1d69505411f3045.mp4\" \ntype=\"video/mp4\"> \n</video> \n<div class=\"video-text\"></div> \n</div> \n</div> \n</body> \n</html>"
+          }
         }
       },
       "block_order": [
@@ -412,7 +425,9 @@
         "image_fUaaHH",
         "buy_buttons_HQXdke",
         "image_gfhPbC",
-        "pickup_availability_nnAwX7"
+        "liquid_aMMqaq",
+        "pickup_availability_nnAwX7",
+        "liquid_jbEmEw"
       ],
       "name": "Featured product",
       "settings": {
