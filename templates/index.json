@@ -679,29 +679,6 @@
         "enable_hover": true
       }
     },
-    "before_after_image_CCpfJP": {
-      "type": "before-after-image",
-      "name": "Before/after image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Qu'attendez-vous ?",
-        "content": "<p>Découvrez l'éclat naturel</p>",
-        "expand_image": false,
-        "text_position": "center",
-        "before_after_text_position": "top",
-        "before_text": "Avant",
-        "after_text": "Après",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
-      }
-    },
     "multiple_images_with_text_nprHPF": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -916,7 +893,6 @@
     "slideshow_8yx3ir",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
-    "before_after_image_CCpfJP",
     "multiple_images_with_text_nprHPF",
     "image_with_text_overlay_LiVhKt",
     "rich_text_PkqGLz",
