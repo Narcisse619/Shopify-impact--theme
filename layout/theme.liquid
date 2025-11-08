@@ -110,18 +110,4 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
     return originalFetch.apply(this, args);
   };
   
-  // Intercepter aussi les événements personnalisés du thème
-  document.addEventListener('variant:add', function(event) {
-    event.stopImmediatePropagation();
-    window.location.href = '/checkout';
-  }, true);
-  
-  document.addEventListener('cart:change', function(event) {
-    if (event.detail && event.detail.baseEvent === 'variant:add') {
-      event.stopImmediatePropagation();
-      window.location.href = '/checkout';
-    }
-  }, true);
-})();
-</script>
 </html>
