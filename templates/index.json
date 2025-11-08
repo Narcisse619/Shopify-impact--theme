@@ -15,7 +15,7 @@
         "heading_bNK6dx": {
           "type": "heading",
           "settings": {
-            "text": "Rides effacées • Peau raffermie• Éclat retrouvé",
+            "text": "",
             "heading_tag": "h4"
           }
         }
@@ -32,7 +32,7 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#a84932",
+        "overlay_color": "#1a1a1a",
         "overlay_opacity": 30
       }
     },
@@ -97,7 +97,7 @@
         "heading_cMcXVj": {
           "type": "heading",
           "settings": {
-            "text": "Pourquoi choisir notre masque ?",
+            "text": "Pourquoi nous choisir  ?",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -177,7 +177,7 @@
             "column_size": "3",
             "title": "Amélia G.",
             "heading_tag": "h4",
-            "content": "<p>J’ai testé de nombreuses crèmes anti-âge, mais ce masque est le seul qui a vraiment fait la différence. Après quelques applications, mes rides sont moins marquées et ma peau est plus ferme. J’aurais aimé le découvrir plus tôt.</p>",
+            "content": "",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -189,7 +189,7 @@
             "column_size": "3",
             "title": "Céline Moreau",
             "heading_tag": "h4",
-            "content": "<p>Dès la première utilisation, j’ai ressenti un effet tenseur incroyable. Ma peau est plus souple et mes ridules autour des yeux sont visiblement atténuées. Je recommande à toutes celles qui veulent un soin efficace sans passer par des injections.<br/><br/></p>",
+            "content": "<p><br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -201,7 +201,7 @@
             "column_size": "3",
             "title": "Nathalie C.",
             "heading_tag": "h4",
-            "content": "<p>Dès la première utilisation, j’ai ressenti un effet tenseur incroyable. Ma peau est plus souple et mes ridules autour des yeux sont visiblement atténuées. Je recommande à toutes celles qui veulent un soin efficace sans passer par des injections.<br/><br/></p>",
+            "content": "<p><br/><br/></p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
