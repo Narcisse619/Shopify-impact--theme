@@ -15,7 +15,7 @@
         "heading_bNK6dx": {
           "type": "heading",
           "settings": {
-            "text": "",
+            "text": "Effacez vos rides. Révélez la jeunesse que le temps n’a pas effacée.",
             "heading_tag": "h4"
           }
         }
@@ -401,7 +401,7 @@
         "liquid_VkHNkR": {
           "type": "liquid",
           "settings": {
-            "liquid": "plus de 10000 clients satifait ..iuo"
+            "liquid": "<div class=\"loved-by-customers\">\n  <span>🖤  Aimé par 100,000 clients</span>\n</div>\n\n<style>\n  .loved-by-customers {\n    background: linear-gradient(#dddddd, #d8d8d8);\n    color: #121212;\n    text-align: center;\n    padding: 6px;\n    margin-top: 20px; /* Adjust as needed */\n    border-radius: 20px; /* Adjust to desired pill shape */\n    width: 300px; /* Adjust width as needed */\n    margin-left: auto;\n    margin-right: auto;\n    font-size: 14px;\n    font-weight: \n  }\n</style>"
           }
         },
         "liquid_jbEmEw": {
