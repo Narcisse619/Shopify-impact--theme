@@ -392,6 +392,12 @@
             "payment_button_text_color": ""
           }
         },
+        "liquid_VkHNkR": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "iuo"
+          }
+        },
         "liquid_jbEmEw": {
           "type": "liquid",
           "settings": {
@@ -430,6 +436,7 @@
         "quantity_selector_4UPWMw",
         "image_fUaaHH",
         "buy_buttons_HQXdke",
+        "liquid_VkHNkR",
         "liquid_jbEmEw",
         "image_gfhPbC",
         "pickup_availability_nnAwX7",
