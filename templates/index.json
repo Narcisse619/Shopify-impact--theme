@@ -324,6 +324,12 @@
             "heading_tag": "h2"
           }
         },
+        "text_3KmRc3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>✔ Effacez les rides et ridules en 7 jours !</p><p>✔ Raffermit et lifte la peau de 98 % !</p><p>✔ Inversez le temps et retrouvez confiance en vous !</p><p>✔ Recommandé par les dermatologues</p>"
+          }
+        },
         "liquid_xBhWW3": {
           "type": "liquid",
           "settings": {
@@ -426,6 +432,7 @@
       "block_order": [
         "liquid_r8qNpD",
         "title_XwJQUF",
+        "text_3KmRc3",
         "liquid_xBhWW3",
         "image_d9Ezwq",
         "badges_iCJWVX",
