@@ -42,6 +42,7 @@
         "logo_gc3ryK": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Elle.webp",
             "logo_width": 120,
             "link": ""
           }
@@ -49,6 +50,7 @@
         "logo_AMFpJj": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Comopolitan_Magazine_Logo.svg",
             "logo_width": 120,
             "link": ""
           }
@@ -56,6 +58,7 @@
         "logo_qYXkzU": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/VOGUE_revista_-_logo.avif",
             "logo_width": 120,
             "link": ""
           }
@@ -63,6 +66,7 @@
         "logo_L8tEAq": {
           "type": "logo",
           "settings": {
+            "logo": "shopify://shop_images/Marie_Claire.webp",
             "logo_width": 120,
             "link": ""
           }
