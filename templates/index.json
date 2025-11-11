@@ -377,6 +377,7 @@
         },
         "quantity_selector_4UPWMw": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "image_fUaaHH": {
