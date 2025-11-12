@@ -722,9 +722,9 @@
             "title": "Rétinol purifié",
             "heading_tag": "h4",
             "content": "<p>Le rétinol est un actif puissant qui lisse les rides, affine le grain de peau et améliore la fermeté. Il aide également à estomper les taches pigmentaires tout en unifiant le teint. Résultat : une peau plus jeune, plus lisse et visiblement éclatante.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "link_url": "https://regenovaskin.com/#produit",
+            "link_text": "Je veux ma peau lisse  ! →",
+            "link_style": "button"
           }
         },
         "item_4CLaXU": {
@@ -736,8 +736,8 @@
             "heading_tag": "h4",
             "content": "<p>Le Coceth-6 est un agent adoucissant qui améliore la souplesse et la douceur de la peau. Il aide à lisser les ridules et à renforcer la barrière cutanée pour une peau mieux hydratée. Grâce à son action nourrissante, il laisse la peau plus lisse, plus ferme et visiblement plus saine jour après jour.</p>",
             "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "link_text": "Je veux ma peau lisse  ! →",
+            "link_style": "button"
           }
         },
         "item_hWLima": {
@@ -749,8 +749,8 @@
             "heading_tag": "h4",
             "content": "<p>Le carbomère est un ingrédient apaisant qui réduit les irritations et les sensations d’inconfort. Il aide à maintenir l’hydratation naturelle de la peau tout en lui apportant une texture douce et soyeuse. Résultat : une peau apaisée, équilibrée et agréablement lisse au toucher.</p>",
             "link_url": "",
-            "link_text": "",
-            "link_style": "link"
+            "link_text": "Je veux ma peau lisse  ! →",
+            "link_style": "button"
           }
         }
       },
@@ -894,7 +894,7 @@
             "title": "Aucun risque",
             "content": "<h4>Essayez notre crème en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours. Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>",
             "link_text": "Achetez maintenant — Sans risque pendant 30 jours",
-            "link_url": "",
+            "link_url": "https://regenovaskin.com/#produit",
             "background": "#eccbad",
             "background_gradient": "",
             "text_color": "#1a1a1a",
