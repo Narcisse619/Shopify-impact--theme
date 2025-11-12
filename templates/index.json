@@ -846,39 +846,35 @@
         "text_color": ""
       }
     },
-    "image_with_text_overlay_KmDcBe": {
-      "type": "image-with-text-overlay",
+    "images_with_text_scrolling_8AKmYG": {
+      "type": "images-with-text-scrolling",
       "blocks": {
-        "heading_8YXRkL": {
-          "type": "heading",
+        "item_hmY9WY": {
+          "type": "item",
           "settings": {
-            "text": "Dr. Elizabeth Turner",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_MkHMEU": {
-          "type": "richtext",
-          "settings": {
+            "image": "shopify://shop_images/360_F_1689985781_hPpO28fW2BclZvxCW9ciSmpahxaetgch.png",
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Dr. Elizabeth Turner",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "heading_8YXRkL",
-        "richtext_MkHMEU"
+        "item_hmY9WY"
       ],
-      "name": "Image with text overlay",
+      "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/beautiful-senior-older-woman-smiling-looking-at-mi-2023-11-27-05-27-50-utc_1_86dd79fe-04bf-45b4-8d3a-37f98292e1c9.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "media_with_text_aWGyyR": {
@@ -1031,7 +1027,7 @@
     "multi_column_MLDfJy",
     "impact_text_HM6cRh",
     "custom_html_PnpHBT",
-    "image_with_text_overlay_KmDcBe",
+    "images_with_text_scrolling_8AKmYG",
     "media_with_text_aWGyyR",
     "faq_jkrpcC",
     "contact_7xcgtb",
