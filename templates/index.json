@@ -728,6 +728,7 @@
         "item_4CLaXU": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/moleculaire-fond-blanc_36845-476_57ca9251-46ed-48dd-b2f4-4f6e9a1b8fee.avif",
             "column_size": "3",
             "title": "Coceth-6",
             "heading_tag": "h4",
