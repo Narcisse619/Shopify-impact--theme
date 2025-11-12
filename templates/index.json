@@ -193,6 +193,7 @@
         "item_ACYMhN": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/bc040b71d6c0e1cd9aaccbb49fcbf406.jpg",
             "column_size": "3",
             "title": "Céline Moreau",
             "heading_tag": "h4",
@@ -205,6 +206,7 @@
         "item_NePLrr": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/e23757ea35778bed7ef784b578689479.jpg",
             "column_size": "3",
             "title": "Nathalie C.",
             "heading_tag": "h4",
@@ -217,6 +219,7 @@
         "item_NhgpMH": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/62ec4784ef88c1eb55ff3a5073df42f0.jpg",
             "column_size": "3",
             "title": "Veronica M.",
             "heading_tag": "h4",
@@ -229,6 +232,7 @@
         "item_PmE64Q": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/c81c42c2f8c397829837660a602fa43e.jpg",
             "column_size": "3",
             "title": "Flore D.",
             "heading_tag": "h4",
@@ -241,6 +245,7 @@
         "item_4baV3R": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/c2e2dbf4b1c9830271638179285ee016.jpg",
             "column_size": "3",
             "title": "Jessica D.",
             "heading_tag": "h4",
@@ -253,6 +258,7 @@
         "item_LaNxcz": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/tRAsIRMBI_mid.jpg",
             "column_size": "3",
             "title": "Aurélia G.",
             "heading_tag": "h4",
