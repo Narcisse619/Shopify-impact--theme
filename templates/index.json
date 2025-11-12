@@ -258,7 +258,7 @@
         "item_LaNxcz": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/tRAsIRMBI_mid.jpg",
+            "image": "shopify://shop_images/6ea763719c3d36db9e6c4ec196891919.jpg",
             "column_size": "3",
             "title": "Aurélia G.",
             "heading_tag": "h4",
@@ -271,6 +271,7 @@
         "item_V63TLT": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/934c517da65ade7d6537ef1b19c907aa.jpg",
             "column_size": "3",
             "title": "Olivia V.",
             "heading_tag": "h4",
@@ -283,6 +284,7 @@
         "item_QxmJ4W": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/8e5663ddb079599c2a907dd408c3a057.jpg",
             "column_size": "3",
             "title": "Thérésa H.",
             "heading_tag": "h4",
