@@ -144,6 +144,8 @@
         "subheading": "",
         "title": "Résultat Avant/Après",
         "content": "",
+        "before_image": "shopify://shop_images/3_9ccf463b-f4f7-40b5-95bc-be0febec1637.webp",
+        "after_image": "shopify://shop_images/4_57b32c2e-d984-4d60-9fc0-4050dbc89a76_1.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "top",
