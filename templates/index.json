@@ -913,6 +913,39 @@
         "spacing": "small"
       }
     },
+    "text_with_icons_RCYRfB": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_iTRWye": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "#eccbad",
+            "icon_color": "#8b562a",
+            "title": "Aucun risque",
+            "content": "<h4>Essayez notre crème en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours. Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p><h4><br/><a href=\"https://regenovaskin.com/#produit\" title=\"https://regenovaskin.com/#produit\"><strong>Je veux ma peau lisse  ! →</strong></a></h4>"
+          }
+        }
+      },
+      "block_order": [
+        "item_iTRWye"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "title": "",
+        "heading_tag": "h2",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "#eccbad",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
@@ -1031,6 +1064,7 @@
     "custom_html_PnpHBT",
     "images_with_text_scrolling_8AKmYG",
     "media_with_text_6A4frm",
+    "text_with_icons_RCYRfB",
     "faq_jkrpcC",
     "contact_7xcgtb",
     "175979749349adff91"
