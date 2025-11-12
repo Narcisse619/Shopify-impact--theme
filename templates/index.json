@@ -879,32 +879,6 @@
     },
     "media_with_text_aWGyyR": {
       "type": "media-with-text",
-      "blocks": {
-        "image_LWQP9r": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "none",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Aucun risque",
-            "content": "<h4>Essayez notre crème en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours. Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>",
-            "link_text": "Achetez maintenant — Sans risque pendant 30 jours",
-            "link_url": "https://tdkw89-iz.myshopify.com/#produit",
-            "background": "#eccbad",
-            "background_gradient": "",
-            "text_color": "#1a1a1a",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_LWQP9r"
-      ],
       "name": "Media with text",
       "settings": {
         "full_width": false,
