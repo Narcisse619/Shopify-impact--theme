@@ -741,6 +741,7 @@
         "item_hWLima": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/exosomes.jpg",
             "column_size": "3",
             "title": "Carbomère doux",
             "heading_tag": "h4",
