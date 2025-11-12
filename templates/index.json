@@ -715,10 +715,11 @@
         "item_7RCRkr": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/elastyn_1.webp",
             "column_size": "3",
-            "title": "Column title",
+            "title": "Le rétinol",
             "heading_tag": "h4",
-            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "content": "<p>Le rétinol est un actif puissant qui lisse les rides, affine le grain de peau et améliore la fermeté. Il aide également à estomper les taches pigmentaires tout en unifiant le teint. Résultat : une peau plus jeune, plus lisse et visiblement éclatante.</p>",
             "link_url": "",
             "link_text": "",
             "link_style": "link"
@@ -759,10 +760,10 @@
         "full_width": true,
         "stack_on_mobile": false,
         "gap": "medium",
-        "text_alignment": "start",
-        "subheading": "About",
-        "title": "Featured content",
-        "content": "<p>Organize content into multiple columns to share useful information to your customers about your products, values...</p>",
+        "text_alignment": "center",
+        "subheading": "Tout ce dont votre peau a besoin à portée de main",
+        "title": "Des résultats prouvés, des ingrédients validés par la science",
+        "content": "",
         "background": "",
         "background_gradient": "",
         "text_color": ""
