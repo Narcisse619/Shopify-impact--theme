@@ -717,7 +717,7 @@
           "settings": {
             "image": "shopify://shop_images/elastyn_1.webp",
             "column_size": "3",
-            "title": "Le rétinol",
+            "title": "Rétinol purifié",
             "heading_tag": "h4",
             "content": "<p>Le rétinol est un actif puissant qui lisse les rides, affine le grain de peau et améliore la fermeté. Il aide également à estomper les taches pigmentaires tout en unifiant le teint. Résultat : une peau plus jeune, plus lisse et visiblement éclatante.</p>",
             "link_url": "",
@@ -729,7 +729,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Coceth-6",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
@@ -741,7 +741,7 @@
           "type": "item",
           "settings": {
             "column_size": "3",
-            "title": "Column title",
+            "title": "Carbomère doux",
             "heading_tag": "h4",
             "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_url": "",
