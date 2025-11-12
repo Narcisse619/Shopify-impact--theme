@@ -180,6 +180,7 @@
         "item_wqGqdw": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/AVISMASQUE5.webp",
             "column_size": "3",
             "title": "Amélia G.",
             "heading_tag": "h4",
