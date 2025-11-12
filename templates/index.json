@@ -879,40 +879,6 @@
         "heading_gradient": ""
       }
     },
-    "media_with_text_6A4frm": {
-      "type": "media-with-text",
-      "blocks": {
-        "image_w6kiaw": {
-          "type": "image",
-          "settings": {
-            "media_width": 50,
-            "media_position": "start",
-            "text_position": "place-self-center text-center",
-            "icon": "picto-return",
-            "icon_width": 48,
-            "subheading": "",
-            "title": "Aucun risque",
-            "content": "<h4>Essayez notre crème en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours. Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p>",
-            "link_text": "Achetez maintenant — Sans risque pendant 30 jours",
-            "link_url": "https://regenovaskin.com/#produit",
-            "background": "#eccbad",
-            "background_gradient": "",
-            "text_color": "#1a1a1a",
-            "text_gradient": "",
-            "button_background": "",
-            "button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_w6kiaw"
-      ],
-      "name": "Media with text",
-      "settings": {
-        "full_width": true,
-        "spacing": "small"
-      }
-    },
     "text_with_icons_RCYRfB": {
       "type": "text-with-icons",
       "blocks": {
@@ -1063,7 +1029,6 @@
     "impact_text_HM6cRh",
     "custom_html_PnpHBT",
     "images_with_text_scrolling_8AKmYG",
-    "media_with_text_6A4frm",
     "text_with_icons_RCYRfB",
     "faq_jkrpcC",
     "contact_7xcgtb",
