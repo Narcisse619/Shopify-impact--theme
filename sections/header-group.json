@@ -98,13 +98,13 @@
         "mega_menu_KwkBNa"
       ],
       "custom_css": [
-        "/* Cacher la recherche dans Impact */.header__search, .search-modal, .search-button, [href*=\"search\"] {display: none !important;}"
+        "/* Cacher la recherche dans Impact */.header__search,.search-modal,.search-button,[href*=\"search\"] {display: none !important;}"
       ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
         "logo": "shopify://shop_images/REGENOVA.00png.png",
-        "logo_max_width": 240,
+        "logo_max_width": 250,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
         "sidebar_menu": "",
