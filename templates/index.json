@@ -14,7 +14,6 @@
       "blocks": {
         "heading_bNK6dx": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "text": "Effacez vos rides. Révélez la jeunesse que le temps n’a pas effacée.",
             "heading_tag": "h4"
@@ -22,7 +21,6 @@
         },
         "subheading_LVfnm7": {
           "type": "subheading",
-          "disabled": true,
           "settings": {
             "text": "Votre peau retrouve sa lumière naturelle avec Regenova Lifting."
           }
