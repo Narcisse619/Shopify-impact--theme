@@ -902,7 +902,7 @@
       "name": "Text with icons",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h2",
         "text_alignment": "center",
@@ -922,7 +922,7 @@
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "Retrouvez ce dont vous avez toujours rêver : votre jeunesse.",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "content": "<p>Le temps marque nos visages, mais il ne devrait jamais effacer la beauté ni la confiance. Avec Regenova Lifting, redécouvrez une peau éclatante, ferme et pleine de vie  comme aux plus belles années. Jour après jour, les rides s’estompent, la peau se régénère et le miroir reflète enfin ce que vous ressentez à l’intérieur : une femme rayonnante, sûre d’elle, et fière de son âge. Parce que la jeunesse n’est pas une question d’années, mais d’éclat.</p>",
             "button_url": "https://regenovaskin.com/#produit",
             "button_text": "Je veux retrouver ma jeunesse !"
           }
