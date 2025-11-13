@@ -18,10 +18,17 @@
             "text": "Effacez vos rides. Révélez la jeunesse que le temps n’a pas effacée.",
             "heading_tag": "h4"
           }
+        },
+        "subheading_LVfnm7": {
+          "type": "subheading",
+          "settings": {
+            "text": "Votre peau retrouve sa lumière naturelle avec Regenova Lifting."
+          }
         }
       },
       "block_order": [
-        "heading_bNK6dx"
+        "heading_bNK6dx",
+        "subheading_LVfnm7"
       ],
       "name": "Image with text overlay",
       "settings": {
