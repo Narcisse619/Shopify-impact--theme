@@ -854,7 +854,7 @@
         "item_hmY9WY": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/concept-soins-sante-technologie-medecine-femme-medecin-blouse-blanche-ordinateur-portable-presse-papiers-hopital_380164-174240.avif",
+            "image": "shopify://shop_images/d68bc5a956f26768d27ff4c9f942174f.jpg",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Elizabeth Turner",
@@ -868,7 +868,7 @@
       "name": "Images and text scrolling",
       "settings": {
         "full_width": true,
-        "stack_on_mobile": false,
+        "stack_on_mobile": true,
         "show_counter": false,
         "desktop_image_effect": "reveal",
         "image_position": "start",
