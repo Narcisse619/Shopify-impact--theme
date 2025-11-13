@@ -22,6 +22,7 @@
         },
         "subheading_LVfnm7": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Votre peau retrouve sa lumière naturelle avec Regenova Lifting."
           }
