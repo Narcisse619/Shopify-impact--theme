@@ -960,6 +960,13 @@
             "content": "<p>Oui, vous pouvez vous maquiller après avoir utilisé Regenova Lifting. Le produit pénètre rapidement et crée une base lisse pour le maquillage.</p>"
           }
         },
+        "item_7q4nHJ": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
         "item_AbEDRr": {
           "type": "item",
           "settings": {
@@ -970,8 +977,8 @@
         "item_aVyyfE": {
           "type": "item",
           "settings": {
-            "title": "Regenova Lifting peut-elle être utilisée sur le cou et le décolleté ?",
-            "content": "<p>Oui, Regenova Lifting est parfaite pour une utilisation sur le cou et le décolleté, aidant à réduire les rides et à adoucir la peau.</p>"
+            "title": "Combien de fois par jour dois-je utiliser Regenova Liftingpour obtenir les meilleurs résultats ?",
+            "content": "<p>Pour un résultat optimal, appliquez Regenova Lifting une fois par jour, de préférence le matin après avoir nettoyé votre visage.</p>"
           }
         },
         "item_TEfWiB": {
@@ -1040,6 +1047,7 @@
       },
       "block_order": [
         "item_ept6fm",
+        "item_7q4nHJ",
         "item_AbEDRr",
         "item_aVyyfE",
         "item_TEfWiB",
