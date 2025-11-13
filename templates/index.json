@@ -918,9 +918,10 @@
         "item_YMxVC9": {
           "type": "item",
           "settings": {
+            "image": "shopify://shop_images/beautiful-senior-older-woman-smiling-looking-at-mi-2023-11-27-05-27-50-utc_1_86dd79fe-04bf-45b4-8d3a-37f98292e1c9.jpg",
             "image_rotation_degrees": -2,
             "subheading": "",
-            "title": "",
+            "title": "Retrouvez ce dont vous avez toujours rêver : votre jeunesse.",
             "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
             "button_url": "",
             "button_text": ""
