@@ -1019,15 +1019,8 @@
         "item_wMyDgy": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
-        },
-        "item_b6MjDh": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Un homme peut-il l'utiliser ?",
+            "content": "<p>Absolument, c'est fait pour homme comme femme.</p>"
           }
         },
         "item_Qn8LwH": {
@@ -1068,7 +1061,6 @@
         "item_TVyPfc",
         "item_DpNhje",
         "item_wMyDgy",
-        "item_b6MjDh",
         "item_Qn8LwH",
         "item_jUWDnj",
         "item_ybPhdh",
