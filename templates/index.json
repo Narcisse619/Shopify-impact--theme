@@ -988,6 +988,13 @@
             "content": "<p>Oui, Regenova Lifting est composée d'ingrédients naturels, ce qui la rend sûre et efficace pour tous les types de peau.</p>"
           }
         },
+        "item_ThdHej": {
+          "type": "item",
+          "settings": {
+            "title": "Le produit est-il certifié et sûr à utiliser ?",
+            "content": "<p>Oui, la crème Regenova Lifting est testée dermatologiquement et conforme aux normes européennes de sécurité cosmétique. Sa formulation respecte les réglementations de l’UE en matière d’ingrédients actifs et ne contient <strong>aucun parabène, sulfate ni silicone nocif</strong>.</p>"
+          }
+        },
         "item_aVyyfE": {
           "type": "item",
           "settings": {
@@ -1056,6 +1063,7 @@
         "item_ept6fm",
         "item_7q4nHJ",
         "item_AbEDRr",
+        "item_ThdHej",
         "item_aVyyfE",
         "item_TEfWiB",
         "item_TVyPfc",
