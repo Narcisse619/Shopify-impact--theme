@@ -991,8 +991,8 @@
         "item_TVyPfc": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Y a-t-il des effets secondaires ?",
+            "content": "<p>Aucun effet indésirable n’a été observé. Toutefois, si vous avez une peau extrêmement sensible, nous recommandons de tester la crème sur une petite zone pendant 24 heures avant la première utilisation.</p>"
           }
         },
         "item_DpNhje": {
