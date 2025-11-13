@@ -953,6 +953,62 @@
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
+        "item_ept6fm": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je me maquiller après avoir utilisé Luxevéria ?",
+            "content": "<p>Oui, vous pouvez vous maquiller après avoir utilisé Regenova Lifting. Le produit pénètre rapidement et crée une base lisse pour le maquillage.</p>"
+          }
+        },
+        "item_AbEDRr": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_aVyyfE": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_TEfWiB": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_TVyPfc": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_DpNhje": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_wMyDgy": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_b6MjDh": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
         "item_Qn8LwH": {
           "type": "item",
           "settings": {
@@ -983,6 +1039,14 @@
         }
       },
       "block_order": [
+        "item_ept6fm",
+        "item_AbEDRr",
+        "item_aVyyfE",
+        "item_TEfWiB",
+        "item_TVyPfc",
+        "item_DpNhje",
+        "item_wMyDgy",
+        "item_b6MjDh",
         "item_Qn8LwH",
         "item_jUWDnj",
         "item_ybPhdh",
