@@ -97,6 +97,9 @@
       "block_order": [
         "mega_menu_KwkBNa"
       ],
+      "custom_css": [
+        "/* Cacher la recherche dans Impact */.header__search, .search-modal, .search-button, [href*=\"search\"] {display: none !important;}"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
