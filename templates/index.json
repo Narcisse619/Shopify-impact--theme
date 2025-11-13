@@ -759,12 +759,26 @@
             "link_text": "Je veux ma peau lisse  ! →",
             "link_style": "button"
           }
+        },
+        "item_VDN8QB": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/image_3_4.webp",
+            "column_size": "3",
+            "title": "Acide Hyaluronique",
+            "heading_tag": "h4",
+            "content": "<p>Hydrate intensément et repulpe la peau. Il retient l’eau dans les tissus, comblant les rides de l’intérieur pour une peau souple, ferme et parfaitement hydratée.</p>",
+            "link_url": "https://regenovaskin.com/#produit",
+            "link_text": "Je veux ma peau lisse  ! →",
+            "link_style": "button"
+          }
         }
       },
       "block_order": [
         "item_7RCRkr",
         "item_4CLaXU",
-        "item_hWLima"
+        "item_hWLima",
+        "item_VDN8QB"
       ],
       "name": "Multi-column",
       "settings": {
