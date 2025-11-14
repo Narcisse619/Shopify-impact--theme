@@ -40,8 +40,8 @@
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#8b562a",
-        "overlay_opacity": 10
+        "overlay_color": "#1a1a1a",
+        "overlay_opacity": 46
       }
     },
     "logo_list_dnUGVr": {
