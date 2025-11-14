@@ -41,7 +41,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#8b562a",
-        "overlay_opacity": 30
+        "overlay_opacity": 6
       }
     },
     "logo_list_dnUGVr": {
