@@ -9878,3 +9878,36 @@ split-lines {
   display: -webkit-box;
   overflow: hidden;
 }
+
+
+
+/* Défilement rapide et infini des logos */
+.section.section-full {
+  overflow: hidden !important;
+}
+
+.logo-list {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  animation: scroll-logos-rapide 15s linear infinite !important;
+  width: max-content !important;
+  gap: 60px !important;
+}
+
+@keyframes scroll-logos-rapide {
+  0% { 
+    transform: translateX(0); 
+  }
+  100% { 
+    transform: translateX(-50%); 
+  }
+}
+
+.logo-list:hover {
+  animation-play-state: paused;
+}
+
+.logo-list__item {
+  flex-shrink: 0 !important;
+  min-width: 200px;
+}
