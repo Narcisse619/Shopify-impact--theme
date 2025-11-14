@@ -78,49 +78,13 @@
             "logo_width": 120,
             "link": ""
           }
-        },
-        "logo_jn43Wc": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/telechargement-removebg-preview.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_dxLLni": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/telechargement-removebg-preview.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_jQf9Te": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/telechargement-removebg-preview.png",
-            "logo_width": 120,
-            "link": ""
-          }
-        },
-        "logo_jPwm3y": {
-          "type": "logo",
-          "settings": {
-            "logo": "shopify://shop_images/telechargement-removebg-preview.png",
-            "logo_width": 120,
-            "link": ""
-          }
         }
       },
       "block_order": [
         "logo_gc3ryK",
         "logo_AMFpJj",
         "logo_qYXkzU",
-        "logo_L8tEAq",
-        "logo_jn43Wc",
-        "logo_dxLLni",
-        "logo_jQf9Te",
-        "logo_jPwm3y"
+        "logo_L8tEAq"
       ],
       "custom_css": [],
       "name": "Logo list",
