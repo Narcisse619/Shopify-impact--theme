@@ -9889,7 +9889,7 @@ split-lines {
 .logo-list {
   display: flex !important;
   flex-wrap: nowrap !important;
-  animation: scroll-logos-rapide 15s linear infinite !important;
+  animation: scroll-logos-rapide 10s linear infinite !important;
   width: max-content !important;
   gap: 60px !important;
 }
