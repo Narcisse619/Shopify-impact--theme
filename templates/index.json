@@ -41,7 +41,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#8b562a",
-        "overlay_opacity": 15
+        "overlay_opacity": 5
       }
     },
     "logo_list_dnUGVr": {
@@ -90,7 +90,7 @@
       "settings": {
         "full_width": true,
         "stack_mobile": true,
-        "title": "Vu sur :",
+        "title": "Vu sur",
         "content": "",
         "text_alignment": "center",
         "items_per_row": 5,
