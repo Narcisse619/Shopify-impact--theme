@@ -27,6 +27,29 @@
         --logo-list-items-per-row: {{ section.settings.items_per_row | at_most: section.blocks.size }};
       }
     }
+
+    .logo-list {
+  display: flex !important;
+  animation: scroll-logos 30s linear infinite;
+  flex-wrap: nowrap !important;
+}
+
+@keyframes scroll-logos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-list:hover {
+  animation-play-state: paused;
+}
+
+.logo-list__item {
+  flex-shrink: 0;
+}
+
+.section.section-full {
+  overflow: hidden;
+}
   </style>
 
   <div {% render 'section-properties' %}>
