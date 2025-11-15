@@ -578,6 +578,24 @@
         "background_gradient": ""
       }
     },
+    "video_carousel_ahPrY3": {
+      "type": "video-carousel",
+      "blocks": {
+        "video_block_HkMFXh": {
+          "type": "video_block",
+          "settings": {
+            "video_url": "https://cdn.shopify.com/videos/c/o/v/5c9d2a283101435692b52908081730e7.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_HkMFXh"
+      ],
+      "name": "Carrousel de vidéos",
+      "settings": {
+        "title": "ELLES L'ADORENT"
+      }
+    },
     "tabs_LycG4c": {
       "type": "tabs",
       "blocks": {
@@ -1175,6 +1193,7 @@
     "features_checkmarks_mTNGLc",
     "scrolling_text_477TmX",
     "slideshow_8yx3ir",
+    "video_carousel_ahPrY3",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
     "multi_column_MLDfJy",
