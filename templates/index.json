@@ -444,6 +444,12 @@
           "type": "pickup_availability",
           "settings": {}
         },
+        "liquid_Gr8Eh9": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='ss-product-video'><div>"
+          }
+        },
         "liquid_9ETFgV": {
           "type": "liquid",
           "settings": {
@@ -469,6 +475,7 @@
         "liquid_jbEmEw",
         "image_gfhPbC",
         "pickup_availability_nnAwX7",
+        "liquid_Gr8Eh9",
         "liquid_9ETFgV"
       ],
       "name": "Featured product",
