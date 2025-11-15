@@ -1,0 +1,120 @@
+<div class="logo-carousel">
+  <div class="logo-carousel-track">
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        <img src="{{ block.settings.logo_image | img_url: '200x' }}" alt="Logo" loading="lazy" />
+      </div>
+    {% endfor %}
+    
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        <img src="{{ block.settings.logo_image | img_url: '200x' }}" alt="Logo" loading="lazy" />
+      </div>
+    {% endfor %}
+    
+    {% for block in section.blocks %}
+      <div class="logo-item">
+        <img src="{{ block.settings.logo_image | img_url: '200x' }}" alt="Logo" loading="lazy" />
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.logo-carousel {
+  overflow: hidden;
+  width: 100%;
+  background-color: #000000;
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo-carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 40s linear infinite;
+  width: max-content;
+}
+
+.logo-item {
+  min-width: 150px;
+  width: 150px; /* Largeur fixe */
+  height: 80px; /* Hauteur fixe - ajustez selon vos besoins */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre horizontalement */
+}
+
+.logo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Maintient les proportions à l'intérieur du cadre */
+  display: block;
+}
+
+/* Le reste du CSS reste identique */
+@keyframes scroll {
+  0% { 
+    transform: translateX(0);
+  }
+  100% { 
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo-carousel-track {
+    animation-timing-function: linear;
+    will-change: transform;
+  }
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const track = document.querySelector('.logo-carousel-track');
+  
+  // Pause sur hover
+  track.addEventListener('mouseover', function() {
+    track.style.animationPlayState = 'paused';
+  });
+  
+  track.addEventListener('mouseout', function() {
+    track.style.animationPlayState = 'running';
+  });
+
+  // Gestion du redémarrage fluide de l'animation
+  track.addEventListener('animationend', function() {
+    track.style.animation = 'none';
+    track.offsetHeight; // Force le reflow
+    track.style.animation = null;
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Logo Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo Carousel",
+      "category": "Sections"
+    }
+  ]
+}
+{% endschema %}
