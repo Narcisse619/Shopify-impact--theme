@@ -464,6 +464,7 @@
         "image_gfhPbC",
         "pickup_availability_nnAwX7"
       ],
+      "custom_css": [],
       "name": "Featured product",
       "settings": {
         "full_width": true,
@@ -532,6 +533,7 @@
         "video_block_HkMFXh",
         "video_block_XrUGPj"
       ],
+      "custom_css": [],
       "name": "Carrousel de vidéos",
       "settings": {
         "title": "En vidéo c'est mieux"
