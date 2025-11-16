@@ -962,8 +962,8 @@
         "item_LUitDk": {
           "type": "item",
           "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+            "title": "Quelle est la contenance de la crème Regenova Lifting ?",
+            "content": "<p>Notre crème anti-rides est conditionnée dans un pot en verre ambré de <strong>50 ml</strong>, un format idéal pour une routine visage complète et durable.</p>"
           }
         },
         "item_rdWnCw": {
