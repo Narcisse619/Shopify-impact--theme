@@ -483,79 +483,6 @@
         "input_text_color": ""
       }
     },
-    "features_checkmarks_mTNGLc": {
-      "type": "features-checkmarks",
-      "blocks": {
-        "feature_hQdmmM": {
-          "type": "feature",
-          "settings": {
-            "text": "Hydratation profonde"
-          }
-        },
-        "feature_Gny47U": {
-          "type": "feature",
-          "settings": {
-            "text": "+98% naturel"
-          }
-        },
-        "feature_gepQDc": {
-          "type": "feature",
-          "settings": {
-            "text": "Anti-âge"
-          }
-        },
-        "feature_pd8hmy": {
-          "type": "feature",
-          "settings": {
-            "text": "Tâches Pigmentaires"
-          }
-        }
-      },
-      "block_order": [
-        "feature_hQdmmM",
-        "feature_Gny47U",
-        "feature_gepQDc",
-        "feature_pd8hmy"
-      ],
-      "disabled": true,
-      "name": "Avantages Checkmarks",
-      "settings": {
-        "container_width": 700,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "gap": 25,
-        "gap_mobile": 15,
-        "padding_top": 40,
-        "padding_bottom": 45,
-        "icon_size": 35,
-        "icon_size_mobile": 30,
-        "icon_spacing": 10,
-        "icon_bg_color": "#a84932",
-        "icon_color": "#ffffff",
-        "text_size": 18,
-        "text_size_mobile": 14,
-        "text_weight": "400",
-        "text_color": "#000000",
-        "background_color": "#ffffff"
-      }
-    },
-    "scrolling_text_477TmX": {
-      "type": "scrolling-text",
-      "disabled": true,
-      "name": "Scrolling text",
-      "settings": {
-        "full_width": true,
-        "text": "Le Skinova Beauty Mask est Made in Korea. Vegan . Cruelty Free . Sans Parfum . Sans Allergènes",
-        "text_size": "small",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
     "slideshow_8yx3ir": {
       "type": "slideshow",
       "name": "Slideshow",
@@ -1204,8 +1131,6 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
-    "features_checkmarks_mTNGLc",
-    "scrolling_text_477TmX",
     "slideshow_8yx3ir",
     "video_carousel_ahPrY3",
     "tabs_LycG4c",
