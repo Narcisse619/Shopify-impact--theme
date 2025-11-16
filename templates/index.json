@@ -245,32 +245,6 @@
             "link_style": "link"
           }
         },
-        "item_wqGqdw": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/AVISMASQUE5.webp",
-            "column_size": "3",
-            "title": "Carole M.",
-            "heading_tag": "h4",
-            "content": "<p>Je travaille dans la vente, donc mon visage est ma carte de visite. Depuis que j’utilise la crème Regenova Lifting, mes clientes me disent que j’ai “bonne mine”. Ma peau est plus rebondie et je rayonne. J’ai retrouvé ce petit éclat que je croyais perdu. J’ai hâte de fêter mes 48 ans avec cette nouvelle peau !</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_LaNxcz": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/6ea763719c3d36db9e6c4ec196891919.jpg",
-            "column_size": "3",
-            "title": "Aurélia G.",
-            "heading_tag": "h4",
-            "content": "<p>Le stress et le manque de sommeil avaient marqué mon visage. Ma peau semblait fatiguée malgré tous mes soins. Regenova Lifting a été une révélation : après deux semaines, mon teint est plus lumineux et mes rides d’expression beaucoup moins visibles. Même mes collègues m’ont demandé si j’avais fait quelque chose de spécial !</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
         "item_V63TLT": {
           "type": "item",
           "settings": {
@@ -296,6 +270,32 @@
             "link_text": "",
             "link_style": "link"
           }
+        },
+        "item_wqGqdw": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AVISMASQUE5.webp",
+            "column_size": "3",
+            "title": "Carole M.",
+            "heading_tag": "h4",
+            "content": "<p>Je travaille dans la vente, donc mon visage est ma carte de visite. Depuis que j’utilise la crème Regenova Lifting, mes clientes me disent que j’ai “bonne mine”. Ma peau est plus rebondie et je rayonne. J’ai retrouvé ce petit éclat que je croyais perdu. J’ai hâte de fêter mes 48 ans avec cette nouvelle peau !</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_LaNxcz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/6ea763719c3d36db9e6c4ec196891919.jpg",
+            "column_size": "3",
+            "title": "Aurélia G.",
+            "heading_tag": "h4",
+            "content": "<p>Le stress et le manque de sommeil avaient marqué mon visage. Ma peau semblait fatiguée malgré tous mes soins. Regenova Lifting a été une révélation : après deux semaines, mon teint est plus lumineux et mes rides d’expression beaucoup moins visibles. Même mes collègues m’ont demandé si j’avais fait quelque chose de spécial !</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
         }
       },
       "block_order": [
@@ -304,10 +304,10 @@
         "item_4baV3R",
         "item_NhgpMH",
         "item_ACYMhN",
-        "item_wqGqdw",
-        "item_LaNxcz",
         "item_V63TLT",
-        "item_QxmJ4W"
+        "item_QxmJ4W",
+        "item_wqGqdw",
+        "item_LaNxcz"
       ],
       "name": "Multi-column",
       "settings": {
