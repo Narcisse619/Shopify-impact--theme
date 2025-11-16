@@ -959,6 +959,20 @@
             "content": "<p>Oui, la crème Regenova Lifting est testée dermatologiquement et conforme aux normes européennes de sécurité cosmétique. Sa formulation respecte les réglementations de l’UE en matière d’ingrédients actifs et ne contient <strong>aucun parabène, sulfate ni silicone nocif</strong>.</p>"
           }
         },
+        "item_LUitDk": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
+        "item_rdWnCw": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps dure un pot de la crème ?",
+            "content": "<p>Avec une utilisation quotidienne (matin et/ou soir), un pot dure en moyenne :</p><ul><li><strong>4 semaines</strong> en application 2 fois par jour</li><li><strong>6 semaines</strong> en application 1 fois par jour</li></ul><p>Cela peut varier selon la quantité appliquée.</p><h3></h3>"
+          }
+        },
         "item_aVyyfE": {
           "type": "item",
           "settings": {
@@ -1029,6 +1043,8 @@
         "item_7q4nHJ",
         "item_AbEDRr",
         "item_ThdHej",
+        "item_LUitDk",
+        "item_rdWnCw",
         "item_aVyyfE",
         "item_TEfWiB",
         "item_TVyPfc",
