@@ -86,28 +86,5 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
       {%- endif -%}
     </main>
   </body>
-  <script>
-(function() {
-  // Intercepter TOUTES les requêtes d'ajout au panier
-  const originalFetch = window.fetch;
-  window.fetch = function(...args) {
-    const [url, options] = args;
-    
-    // Si c'est une requête d'ajout au panier
-    if (url && url.includes('/cart/add')) {
-      return originalFetch.apply(this, args).then(response => {
-        if (response.ok) {
-          // Rediriger immédiatement vers le checkout
-          window.location.href = '/checkout';
-          // Retourner une promesse qui ne se résout jamais pour bloquer le reste
-          return new Promise(() => {});
-        }
-        return response;
-      });
-    }
-    
-    // Pour toutes les autres requêtes, comportement normal
-    return originalFetch.apply(this, args);
-  };
   
 </html>
