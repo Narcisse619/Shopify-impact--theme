@@ -44,6 +44,13 @@
             "max_width": 500
           }
         },
+        "image_q9Hbp6": {
+          "type": "image",
+          "settings": {
+            "alignment": "center",
+            "max_width": 500
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -123,6 +130,7 @@
         "text_CErbx9",
         "liquid_BiDKVK",
         "image_7pfF87",
+        "image_q9Hbp6",
         "badges",
         "price",
         "rating",
