@@ -603,6 +603,22 @@
         "comparison_row_6LgRA4": {
           "type": "comparison_row",
           "settings": {
+            "feature_text": "Non-invasif",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_GrjRdN": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Certifié par des Dermatologues",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
+        "comparison_row_yR3N9x": {
+          "type": "comparison_row",
+          "settings": {
             "feature_text": "Raffermissant à effet liftant visible",
             "nous_has": true,
             "eux_has": false
@@ -643,6 +659,8 @@
       },
       "block_order": [
         "comparison_row_6LgRA4",
+        "comparison_row_GrjRdN",
+        "comparison_row_yR3N9x",
         "comparison_row_p8KRL7",
         "comparison_row_rFN6ap",
         "comparison_row_fX3wdq",
