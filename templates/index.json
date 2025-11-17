@@ -608,14 +608,6 @@
             "eux_has": false
           }
         },
-        "comparison_row_jVYfQP": {
-          "type": "comparison_row",
-          "settings": {
-            "feature_text": "Résultat anti-âge",
-            "nous_has": true,
-            "eux_has": false
-          }
-        },
         "comparison_row_p8KRL7": {
           "type": "comparison_row",
           "settings": {
@@ -651,7 +643,6 @@
       },
       "block_order": [
         "comparison_row_6LgRA4",
-        "comparison_row_jVYfQP",
         "comparison_row_p8KRL7",
         "comparison_row_rFN6ap",
         "comparison_row_fX3wdq",
