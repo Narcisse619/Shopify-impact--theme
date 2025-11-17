@@ -23,6 +23,12 @@
             "heading_tag": "h2"
           }
         },
+        "text_CErbx9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>✔ Atténue les rides et ridules</strong></p><p><strong>✔ Atténue efficacement les taches de vieillesse</strong></p><p><strong>✔ Hydrate pour une peau plus douce</strong></p><p><strong>✔ Résultats visibles en une semaine</strong></p><p><strong>✔ Recommandé par les dermatologues</strong></p>"
+          }
+        },
         "badges": {
           "type": "badges",
           "settings": {}
@@ -78,6 +84,7 @@
       "block_order": [
         "vendor",
         "title",
+        "text_CErbx9",
         "badges",
         "price",
         "rating",
