@@ -47,6 +47,7 @@
         "image_q9Hbp6": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/7_8.png",
             "alignment": "center",
             "max_width": 500
           }
