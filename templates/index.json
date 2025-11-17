@@ -616,6 +616,14 @@
             "eux_has": false
           }
         },
+        "comparison_row_6PrByn": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Ingrédients Naturels",
+            "nous_has": true,
+            "eux_has": false
+          }
+        },
         "comparison_row_yR3N9x": {
           "type": "comparison_row",
           "settings": {
@@ -660,6 +668,7 @@
       "block_order": [
         "comparison_row_6LgRA4",
         "comparison_row_GrjRdN",
+        "comparison_row_6PrByn",
         "comparison_row_yR3N9x",
         "comparison_row_p8KRL7",
         "comparison_row_rFN6ap",
