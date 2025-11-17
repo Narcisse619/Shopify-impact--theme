@@ -123,6 +123,14 @@
             "alignment": "center",
             "max_width": 500
           }
+        },
+        "image_wXgkhH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1733418998-AU-women-health-2_1.png",
+            "alignment": "center",
+            "max_width": 500
+          }
         }
       },
       "block_order": [
@@ -142,7 +150,8 @@
         "buy_buttons",
         "liquid_tU6RLt",
         "liquid_YkcTWE",
-        "image_RAKLpr"
+        "image_RAKLpr",
+        "image_wXgkhH"
       ],
       "settings": {
         "full_width": true,
