@@ -639,30 +639,6 @@
             "nous_has": true,
             "eux_has": false
           }
-        },
-        "comparison_row_rFN6ap": {
-          "type": "comparison_row",
-          "settings": {
-            "feature_text": "Convient aux peaux matures et sensibles",
-            "nous_has": true,
-            "eux_has": false
-          }
-        },
-        "comparison_row_fX3wdq": {
-          "type": "comparison_row",
-          "settings": {
-            "feature_text": "Origines inconnues",
-            "nous_has": true,
-            "eux_has": false
-          }
-        },
-        "comparison_row_tDV3Em": {
-          "type": "comparison_row",
-          "settings": {
-            "feature_text": "Favorise un teint éclatant & uniforme",
-            "nous_has": true,
-            "eux_has": false
-          }
         }
       },
       "block_order": [
@@ -670,10 +646,7 @@
         "comparison_row_GrjRdN",
         "comparison_row_6PrByn",
         "comparison_row_yR3N9x",
-        "comparison_row_p8KRL7",
-        "comparison_row_rFN6ap",
-        "comparison_row_fX3wdq",
-        "comparison_row_tDV3Em"
+        "comparison_row_p8KRL7"
       ],
       "name": "Nous vs Eux",
       "settings": {
