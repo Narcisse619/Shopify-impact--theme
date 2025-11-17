@@ -44,6 +44,10 @@
             "max_width": 500
           }
         },
+        "separator_tj9jtA": {
+          "type": "separator",
+          "settings": {}
+        },
         "image_q9Hbp6": {
           "type": "image",
           "settings": {
@@ -139,6 +143,7 @@
         "text_CErbx9",
         "liquid_BiDKVK",
         "image_7pfF87",
+        "separator_tj9jtA",
         "image_q9Hbp6",
         "badges",
         "price",
