@@ -915,6 +915,13 @@
     "faq_jkrpcC": {
       "type": "faq",
       "blocks": {
+        "item_MwBTGz": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je utiliser la crème sur plusieurs zones du corps ?",
+            "content": "<p>Oui, notre crème a été formulée pour être utilisée en toute sécurité sur le <strong>visage</strong>, le <strong>cou</strong>, ainsi que sur certaines zones du <strong>corps</strong> nécessitant un lissage ou un raffermissement (mains, décolleté, bras, etc.).</p>"
+          }
+        },
         "item_ept6fm": {
           "type": "item",
           "settings": {
@@ -1029,6 +1036,7 @@
         }
       },
       "block_order": [
+        "item_MwBTGz",
         "item_ept6fm",
         "item_pmeeVk",
         "item_7q4nHJ",
