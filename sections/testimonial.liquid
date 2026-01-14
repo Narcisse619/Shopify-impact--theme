@@ -1,0 +1,249 @@
+<style>
+.testimonial-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: #fafafa;
+}
+
+.testimonial-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 50px 45px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  border: 1px solid #e8e8e8;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.testimonial-image-wrapper {
+  flex-shrink: 0;
+}
+
+.testimonial-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f5f5f5;
+}
+
+.testimonial-info {
+  flex: 1;
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.star {
+  width: 28px;
+  height: 28px;
+  background: #00B67A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #191919;
+  margin: 0;
+}
+
+.verified-badge {
+  width: 24px;
+  height: 24px;
+  background: #1E90FF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.expert-title {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.testimonial-quote {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #2d2d2d;
+  font-style: italic;
+  position: relative;
+  padding-left: 25px;
+}
+
+.testimonial-quote:before {
+  content: '"';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  font-size: 3rem;
+  color: #00B67A;
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    padding: 40px 15px;
+  }
+  
+  .testimonial-card {
+    padding: 35px 25px;
+  }
+  
+  .testimonial-header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .testimonial-image {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .testimonial-stars {
+    justify-content: center;
+  }
+  
+  .star {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+  
+  .testimonial-author {
+    justify-content: center;
+  }
+  
+  .author-name {
+    font-size: 1.1rem;
+  }
+  
+  .testimonial-quote {
+    font-size: 1.05rem;
+    padding-left: 20px;
+  }
+  
+  .testimonial-quote:before {
+    font-size: 2.5rem;
+  }
+}
+</style>
+
+<div class="testimonial-section">
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      
+      <div class="testimonial-header">
+        <div class="testimonial-image-wrapper">
+          {% if section.settings.expert_image %}
+            <img 
+              src="{{ section.settings.expert_image | img_url: '300x' }}" 
+              alt="{{ section.settings.expert_name }}" 
+              class="testimonial-image"
+            >
+          {% else %}
+            <img 
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=300&q=80" 
+              alt="Expert" 
+              class="testimonial-image"
+            >
+          {% endif %}
+        </div>
+
+        <div class="testimonial-info">
+          <div class="testimonial-stars">
+            <div class="star">★</div>
+            <div class="star">★</div>
+            <div class="star">★</div>
+            <div class="star">★</div>
+            <div class="star">★</div>
+          </div>
+
+          <div class="testimonial-author">
+            <h3 class="author-name">{{ section.settings.expert_name }}</h3>
+            <div class="verified-badge">✓</div>
+          </div>
+
+          {% if section.settings.expert_title %}
+            <p class="expert-title">{{ section.settings.expert_title }}</p>
+          {% endif %}
+        </div>
+      </div>
+
+      <blockquote class="testimonial-quote">
+        {{ section.settings.testimonial_text }}
+      </blockquote>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonial Expert",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "expert_image",
+      "label": "Photo de l'expert",
+      "info": "Recommandé: 300x300px minimum"
+    },
+    {
+      "type": "text",
+      "id": "expert_name",
+      "label": "Nom de l'expert",
+      "default": "Dr Hélène S."
+    },
+    {
+      "type": "text",
+      "id": "expert_title",
+      "label": "Titre/Fonction",
+      "default": "Dermatologue"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial_text",
+      "label": "Témoignage",
+      "default": "Je vous recommande le masque Bio-Collagène pour le visage Leaf ! Il remplit toutes les conditions - hydratation en profondeur, réduction des pores et raffermissement de la peau. Un véritable bijou en matière de soins de la peau"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonial Expert"
+    }
+  ]
+}
+{% endschema %}
