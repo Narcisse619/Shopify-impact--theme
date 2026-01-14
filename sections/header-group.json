@@ -17,7 +17,7 @@
         "message_Pzcpfb": {
           "type": "message",
           "settings": {
-            "text": "Livraison premium offerte à domicile",
+            "text": "LIVRAISON OFFERTE À DOMICILE",
             "url": ""
           }
         },
@@ -103,7 +103,6 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/REGENOVA.00png.png",
         "logo_max_width": 250,
         "logo_mobile_max_width": 170,
         "menu": "main-menu",
