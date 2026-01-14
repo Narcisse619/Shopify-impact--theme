@@ -29,7 +29,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/500ec2696015416e71be8153a0a4e0a0-removebg-preview.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -43,7 +42,6 @@
         "logo_gc3ryK": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/ELLE-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
@@ -51,7 +49,6 @@
         "logo_AMFpJj": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/Comopolitan_Magazine_Logo.svg",
             "logo_width": 120,
             "link": ""
           }
@@ -59,7 +56,6 @@
         "logo_qYXkzU": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/1000134034-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
@@ -67,7 +63,6 @@
         "logo_L8tEAq": {
           "type": "logo",
           "settings": {
-            "logo": "shopify://shop_images/telechargement-removebg-preview.png",
             "logo_width": 120,
             "link": ""
           }
@@ -131,7 +126,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Copie_de_Template_section_benefice.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -147,8 +141,6 @@
         "subheading": "",
         "title": "Résultat Avant/Après",
         "content": "",
-        "before_image": "shopify://shop_images/3_9ccf463b-f4f7-40b5-95bc-be0febec1637.webp",
-        "after_image": "shopify://shop_images/4_57b32c2e-d984-4d60-9fc0-4050dbc89a76_1.webp",
         "expand_image": false,
         "text_position": "center",
         "before_after_text_position": "top",
@@ -183,7 +175,6 @@
         "item_NePLrr": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/e23757ea35778bed7ef784b578689479.jpg",
             "column_size": "3",
             "title": "Evelin D.",
             "heading_tag": "h4",
@@ -196,7 +187,6 @@
         "item_PmE64Q": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/c81c42c2f8c397829837660a602fa43e.jpg",
             "column_size": "3",
             "title": "Chantal P.",
             "heading_tag": "h4",
@@ -209,7 +199,6 @@
         "item_4baV3R": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/c2e2dbf4b1c9830271638179285ee016.jpg",
             "column_size": "3",
             "title": "Aline V.",
             "heading_tag": "h4",
@@ -222,7 +211,6 @@
         "item_NhgpMH": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/62ec4784ef88c1eb55ff3a5073df42f0.jpg",
             "column_size": "3",
             "title": "Patricia L.",
             "heading_tag": "h4",
@@ -235,7 +223,6 @@
         "item_ACYMhN": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/bc040b71d6c0e1cd9aaccbb49fcbf406.jpg",
             "column_size": "3",
             "title": "Julie G., 68 ans",
             "heading_tag": "h4",
@@ -248,7 +235,6 @@
         "item_V63TLT": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/934c517da65ade7d6537ef1b19c907aa.jpg",
             "column_size": "3",
             "title": "Nathalie C.",
             "heading_tag": "h4",
@@ -261,7 +247,6 @@
         "item_QxmJ4W": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/8e5663ddb079599c2a907dd408c3a057.jpg",
             "column_size": "3",
             "title": "Mireille D.",
             "heading_tag": "h4",
@@ -274,7 +259,6 @@
         "item_wqGqdw": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/AVISMASQUE5.webp",
             "column_size": "3",
             "title": "Carole M.",
             "heading_tag": "h4",
@@ -287,7 +271,6 @@
         "item_LaNxcz": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/6ea763719c3d36db9e6c4ec196891919.jpg",
             "column_size": "3",
             "title": "Aurélia G.",
             "heading_tag": "h4",
@@ -353,7 +336,6 @@
         "image_d9Ezwq": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Black_Gold_Elegant_Black_Friday_Super_Sale_Facebook_Cover_Landscape_2.png",
             "alignment": "center",
             "max_width": 500
           }
@@ -397,7 +379,6 @@
         "image_fUaaHH": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/7_8.png",
             "alignment": "center",
             "max_width": 500
           }
@@ -419,16 +400,9 @@
             "liquid": "<div class=\"loved-by-customers\">\n  <span>❤️🫂  Plus de 10,000 clients satisfaits</span>\n</div>\n\n<style>\n  .loved-by-customers {\n    background: linear-gradient(#dddddd, #d8d8d8);\n    color: #121212;\n    text-align: center;\n    padding: 6px;\n    margin-top: 20px; /* Adjust as needed */\n    border-radius: 20px; /* Adjust to desired pill shape */\n    width: 300px; /* Adjust width as needed */\n    margin-left: auto;\n    margin-right: auto;\n    font-size: 14px;\n    font-weight: \n  }\n</style>"
           }
         },
-        "liquid_jbEmEw": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<!-- Liste de garanties avec icônes -->\n{% comment %}\nVariables personnalisables (optionnelles)\nVous pouvez personnaliser chaque texte :\n{% assign guarantee_text = 'Satisfait ou remboursé 30 jours' %}\n{% assign support_text = 'Support client français 7J/7' %}\n{% assign payment_text = 'Paiement 100% sécurisé SSL' %}\n{% assign delivery_text = 'Livraison premium offerte' %}\n{% endcomment %}\n\n{% assign guarantee_text = guarantee_text | default: 'Satisfait ou remboursé 30 jours' %}\n{% assign support_text = support_text | default: 'Support client français 7J/7' %}\n{% assign payment_text = payment_text | default: 'Paiement 100% sécurisé SSL' %}\n{% assign delivery_text = delivery_text | default: 'Livraison premium offerte' %}\n\n<div class=\"trust-badges\" style=\"\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  gap: 16px;\n  font-family: Arial, sans-serif;\n  max-width: fit-content;\n  margin: 20px auto;\n\">\n  \n  <!-- Garantie satisfait ou remboursé -->\n  <div class=\"trust-item\" style=\"\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  \">\n    <!-- Icône checkmark -->\n    <div style=\"\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      width: 32px;\n      height: 32px;\n      background-color: #16a34a;\n      border-radius: 50%;\n      flex-shrink: 0;\n    \">\n      <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" style=\"fill: white;\">\n        <path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z\"/>\n      </svg>\n    </div>\n    \n    <!-- Texte -->\n    <span style=\"\n      color: #333;\n      font-size: 18px;\n      font-weight: 400;\n    \">\n      {{ guarantee_text }}\n    </span>\n  </div>\n  \n  <!-- Support client français 7J/7 -->\n  <div class=\"trust-item\" style=\"\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  \">\n    <!-- Icône casque -->\n    <div style=\"\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      width: 32px;\n      height: 32px;\n      background-color: #16a34a;\n      border-radius: 50%;\n      flex-shrink: 0;\n    \">\n      <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" style=\"fill: white;\">\n        <path d=\"M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z\"/>\n      </svg>\n    </div>\n    \n    <!-- Texte -->\n    <span style=\"\n      color: #333;\n      font-size: 18px;\n      font-weight: 400;\n    \">\n      {{ support_text }}\n    </span>\n  </div>\n  \n  <!-- Paiement 100% sécurisé SSL -->\n  <div class=\"trust-item\" style=\"\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  \">\n    <!-- Icône cadenas -->\n    <div style=\"\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      width: 32px;\n      height: 32px;\n      background-color: #16a34a;\n      border-radius: 50%;\n      flex-shrink: 0;\n    \">\n      <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" style=\"fill: white;\">\n        <path d=\"M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z\"/>\n      </svg>\n    </div>\n    \n    <!-- Texte -->\n    <span style=\"\n      color: #333;\n      font-size: 18px;\n      font-weight: 400;\n    \">\n      {{ payment_text }}\n    </span>\n  </div>\n  \n  <!-- Livraison premium offerte -->\n  <div class=\"trust-item\" style=\"\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  \">\n    <!-- Icône livraison -->\n    <div style=\"\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      width: 32px;\n      height: 32px;\n      background-color: #16a34a;\n      border-radius: 50%;\n      flex-shrink: 0;\n    \">\n      <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" style=\"fill: white;\">\n        <path d=\"M18 18.5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m1.5-9l1.96 2.5H17V9.5m-11 9A1.5 1.5 0 0 1 4.5 17A1.5 1.5 0 0 1 6 15.5A1.5 1.5 0 0 1 7.5 17A1.5 1.5 0 0 1 6 18.5M20 8h-3V4H3c-1.11 0-2 .89-2 2v11h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h6a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2v-5l-3-4Z\"/>\n      </svg>\n    </div>\n    \n    <!-- Texte -->\n    <span style=\"\n      color: #333;\n      font-size: 18px;\n      font-weight: 400;\n    \">\n      {{ delivery_text }}\n    </span>\n  </div>\n  \n</div>\n\n<!-- CSS responsive -->\n<style>\n  @media (max-width: 768px) {\n    .trust-badges {\n      max-width: 100% !important;\n      padding: 0 10px !important;\n      gap: 14px !important;\n    }\n    \n    .trust-item {\n      gap: 10px !important;\n    }\n    \n    .trust-item div:first-child {\n      width: 28px !important;\n      height: 28px !important;\n    }\n    \n    .trust-item svg {\n      width: 16px !important;\n      height: 16px !important;\n    }\n    \n    .trust-item span {\n      font-size: 16px !important;\n    }\n  }\n  \n  /* Animation au survol */\n  .trust-item:hover div:first-child {\n    transform: scale(1.1);\n    transition: transform 0.3s ease;\n  }\n  \n  /* Animation d'apparition */\n  .trust-item {\n    animation: fadeInLeft 0.5s ease-out;\n  }\n  \n  .trust-item:nth-child(2) {\n    animation-delay: 0.1s;\n  }\n  \n  .trust-item:nth-child(3) {\n    animation-delay: 0.2s;\n  }\n  \n  .trust-item:nth-child(4) {\n    animation-delay: 0.3s;\n  }\n  \n  @keyframes fadeInLeft {\n    from {\n      opacity: 0;\n      transform: translateX(-20px);\n    }\n    to {\n      opacity: 1;\n      transform: translateX(0);\n    }\n  }\n</style>"
-          }
-        },
         "image_gfhPbC": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/gempages_578032762192134844-e1eeb719-6221-41e2-aae2-fad292221a52.png",
             "alignment": "center",
             "max_width": 500
           }
@@ -453,7 +427,6 @@
         "image_fUaaHH",
         "buy_buttons_HQXdke",
         "liquid_VkHNkR",
-        "liquid_jbEmEw",
         "image_gfhPbC",
         "pickup_availability_nnAwX7"
       ],
@@ -477,6 +450,19 @@
         "input_text_color": ""
       }
     },
+    "custom_liquid_3j9EAL": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div id='ss-product-videos'></div>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "slideshow_8yx3ir": {
       "type": "slideshow",
       "name": "Slideshow",
@@ -492,44 +478,168 @@
         "background_gradient": ""
       }
     },
-    "video_carousel_ahPrY3": {
-      "type": "video-carousel",
+    "video_Vhd3DH": {
+      "type": "video",
       "blocks": {
-        "video_block_ekhXEC": {
-          "type": "video_block",
+        "video_GTNVpJ": {
+          "type": "video",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/7baf39db2b5148eea13978586fb87f3a.mp4"
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_block_TgdWxA": {
-          "type": "video_block",
+        "video_xnJLP7": {
+          "type": "video",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/6e6a595422a1488abea1a62701672b97.mp4"
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_block_HkMFXh": {
-          "type": "video_block",
+        "video_aYct9d": {
+          "type": "video",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/3d68c54f24b94742a83b693f7978c19b.mp4"
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
           }
         },
-        "video_block_XrUGPj": {
-          "type": "video_block",
+        "video_b8imq7": {
+          "type": "video",
           "settings": {
-            "video_url": "https://cdn.shopify.com/videos/c/o/v/5c9d2a283101435692b52908081730e7.mp4"
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
+          }
+        },
+        "video_FUWARF": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "modal_heading": "<h4>Modal Heading</h4>",
+            "modal_text": "<p>Modal Text</p>"
           }
         }
       },
       "block_order": [
-        "video_block_ekhXEC",
-        "video_block_TgdWxA",
-        "video_block_HkMFXh",
-        "video_block_XrUGPj"
+        "video_GTNVpJ",
+        "video_xnJLP7",
+        "video_aYct9d",
+        "video_b8imq7",
+        "video_FUWARF"
       ],
-      "custom_css": [],
-      "name": "Carrousel de vidéos",
+      "name": "SS - Product Videos",
       "settings": {
-        "title": "En vidéo c'est mieux"
+        "videos_position": "above_description",
+        "use_metafield": false,
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 18,
+        "heading_size_mobile": 18,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 3,
+        "slider_view_mobile": 3,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "slider_mt": 20,
+        "card_radius": 10,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "video_ratio": "portrait",
+        "video_ratio_mobile": "portrait",
+        "video_overlay": 0.3,
+        "icon_size": 34,
+        "icon_size_mobile": 34,
+        "icon_border_thickness": 1,
+        "icon_position_mobile": "bottom_left",
+        "icon_position": "bottom_left",
+        "hide_icon": false,
+        "arrow_size": 35,
+        "arrow_size_mobile": 35,
+        "arrow_radius": 5,
+        "arrow_border_thickness": 0,
+        "arrow_hover_shadow": true,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "show_content": true,
+        "modal_width": 70,
+        "modal_width_mobile": 95,
+        "modal_padding_vertical": 0,
+        "modal_padding_vertical_mobile": 0,
+        "modal_padding_horizontal": 0,
+        "modal_padding_horizontal_mobile": 0,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "close_size": 42,
+        "close_size_mobile": 42,
+        "close_radius": 8,
+        "close_border_thickness": 0,
+        "buttons_size": 48,
+        "buttons_size_mobile": 48,
+        "buttons_radius": 8,
+        "buttons_border_thickness": 0,
+        "modal_video_radius": 0,
+        "modal_video_border_thickness": 0,
+        "modal_video_ratio": "portrait",
+        "modal_video_ratio_mobile": "portrait",
+        "modal_heading_custom": false,
+        "modal_heading_font": "josefin_sans_n4",
+        "modal_heading_size": 28,
+        "modal_heading_size_mobile": 28,
+        "modal_heading_height": 130,
+        "modal_heading_align": "center",
+        "modal_heading_align_mobile": "center",
+        "modal_text_custom": false,
+        "modal_text_font": "josefin_sans_n4",
+        "modal_text_size": 16,
+        "modal_text_size_mobile": 16,
+        "modal_text_height": 130,
+        "modal_text_align": "center",
+        "modal_text_align_mobile": "center",
+        "modal_text_mt": 16,
+        "card_bg_color": "#FFFFFF",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "video_overlay_color": "#000000",
+        "icon_bg_color": "#000000",
+        "icon_border_color": "#FFFFFF",
+        "icon_color": "#FFFFFF",
+        "arrow_bg_color": "#FFFFFF",
+        "arrow_bg_hover_color": "#FFFFFF",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "arrow_icon_color": "#1c1c1c",
+        "arrow_icon_hover_color": "#1c1c1c",
+        "modal_bg_color": "#FFFFFF",
+        "modal_border_color": "#000000",
+        "close_bg_color": "#FFFFFF",
+        "close_border_color": "#000000",
+        "close_icon_color": "#FFFFFF",
+        "buttons_bg_color": "#FFFFFF",
+        "buttons_border_color": "#000000",
+        "buttons_icon_color": "#FFFFFF",
+        "modal_video_border_color": "#000000",
+        "modal_content_bg_color": "#FFFFFF",
+        "modal_content_border_color": "#000000",
+        "modal_heading_color": "#000000",
+        "modal_text_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#FFFFFF",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": true
       }
     },
     "tabs_LycG4c": {
@@ -672,7 +782,6 @@
         "item_7RCRkr": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/elastyn_1.webp",
             "column_size": "3",
             "title": "Rétinol purifié",
             "heading_tag": "h4",
@@ -685,7 +794,6 @@
         "item_4CLaXU": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/360_F_1689985781_hPpO28fW2BclZvxCW9ciSmpahxaetgch.png",
             "column_size": "3",
             "title": "Coceth-6",
             "heading_tag": "h4",
@@ -698,7 +806,6 @@
         "item_hWLima": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/exosomes.jpg",
             "column_size": "3",
             "title": "Carbomère doux",
             "heading_tag": "h4",
@@ -711,7 +818,6 @@
         "item_VDN8QB": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/image_3_4.webp",
             "column_size": "3",
             "title": "Acide Hyaluronique",
             "heading_tag": "h4",
@@ -823,7 +929,6 @@
         "item_hmY9WY": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/d68bc5a956f26768d27ff4c9f942174f.jpg",
             "icon": "none",
             "icon_width": 48,
             "title": "Dr. Elizabeth Turner",
@@ -887,7 +992,6 @@
         "item_YMxVC9": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/beautiful-senior-older-woman-smiling-looking-at-mi-2023-11-27-05-27-50-utc_1_86dd79fe-04bf-45b4-8d3a-37f98292e1c9.jpg",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "Retrouvez ce dont vous avez toujours rêver : votre jeunesse.",
@@ -1079,23 +1183,6 @@
     },
     "1763048663c92e192e": {
       "type": "apps",
-      "blocks": {
-        "loox_reviews_loox_agg_section_QfNrFt": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "hide_thumbnails": false,
-            "product_handle": "",
-            "aggregated": true,
-            "data-limit": 20,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
-        }
-      },
-      "block_order": [
-        "loox_reviews_loox_agg_section_QfNrFt"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -1141,8 +1228,9 @@
     "custom_liquid_BwQnb6",
     "multi_column_37zq9U",
     "featured_product_f4QbiW",
+    "custom_liquid_3j9EAL",
     "slideshow_8yx3ir",
-    "video_carousel_ahPrY3",
+    "video_Vhd3DH",
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
     "multi_column_MLDfJy",
