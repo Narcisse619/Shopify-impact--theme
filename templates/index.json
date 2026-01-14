@@ -336,8 +336,9 @@
         "image_WGMx8f": {
           "type": "image",
           "settings": {
-            "alignment": "start",
-            "max_width": 150
+            "image": "shopify://shop_images/Black_Gold_Elegant_Black_Friday_Super_Sale_Facebook_Cover_Landscape_2.png",
+            "alignment": "center",
+            "max_width": 500
           }
         },
         "badges_iCJWVX": {
@@ -400,9 +401,10 @@
             "liquid": "<!-- Badge Clients Satisfaits - Code compatible Shopify/tout site -->\n<style>\n    .trust-badge-wrapper {\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        width: 100%;\n        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;\n        margin: 20px 0;\n    }\n\n    .trust-badge-container {\n        background: #ffffff;\n        border: 1.5px solid #e0e0e0;\n        border-radius: 30px;\n        padding: 8px 18px;\n        display: inline-flex;\n        align-items: center;\n        gap: 8px;\n        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);\n        transition: all 0.3s ease;\n        cursor: default;\n    }\n\n    .trust-badge-container:hover {\n        transform: translateY(-1px);\n        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n    }\n\n    .trust-badge-icon {\n        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);\n        border-radius: 50%;\n        width: 26px;\n        height: 26px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        flex-shrink: 0;\n    }\n\n    .trust-badge-icon svg {\n        width: 14px;\n        height: 14px;\n        fill: #ffffff;\n        display: block;\n    }\n\n    .trust-badge-text {\n        color: #333333;\n        font-size: 13px;\n        font-weight: 600;\n        white-space: nowrap;\n        letter-spacing: 0.1px;\n        line-height: 1;\n        margin: 0;\n        padding: 0;\n    }\n\n    .trust-badge-flag {\n        font-size: 13px;\n        margin-left: 2px;\n    }\n\n    @media (max-width: 480px) {\n        .trust-badge-container {\n            padding: 7px 15px;\n            gap: 7px;\n        }\n\n        .trust-badge-icon {\n            width: 24px;\n            height: 24px;\n        }\n\n        .trust-badge-icon svg {\n            width: 13px;\n            height: 13px;\n        }\n\n        .trust-badge-text {\n            font-size: 12px;\n        }\n\n        .trust-badge-flag {\n            font-size: 12px;\n        }\n    }\n</style>\n\n<div class=\"trust-badge-wrapper\">\n    <div class=\"trust-badge-container\">\n        <div class=\"trust-badge-icon\">\n            <svg viewBox=\"0 0 24 24\">\n                <path d=\"M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z\"/>\n            </svg>\n        </div>\n        <span class=\"trust-badge-text\">\n            + de 18 000 clientes satisfaites en France <span class=\"trust-badge-flag\">🇫🇷</span>\n        </span>\n    </div>\n</div>"
           }
         },
-        "image_gfhPbC": {
+        "image_M7kpNi": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/swello-65212e38873dc.png",
             "alignment": "center",
             "max_width": 500
           }
@@ -427,7 +429,7 @@
         "image_fUaaHH",
         "buy_buttons_HQXdke",
         "liquid_PGwPrG",
-        "image_gfhPbC",
+        "image_M7kpNi",
         "pickup_availability_nnAwX7"
       ],
       "custom_css": [],
