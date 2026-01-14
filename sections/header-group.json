@@ -24,14 +24,14 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "Paiement 100% sécurisé",
+            "text": "PLUS DE 18 000 CLIENTS SATISFAITS",
             "url": ""
           }
         },
         "message_JAm9mH": {
           "type": "message",
           "settings": {
-            "text": "Paiement en 3x ou 4x avec Klarna sans frais",
+            "text": "STOCKS BIENTÔT ÉPUISÉS",
             "url": ""
           }
         },
@@ -45,7 +45,7 @@
         "message_bnT9Ed": {
           "type": "message",
           "settings": {
-            "text": "Offre limitée Black Friday : -50%",
+            "text": "PROMO D'HIVER -65% ❄️",
             "url": ""
           }
         }
