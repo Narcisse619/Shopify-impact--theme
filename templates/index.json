@@ -757,6 +757,14 @@
             "eux_has": false
           }
         },
+        "comparison_row_riFzA3": {
+          "type": "comparison_row",
+          "settings": {
+            "feature_text": "Caractéristique",
+            "nous_has": true,
+            "eux_has": true
+          }
+        },
         "comparison_row_p8KRL7": {
           "type": "comparison_row",
           "settings": {
@@ -771,6 +779,7 @@
         "comparison_row_GrjRdN",
         "comparison_row_6PrByn",
         "comparison_row_yR3N9x",
+        "comparison_row_riFzA3",
         "comparison_row_p8KRL7"
       ],
       "name": "Nous vs Eux",
@@ -780,8 +789,8 @@
         "column_eux": "Autres",
         "background_color": "#ffffff",
         "title_color": "#000000",
-        "nous_color": "#8b562a",
-        "cross_color": "#8b562a",
+        "nous_color": "#001b73",
+        "cross_color": "#001b73",
         "title_size": 40,
         "header_size": 28,
         "feature_size": 18,
