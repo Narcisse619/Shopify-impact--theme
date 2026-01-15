@@ -968,69 +968,6 @@
         "heading_gradient": ""
       }
     },
-    "text_with_icons_RCYRfB": {
-      "type": "text-with-icons",
-      "blocks": {
-        "item_iTRWye": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-return",
-            "mobile_icon_width": 24,
-            "icon_width": 32,
-            "icon_background_type": "circle",
-            "icon_background": "#8b562a",
-            "icon_color": "#ffffff",
-            "title": "Aucun risque",
-            "content": "<h4>Essayez notre crème en toute confiance avec notre garantie de remboursement de 30 jours !</h4><p>Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours. Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement.</p><h4><br/><a href=\"https://regenovaskin.com/#produit\" title=\"https://regenovaskin.com/#produit\"><strong>Je veux essayer  ! →</strong></a></h4>"
-          }
-        }
-      },
-      "block_order": [
-        "item_iTRWye"
-      ],
-      "name": "Text with icons",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "title": "",
-        "heading_tag": "h2",
-        "text_alignment": "center",
-        "icon_spacing": "large",
-        "background": "#eccbad",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multiple_images_with_text_E4fEPc": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_YMxVC9": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Retrouvez ce dont vous avez toujours rêver : votre jeunesse.",
-            "content": "<p>Le temps marque nos visages, mais il ne devrait jamais effacer la beauté ni la confiance. Avec Regenova Lifting, redécouvrez une peau éclatante, ferme et pleine de vie  comme aux plus belles années. Jour après jour, les rides s’estompent, la peau se régénère et le miroir reflète enfin ce que vous ressentez à l’intérieur : une femme rayonnante, sûre d’elle, et fière de son âge. Parce que la jeunesse n’est pas une question d’années, mais d’éclat.</p>",
-            "button_url": "https://regenovaskin.com/#produit",
-            "button_text": "Je veux retrouver ma jeunesse !"
-          }
-        }
-      },
-      "block_order": [
-        "item_YMxVC9"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "garanties_BPCzTw": {
       "type": "garanties",
       "name": "Garantie 90 Jours",
@@ -1303,8 +1240,6 @@
     "impact_text_HM6cRh",
     "custom_html_PnpHBT",
     "images_with_text_scrolling_8AKmYG",
-    "text_with_icons_RCYRfB",
-    "multiple_images_with_text_E4fEPc",
     "garanties_BPCzTw",
     "faq_jkrpcC",
     "1763048663c92e192e",
