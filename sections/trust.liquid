@@ -1,314 +1,639 @@
-{%- if section.blocks.size > 0 -%}
-  {%- render 'section-spacing-collapsing' -%}
-
-  <style>
-    #shopify-section-{{ section.id }} {
-      --testimonials-grid: {% if section.settings.stack_on_mobile %}none{% else %}auto / auto-flow 73vw{% endif %};
-      --testimonials-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
-    }
-
-    #shopify-section-{{ section.id }} .testimonials-scroll {
-      display: grid;
-      grid: var(--testimonials-grid);
-      gap: var(--testimonials-gap);
-    }
-
-    @media (min-width: 700px) {
-      #shopify-section-{{ section.id }} .testimonials-scroll {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-item {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-item:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-content {
-      padding: 25px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-name-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    #shopify-section-{{ section.id }} .client-name {
-      font-size: 18px;
-      font-weight: 600;
-      color: #333;
-      margin: 0;
-    }
-
-    #shopify-section-{{ section.id }} .client-verified {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      color: #00b67a;
-      font-size: 13px;
-    }
-
-    #shopify-section-{{ section.id }} .verified-icon {
-      width: 16px;
-      height: 16px;
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-stars {
-      display: flex;
-      gap: 3px;
-    }
-
-    #shopify-section-{{ section.id }} .star {
-      color: #00b67a;
-      font-size: 20px;
-    }
-
-    #shopify-section-{{ section.id }} .testimonial-text {
-      color: #555;
-      line-height: 1.7;
-      font-size: 15px;
-      margin: 0;
-    }
-
-    @media (max-width: 699px) {
-      #shopify-section-{{ section.id }} .testimonial-content {
-        padding: 20px;
-      }
-
-      #shopify-section-{{ section.id }} .client-name {
-        font-size: 16px;
-      }
-
-      #shopify-section-{{ section.id }} .testimonial-text {
-        font-size: 14px;
-      }
-    }
-  </style>
-
-  <div {% render 'section-properties' %}>
-    <div class="section-stack">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
-
-      <div class="testimonials-scroll scroll-area bleed md:unbleed">
-        {%- for block in section.blocks -%}
-          <div class="testimonial-item snap-start" {{ block.shopify_attributes }}>
-            {%- if block.settings.image != blank -%}
-              {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), 33vw{%- endcapture -%}
-              {{- block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600', class: 'rounded', style: 'width: 100%; height: 200px; object-fit: cover; display: block;' -}}
-            {%- endif -%}
-
-            <div class="testimonial-content">
-              <div class="testimonial-name-row">
-                {%- if block.settings.name != blank -%}
-                  <div class="client-name">{{ block.settings.name }}</div>
-                {%- endif -%}
-
-                {%- if block.settings.verified -%}
-                  <div class="client-verified">
-                    <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
-                    </svg>
-                    Cliente vérifiée
-                  </div>
-                {%- endif -%}
-              </div>
-
-              <div class="testimonial-stars">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-
-              {%- if block.settings.text != blank -%}
-                <div class="testimonial-text">{{ block.settings.text }}</div>
-              {%- endif -%}
-            </div>
+<div class="guarantee-section">
+  <div class="guarantee-container">
+    
+    <div class="guarantee-content">
+      <div class="guarantee-badge">
+        <div class="badge-circle">
+          <div class="badge-text">
+            <div class="satisfaction">{{ section.settings.badge_line1 }}</div>
+            <div class="days">{{ section.settings.badge_days }}</div>
+            <div class="guarantee">{{ section.settings.badge_line2 }}</div>
           </div>
-        {%- endfor -%}
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="guarantee-text">
+        <h2 class="main-title">{{ section.settings.main_title }}</h2>
+        <div class="description">
+          <p>{{ section.settings.description1 }}</p>
+          <p>{{ section.settings.description2 }}</p>
+          <p>{{ section.settings.description3 }}</p>
+        </div>
       </div>
     </div>
+    
   </div>
-{%- endif -%}
+</div>
+
+<style>
+.guarantee-section {
+  background: linear-gradient(135deg, {{ section.settings.bg_color1 }} 0%, {{ section.settings.bg_color2 }} 100%);
+  padding: {{ section.settings.section_padding }}px 20px;
+  border-radius: {{ section.settings.section_radius }}px;
+  margin: {{ section.settings.section_margin }}px 0;
+}
+
+.guarantee-container {
+  max-width: {{ section.settings.max_width }}px;
+  margin: 0 auto;
+}
+
+.guarantee-content {
+  display: flex;
+  align-items: center;
+  gap: {{ section.settings.content_gap }}px;
+  justify-content: center;
+}
+
+.guarantee-badge {
+  flex-shrink: 0;
+}
+
+.badge-circle {
+  width: {{ section.settings.badge_size }}px;
+  height: {{ section.settings.badge_size }}px;
+  border-radius: 50%;
+  background: {{ section.settings.badge_bg_color }};
+  border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.badge-text {
+  text-align: center;
+  color: {{ section.settings.badge_text_color }};
+  line-height: 1.1;
+}
+
+.satisfaction {
+  font-size: {{ section.settings.satisfaction_size }}px;
+  font-weight: {{ section.settings.text_weight }};
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.days {
+  font-size: {{ section.settings.days_size }}px;
+  font-weight: {{ section.settings.days_weight }};
+  margin: 8px 0;
+  letter-spacing: 1px;
+}
+
+.guarantee {
+  font-size: {{ section.settings.guarantee_size }}px;
+  font-weight: {{ section.settings.text_weight }};
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.star {
+  color: {{ section.settings.star_color }};
+  font-size: {{ section.settings.star_size }}px;
+  font-weight: bold;
+}
+
+.guarantee-text {
+  flex: 1;
+  color: {{ section.settings.text_color }};
+}
+
+.main-title {
+  font-size: {{ section.settings.title_size }}px;
+  font-weight: {{ section.settings.title_weight }};
+  color: {{ section.settings.title_color }};
+  margin-bottom: {{ section.settings.title_margin }}px;
+  line-height: 1.3;
+}
+
+.description p {
+  font-size: {{ section.settings.description_size }}px;
+  line-height: 1.6;
+  margin-bottom: {{ section.settings.paragraph_spacing }}px;
+  color: {{ section.settings.description_color }};
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .guarantee-section {
+    padding: {{ section.settings.mobile_padding }}px 15px;
+    border-radius: {{ section.settings.mobile_radius }}px;
+  }
+  
+  .guarantee-content {
+    flex-direction: column;
+    gap: {{ section.settings.mobile_gap }}px;
+    text-align: center;
+  }
+  
+  .badge-circle {
+    width: {{ section.settings.mobile_badge_size }}px;
+    height: {{ section.settings.mobile_badge_size }}px;
+  }
+  
+  .satisfaction {
+    font-size: {{ section.settings.mobile_satisfaction_size }}px;
+  }
+  
+  .days {
+    font-size: {{ section.settings.mobile_days_size }}px;
+  }
+  
+  .guarantee {
+    font-size: {{ section.settings.mobile_guarantee_size }}px;
+  }
+  
+  .star {
+    font-size: {{ section.settings.mobile_star_size }}px;
+  }
+  
+  .main-title {
+    font-size: {{ section.settings.mobile_title_size }}px;
+  }
+  
+  .description p {
+    font-size: {{ section.settings.mobile_description_size }}px;
+  }
+}
+
+/* Animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.badge-circle {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.guarantee-text {
+  animation: slideInRight 0.8s ease-out 0.3s both;
+}
+</style>
 
 {% schema %}
 {
-  "name": "Temoignages",
-  "class": "shopify-section--testimonials",
-  "tag": "section",
-  "disabled_on": {
-    "templates": ["password"],
-    "groups": ["header", "custom.overlay"]
-  },
+  "name": "Garantie 90 Jours",
   "settings": [
     {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "Full width",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "stack_on_mobile",
-      "label": "Stack on mobile",
-      "default": false
-    },
-    {
-      "type": "select",
-      "id": "gap",
-      "label": "Gap spacing",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        },
-        {
-          "value": "x-large",
-          "label": "X-Large"
-        }
-      ],
-      "default": "medium"
-    },
-    {
-      "type": "select",
-      "id": "text_alignment",
-      "label": "Text alignment",
-      "options": [
-        {
-          "value": "start",
-          "label": "Left"
-        },
-        {
-          "value": "center",
-          "label": "Center"
-        },
-        {
-          "value": "end",
-          "label": "Right"
-        }
-      ],
-      "default": "start"
+      "type": "header",
+      "content": "Contenu du badge"
     },
     {
       "type": "text",
-      "id": "subheading",
-      "label": "Subheading"
+      "id": "badge_line1",
+      "label": "Première ligne badge",
+      "default": "100% SATISFAIT"
     },
     {
       "type": "text",
-      "id": "title",
-      "label": "Heading",
-      "default": "Ce que disent nos clientes"
+      "id": "badge_days",
+      "label": "Nombre de jours",
+      "default": "90 JOURS"
     },
     {
-      "type": "richtext",
-      "id": "content",
-      "label": "Content"
+      "type": "text",
+      "id": "badge_line2",
+      "label": "Dernière ligne badge",
+      "default": "OU REMBOURSÉ"
     },
     {
       "type": "header",
-      "content": "Colors",
-      "info": "Gradient replaces solid colors when set."
+      "content": "Texte principal"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Titre principal",
+      "default": "Essayez Instant Lift+ en toute confiance avec notre garantie de remboursement de 90 jours !"
+    },
+    {
+      "type": "textarea",
+      "id": "description1",
+      "label": "Description ligne 1",
+      "default": "Les spécialistes de la peau, les dermatologues et nos clients en témoignent : Instant Lift+ offre des résultats visibles !"
+    },
+    {
+      "type": "textarea",
+      "id": "description2",
+      "label": "Description ligne 2",
+      "default": "Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours."
+    },
+    {
+      "type": "textarea",
+      "id": "description3",
+      "label": "Description ligne 3",
+      "default": "Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement."
+    },
+    {
+      "type": "header",
+      "content": "Couleurs arrière-plan"
     },
     {
       "type": "color",
-      "id": "background",
-      "label": "Background"
+      "id": "bg_color1",
+      "label": "Couleur début gradient",
+      "default": "#9dd8c0"
     },
     {
-      "type": "color_background",
-      "id": "background_gradient",
-      "label": "Background gradient"
+      "type": "color",
+      "id": "bg_color2",
+      "label": "Couleur fin gradient",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Taille badge",
+      "min": 160,
+      "max": 240,
+      "step": 20,
+      "default": 200,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Fond badge",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Couleur bordure",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Épaisseur bordure",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "default": 4,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Couleur texte badge",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur étoiles",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "header",
+      "content": "Tailles texte badge"
+    },
+    {
+      "type": "range",
+      "id": "satisfaction_size",
+      "label": "Taille 'SATISFAIT'",
+      "min": 10,
+      "max": 18,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "days_size",
+      "label": "Taille '90 JOURS'",
+      "min": 20,
+      "max": 36,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "guarantee_size",
+      "label": "Taille 'REMBOURSÉ'",
+      "min": 10,
+      "max": 18,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Taille étoiles",
+      "min": 12,
+      "max": 20,
+      "step": 2,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Poids texte badge",
+      "options": [
+        {"value": "400", "label": "Normal"},
+        {"value": "500", "label": "Moyen"},
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"}
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "days_weight",
+      "label": "Poids '90 JOURS'",
+      "options": [
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"},
+        {"value": "800", "label": "Très gras"}
+      ],
+      "default": "700"
+    },
+    {
+      "type": "header",
+      "content": "Texte principal"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille titre",
+      "min": 20,
+      "max": 36,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur titre",
+      "default": "#2c3e50"
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Poids titre",
+      "options": [
+        {"value": "500", "label": "Moyen"},
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"}
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Taille description",
+      "min": 14,
+      "max": 20,
+      "step": 2,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Couleur description",
+      "default": "#2c3e50"
     },
     {
       "type": "color",
       "id": "text_color",
-      "label": "Text"
-    }
-  ],
-  "blocks": [
+      "label": "Couleur texte général",
+      "default": "#2c3e50"
+    },
     {
-      "type": "testimonial",
-      "name": "Temoignage",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image",
-          "info": "600 x 400px .jpg recommended"
-        },
-        {
-          "type": "text",
-          "id": "name",
-          "label": "Nom et age",
-          "default": "Cliente, 00"
-        },
-        {
-          "type": "checkbox",
-          "id": "verified",
-          "label": "Badge verifiee",
-          "default": true
-        },
-        {
-          "type": "textarea",
-          "id": "text",
-          "label": "Temoignage",
-          "default": "Ecrivez le temoignage ici..."
-        }
-      ]
+      "type": "header",
+      "content": "Espacements"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Largeur maximum",
+      "min": 800,
+      "max": 1400,
+      "step": 100,
+      "default": 1200,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Padding section",
+      "min": 30,
+      "max": 80,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_margin",
+      "label": "Marge section",
+      "min": 0,
+      "max": 50,
+      "step": 10,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_radius",
+      "label": "Arrondi section",
+      "min": 10,
+      "max": 30,
+      "step": 5,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "label": "Espace badge-texte",
+      "min": 30,
+      "max": 80,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "title_margin",
+      "label": "Marge sous titre",
+      "min": 15,
+      "max": 35,
+      "step": 5,
+      "default": 25,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "label": "Espace entre paragraphes",
+      "min": 10,
+      "max": 25,
+      "step": 5,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding",
+      "label": "Padding mobile",
+      "min": 20,
+      "max": 50,
+      "step": 10,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_radius",
+      "label": "Arrondi mobile",
+      "min": 10,
+      "max": 25,
+      "step": 5,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Espace mobile",
+      "min": 20,
+      "max": 40,
+      "step": 10,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_badge_size",
+      "label": "Taille badge mobile",
+      "min": 140,
+      "max": 180,
+      "step": 20,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_satisfaction_size",
+      "label": "Taille 'SATISFAIT' mobile",
+      "min": 8,
+      "max": 14,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_days_size",
+      "label": "Taille '90 JOURS' mobile",
+      "min": 18,
+      "max": 26,
+      "step": 2,
+      "default": 22,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_guarantee_size",
+      "label": "Taille 'REMBOURSÉ' mobile",
+      "min": 8,
+      "max": 14,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_star_size",
+      "label": "Taille étoiles mobile",
+      "min": 10,
+      "max": 16,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "label": "Taille titre mobile",
+      "min": 18,
+      "max": 26,
+      "step": 2,
+      "default": 22,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_size",
+      "label": "Taille description mobile",
+      "min": 13,
+      "max": 17,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
     }
   ],
   "presets": [
     {
-      "name": "Temoignages",
-      "blocks": [
-        {
-          "type": "testimonial",
-          "settings": {
-            "name": "Linda T., 49",
-            "verified": true,
-            "text": "Je suis maman active et j'ai toujours l'air epuisee. Instant Lift+ me sauve la vie !"
-          }
-        },
-        {
-          "type": "testimonial",
-          "settings": {
-            "name": "Jennifer K., 42",
-            "verified": true,
-            "text": "J'avais des poches sous les yeux tenaces depuis des annees. Les poches disparaissent litteralement !"
-          }
-        },
-        {
-          "type": "testimonial",
-          "settings": {
-            "name": "Patricia R., 58",
-            "verified": true,
-            "text": "Peau sensible, c'est l'enfer. Mais pas Instant Lift+ ! Doux et pourtant efficace."
-          }
-        }
-      ]
+      "name": "Garantie 90 Jours"
     }
   ]
 }
