@@ -1,0 +1,640 @@
+<div class="guarantee-section">
+  <div class="guarantee-container">
+    
+    <div class="guarantee-content">
+      <div class="guarantee-badge">
+        <div class="badge-circle">
+          <div class="badge-text">
+            <div class="satisfaction">{{ section.settings.badge_line1 }}</div>
+            <div class="days">{{ section.settings.badge_days }}</div>
+            <div class="guarantee">{{ section.settings.badge_line2 }}</div>
+          </div>
+          <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="guarantee-text">
+        <h2 class="main-title">{{ section.settings.main_title }}</h2>
+        <div class="description">
+          <p>{{ section.settings.description1 }}</p>
+          <p>{{ section.settings.description2 }}</p>
+          <p>{{ section.settings.description3 }}</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<style>
+.guarantee-section {
+  background: linear-gradient(135deg, {{ section.settings.bg_color1 }} 0%, {{ section.settings.bg_color2 }} 100%);
+  padding: {{ section.settings.section_padding }}px 20px;
+  border-radius: {{ section.settings.section_radius }}px;
+  margin: {{ section.settings.section_margin }}px 0;
+}
+
+.guarantee-container {
+  max-width: {{ section.settings.max_width }}px;
+  margin: 0 auto;
+}
+
+.guarantee-content {
+  display: flex;
+  align-items: center;
+  gap: {{ section.settings.content_gap }}px;
+  justify-content: center;
+}
+
+.guarantee-badge {
+  flex-shrink: 0;
+}
+
+.badge-circle {
+  width: {{ section.settings.badge_size }}px;
+  height: {{ section.settings.badge_size }}px;
+  border-radius: 50%;
+  background: {{ section.settings.badge_bg_color }};
+  border: {{ section.settings.border_width }}px solid {{ section.settings.border_color }};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.badge-text {
+  text-align: center;
+  color: {{ section.settings.badge_text_color }};
+  line-height: 1.1;
+}
+
+.satisfaction {
+  font-size: {{ section.settings.satisfaction_size }}px;
+  font-weight: {{ section.settings.text_weight }};
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.days {
+  font-size: {{ section.settings.days_size }}px;
+  font-weight: {{ section.settings.days_weight }};
+  margin: 8px 0;
+  letter-spacing: 1px;
+}
+
+.guarantee {
+  font-size: {{ section.settings.guarantee_size }}px;
+  font-weight: {{ section.settings.text_weight }};
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.star {
+  color: {{ section.settings.star_color }};
+  font-size: {{ section.settings.star_size }}px;
+  font-weight: bold;
+}
+
+.guarantee-text {
+  flex: 1;
+  color: {{ section.settings.text_color }};
+}
+
+.main-title {
+  font-size: {{ section.settings.title_size }}px;
+  font-weight: {{ section.settings.title_weight }};
+  color: {{ section.settings.title_color }};
+  margin-bottom: {{ section.settings.title_margin }}px;
+  line-height: 1.3;
+}
+
+.description p {
+  font-size: {{ section.settings.description_size }}px;
+  line-height: 1.6;
+  margin-bottom: {{ section.settings.paragraph_spacing }}px;
+  color: {{ section.settings.description_color }};
+}
+
+.description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .guarantee-section {
+    padding: {{ section.settings.mobile_padding }}px 15px;
+    border-radius: {{ section.settings.mobile_radius }}px;
+  }
+  
+  .guarantee-content {
+    flex-direction: column;
+    gap: {{ section.settings.mobile_gap }}px;
+    text-align: center;
+  }
+  
+  .badge-circle {
+    width: {{ section.settings.mobile_badge_size }}px;
+    height: {{ section.settings.mobile_badge_size }}px;
+  }
+  
+  .satisfaction {
+    font-size: {{ section.settings.mobile_satisfaction_size }}px;
+  }
+  
+  .days {
+    font-size: {{ section.settings.mobile_days_size }}px;
+  }
+  
+  .guarantee {
+    font-size: {{ section.settings.mobile_guarantee_size }}px;
+  }
+  
+  .star {
+    font-size: {{ section.settings.mobile_star_size }}px;
+  }
+  
+  .main-title {
+    font-size: {{ section.settings.mobile_title_size }}px;
+  }
+  
+  .description p {
+    font-size: {{ section.settings.mobile_description_size }}px;
+  }
+}
+
+/* Animation */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.badge-circle {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.guarantee-text {
+  animation: slideInRight 0.8s ease-out 0.3s both;
+}
+</style>
+
+{% schema %}
+{
+  "name": "Garantie 90 Jours",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu du badge"
+    },
+    {
+      "type": "text",
+      "id": "badge_line1",
+      "label": "Première ligne badge",
+      "default": "100% SATISFAIT"
+    },
+    {
+      "type": "text",
+      "id": "badge_days",
+      "label": "Nombre de jours",
+      "default": "90 JOURS"
+    },
+    {
+      "type": "text",
+      "id": "badge_line2",
+      "label": "Dernière ligne badge",
+      "default": "OU REMBOURSÉ"
+    },
+    {
+      "type": "header",
+      "content": "Texte principal"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Titre principal",
+      "default": "Essayez Instant Lift+ en toute confiance avec notre garantie de remboursement de 90 jours !"
+    },
+    {
+      "type": "textarea",
+      "id": "description1",
+      "label": "Description ligne 1",
+      "default": "Les spécialistes de la peau, les dermatologues et nos clients en témoignent : Instant Lift+ offre des résultats visibles !"
+    },
+    {
+      "type": "textarea",
+      "id": "description2",
+      "label": "Description ligne 2",
+      "default": "Convaincus de son efficacité, nous vous proposons une garantie satisfait ou remboursé pendant 30 jours."
+    },
+    {
+      "type": "textarea",
+      "id": "description3",
+      "label": "Description ligne 3",
+      "default": "Si vous n'obtenez pas les résultats escomptés nous vous remboursons intégralement."
+    },
+    {
+      "type": "header",
+      "content": "Couleurs arrière-plan"
+    },
+    {
+      "type": "color",
+      "id": "bg_color1",
+      "label": "Couleur début gradient",
+      "default": "#9dd8c0"
+    },
+    {
+      "type": "color",
+      "id": "bg_color2",
+      "label": "Couleur fin gradient",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Taille badge",
+      "min": 160,
+      "max": 240,
+      "step": 20,
+      "default": 200,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "badge_bg_color",
+      "label": "Fond badge",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Couleur bordure",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Épaisseur bordure",
+      "min": 2,
+      "max": 8,
+      "step": 2,
+      "default": 4,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Couleur texte badge",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur étoiles",
+      "default": "#7bc4a4"
+    },
+    {
+      "type": "header",
+      "content": "Tailles texte badge"
+    },
+    {
+      "type": "range",
+      "id": "satisfaction_size",
+      "label": "Taille 'SATISFAIT'",
+      "min": 10,
+      "max": 18,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "days_size",
+      "label": "Taille '90 JOURS'",
+      "min": 20,
+      "max": 36,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "guarantee_size",
+      "label": "Taille 'REMBOURSÉ'",
+      "min": 10,
+      "max": 18,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Taille étoiles",
+      "min": 12,
+      "max": 20,
+      "step": 2,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Poids texte badge",
+      "options": [
+        {"value": "400", "label": "Normal"},
+        {"value": "500", "label": "Moyen"},
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"}
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "days_weight",
+      "label": "Poids '90 JOURS'",
+      "options": [
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"},
+        {"value": "800", "label": "Très gras"}
+      ],
+      "default": "700"
+    },
+    {
+      "type": "header",
+      "content": "Texte principal"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille titre",
+      "min": 20,
+      "max": 36,
+      "step": 2,
+      "default": 28,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur titre",
+      "default": "#2c3e50"
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Poids titre",
+      "options": [
+        {"value": "500", "label": "Moyen"},
+        {"value": "600", "label": "Semi-gras"},
+        {"value": "700", "label": "Gras"}
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "label": "Taille description",
+      "min": 14,
+      "max": 20,
+      "step": 2,
+      "default": 16,
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Couleur description",
+      "default": "#2c3e50"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur texte général",
+      "default": "#2c3e50"
+    },
+    {
+      "type": "header",
+      "content": "Espacements"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Largeur maximum",
+      "min": 800,
+      "max": 1400,
+      "step": 100,
+      "default": 1200,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Padding section",
+      "min": 30,
+      "max": 80,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_margin",
+      "label": "Marge section",
+      "min": 0,
+      "max": 50,
+      "step": 10,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_radius",
+      "label": "Arrondi section",
+      "min": 10,
+      "max": 30,
+      "step": 5,
+      "default": 20,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "label": "Espace badge-texte",
+      "min": 30,
+      "max": 80,
+      "step": 10,
+      "default": 50,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "title_margin",
+      "label": "Marge sous titre",
+      "min": 15,
+      "max": 35,
+      "step": 5,
+      "default": 25,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "label": "Espace entre paragraphes",
+      "min": 10,
+      "max": 25,
+      "step": 5,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding",
+      "label": "Padding mobile",
+      "min": 20,
+      "max": 50,
+      "step": 10,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_radius",
+      "label": "Arrondi mobile",
+      "min": 10,
+      "max": 25,
+      "step": 5,
+      "default": 15,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_gap",
+      "label": "Espace mobile",
+      "min": 20,
+      "max": 40,
+      "step": 10,
+      "default": 30,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_badge_size",
+      "label": "Taille badge mobile",
+      "min": 140,
+      "max": 180,
+      "step": 20,
+      "default": 160,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_satisfaction_size",
+      "label": "Taille 'SATISFAIT' mobile",
+      "min": 8,
+      "max": 14,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_days_size",
+      "label": "Taille '90 JOURS' mobile",
+      "min": 18,
+      "max": 26,
+      "step": 2,
+      "default": 22,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_guarantee_size",
+      "label": "Taille 'REMBOURSÉ' mobile",
+      "min": 8,
+      "max": 14,
+      "step": 2,
+      "default": 12,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_star_size",
+      "label": "Taille étoiles mobile",
+      "min": 10,
+      "max": 16,
+      "step": 2,
+      "default": 14,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_title_size",
+      "label": "Taille titre mobile",
+      "min": 18,
+      "max": 26,
+      "step": 2,
+      "default": 22,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "mobile_description_size",
+      "label": "Taille description mobile",
+      "min": 13,
+      "max": 17,
+      "step": 1,
+      "default": 15,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Garantie 90 Jours"
+    }
+  ]
+}
+{% endschema %}
