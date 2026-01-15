@@ -85,6 +85,62 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
         {%- sections 'footer-group' -%}
       {%- endif -%}
     </main>
+
+   <script>
+// =============== Retigena Perf Booster ===============
+
+// 1. Forcer lazy-loading sur toutes les images et iframes
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll("img, iframe").forEach(el => {
+    if (!el.hasAttribute("loading")) {
+      el.setAttribute("loading", "lazy");
+    }
+    // Bonus: forcer async decoding
+    el.setAttribute("decoding", "async");
+  });
+});
+
+// 2. Différer le chargement des scripts lourds (Google Analytics, widgets...)
+window.addEventListener("load", function() {
+  setTimeout(function(){
+
+    // ========== Google Analytics 4 ==========
+    var ga = document.createElement('script');
+    ga.src = "https://www.googletagmanager.com/gtag/js?id=G-MCN053PRH1";
+    ga.async = true; ga.defer = true;
+    document.body.appendChild(ga);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MCN053PRH1');
+
+    // ========== Exemple: Autre widget (chat, heatmap, popup) ==========
+    // var widget = document.createElement('script');
+    // widget.src = "https://cdn.vendor.com/widget.js";
+    // widget.async = true; widget.defer = true;
+    // document.body.appendChild(widget);
+
+  }, 2000); // Lance après 2 secondes
+});
+
+// 3. Précharger les ressources critiques (CSS & JS du thème)
+var preloads = [
+  { href: "{{ 'theme.css' | asset_url }}", as: "style" },
+  { href: "{{ 'theme.js' | asset_url }}", as: "script" }
+];
+preloads.forEach(function(file) {
+  var link = document.createElement('link');
+  link.rel = 'preload';
+  link.href = file.href;
+  link.as = file.as;
+  document.head.appendChild(link);
+});
+
+// =====================================================
+</script>
+
+
   </body>
   
 </html>
