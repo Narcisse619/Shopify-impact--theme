@@ -1,400 +1,314 @@
-<div class="trustpilot-compact">
-  <div class="tp-container">
-    
-    {% if section.settings.title != blank %}
-    <h2 class="tp-title">{{ section.settings.title }}</h2>
-    {% endif %}
-    
-    <div class="tp-rating-line">
-      <span class="tp-excellent">{{ section.settings.excellent_text }}</span>
-      <span class="tp-score">{{ section.settings.rating }} / 5</span>
-      
-      <div class="tp-stars">
-        <span class="tp-star">★</span>
-        <span class="tp-star">★</span>
-        <span class="tp-star">★</span>
-        <span class="tp-star">★</span>
-        <span class="tp-star">★</span>
+{%- if section.blocks.size > 0 -%}
+  {%- render 'section-spacing-collapsing' -%}
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      --testimonials-grid: {% if section.settings.stack_on_mobile %}none{% else %}auto / auto-flow 73vw{% endif %};
+      --testimonials-gap: {% if section.settings.gap == 'small' %}var(--grid-gutter){% elsif section.settings.gap == 'medium' %}var(--spacing-12){% elsif section.settings.gap == 'large' %}var(--spacing-20){% else %}var(--spacing-28){% endif %};
+    }
+
+    #shopify-section-{{ section.id }} .testimonials-scroll {
+      display: grid;
+      grid: var(--testimonials-grid);
+      gap: var(--testimonials-gap);
+    }
+
+    @media (min-width: 700px) {
+      #shopify-section-{{ section.id }} .testimonials-scroll {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-name-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    #shopify-section-{{ section.id }} .client-name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+    }
+
+    #shopify-section-{{ section.id }} .client-verified {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: #00b67a;
+      font-size: 13px;
+    }
+
+    #shopify-section-{{ section.id }} .verified-icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-stars {
+      display: flex;
+      gap: 3px;
+    }
+
+    #shopify-section-{{ section.id }} .star {
+      color: #00b67a;
+      font-size: 20px;
+    }
+
+    #shopify-section-{{ section.id }} .testimonial-text {
+      color: #555;
+      line-height: 1.7;
+      font-size: 15px;
+      margin: 0;
+    }
+
+    @media (max-width: 699px) {
+      #shopify-section-{{ section.id }} .testimonial-content {
+        padding: 20px;
+      }
+
+      #shopify-section-{{ section.id }} .client-name {
+        font-size: 16px;
+      }
+
+      #shopify-section-{{ section.id }} .testimonial-text {
+        font-size: 14px;
+      }
+    }
+  </style>
+
+  <div {% render 'section-properties' %}>
+    <div class="section-stack">
+      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: section.settings.text_alignment -%}
+
+      <div class="testimonials-scroll scroll-area bleed md:unbleed">
+        {%- for block in section.blocks -%}
+          <div class="testimonial-item snap-start" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {%- capture sizes -%}(max-width: 699px) calc(73vw - 40px), 33vw{%- endcapture -%}
+              {{- block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', sizes: sizes, widths: '300,400,500,600', class: 'rounded', style: 'width: 100%; height: 200px; object-fit: cover; display: block;' -}}
+            {%- endif -%}
+
+            <div class="testimonial-content">
+              <div class="testimonial-name-row">
+                {%- if block.settings.name != blank -%}
+                  <div class="client-name">{{ block.settings.name }}</div>
+                {%- endif -%}
+
+                {%- if block.settings.verified -%}
+                  <div class="client-verified">
+                    <svg class="verified-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                    </svg>
+                    Cliente vérifiée
+                  </div>
+                {%- endif -%}
+              </div>
+
+              <div class="testimonial-stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+
+              {%- if block.settings.text != blank -%}
+                <div class="testimonial-text">{{ block.settings.text }}</div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
       </div>
     </div>
-    
-    <div class="tp-info">
-      {{ section.settings.review_prefix }}<span class="tp-count">{{ section.settings.review_count }}</span>{{ section.settings.review_suffix }} ⭐ {{ section.settings.brand_text }}
-    </div>
-    
   </div>
-</div>
-
-<style>
-.trustpilot-compact {
-  background: {{ section.settings.background_color }};
-  padding: {{ section.settings.spacing }}px 20px;
-}
-
-.tp-container {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.tp-title {
-  font-size: {{ section.settings.title_size }}px;
-  color: {{ section.settings.title_color }};
-  font-weight: 600;
-  margin: 0 0 {{ section.settings.title_spacing }}px 0;
-  line-height: 1.2;
-}
-
-.tp-rating-line {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: {{ section.settings.element_gap }}px;
-  margin-bottom: {{ section.settings.info_spacing }}px;
-  flex-wrap: wrap;
-}
-
-.tp-excellent {
-  font-size: {{ section.settings.text_size }}px;
-  color: {{ section.settings.text_color }};
-  font-weight: 500;
-}
-
-.tp-score {
-  font-size: {{ section.settings.rating_size }}px;
-  color: {{ section.settings.rating_color }};
-  font-weight: 700;
-}
-
-.tp-stars {
-  display: flex;
-  gap: {{ section.settings.star_spacing }}px;
-}
-
-.tp-star {
-  width: {{ section.settings.star_size }}px;
-  height: {{ section.settings.star_size }}px;
-  background: {{ section.settings.star_color }};
-  color: white;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: {{ section.settings.star_icon_size }}px;
-  font-weight: bold;
-}
-
-.tp-info {
-  font-size: {{ section.settings.info_size }}px;
-  color: {{ section.settings.info_color }};
-}
-
-.tp-count {
-  color: {{ section.settings.count_color }};
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .trustpilot-compact {
-    padding: {{ section.settings.mobile_spacing }}px 15px;
-  }
-  
-  .tp-title {
-    font-size: {{ section.settings.mobile_title_size }}px;
-  }
-  
-  .tp-rating-line {
-    gap: {{ section.settings.mobile_gap }}px;
-    {% if section.settings.mobile_stack %}
-    flex-direction: column;
-    {% endif %}
-  }
-  
-  .tp-star {
-    width: {{ section.settings.mobile_star_size }}px;
-    height: {{ section.settings.mobile_star_size }}px;
-    font-size: {{ section.settings.mobile_star_icon }}px;
-  }
-  
-  .tp-info {
-    font-size: {{ section.settings.mobile_info_size }}px;
-  }
-}
-</style>
+{%- endif -%}
 
 {% schema %}
 {
-  "name": "Trustpilot Compact",
+  "name": "Temoignages",
+  "class": "shopify-section--testimonials",
+  "tag": "section",
+  "disabled_on": {
+    "templates": ["password"],
+    "groups": ["header", "custom.overlay"]
+  },
   "settings": [
     {
-      "type": "header",
-      "content": "Contenu"
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "label": "Stack on mobile",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "gap",
+      "label": "Gap spacing",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "x-large",
+          "label": "X-Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
     },
     {
       "type": "text",
       "id": "title",
-      "label": "Titre",
-      "default": "Nos clients en parlent le mieux"
+      "label": "Heading",
+      "default": "Ce que disent nos clientes"
     },
     {
-      "type": "text",
-      "id": "excellent_text",
-      "label": "Texte excellent",
-      "default": "Excellent"
-    },
-    {
-      "type": "text",
-      "id": "rating",
-      "label": "Note",
-      "default": "4,7"
-    },
-    {
-      "type": "text",
-      "id": "review_prefix",
-      "label": "Avant nombre",
-      "default": "basé sur +"
-    },
-    {
-      "type": "text",
-      "id": "review_count",
-      "label": "Nombre d'avis",
-      "default": "1 067"
-    },
-    {
-      "type": "text",
-      "id": "review_suffix",
-      "label": "Après nombre",
-      "default": " avis"
-    },
-    {
-      "type": "text",
-      "id": "brand_text",
-      "label": "Texte marque",
-      "default": "Trustpilot"
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
     },
     {
       "type": "header",
-      "content": "Espacements"
-    },
-    {
-      "type": "range",
-      "id": "spacing",
-      "label": "Espacement général",
-      "min": 10,
-      "max": 50,
-      "step": 5,
-      "default": 15
-    },
-    {
-      "type": "range",
-      "id": "title_spacing",
-      "label": "Espace sous titre",
-      "min": 5,
-      "max": 25,
-      "step": 5,
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "element_gap",
-      "label": "Espace entre éléments",
-      "min": 5,
-      "max": 20,
-      "step": 5,
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "info_spacing",
-      "label": "Espace avant info",
-      "min": 5,
-      "max": 15,
-      "step": 5,
-      "default": 5
-    },
-    {
-      "type": "range",
-      "id": "star_spacing",
-      "label": "Espace entre étoiles",
-      "min": 2,
-      "max": 6,
-      "step": 2,
-      "default": 2
-    },
-    {
-      "type": "header",
-      "content": "Tailles Desktop"
-    },
-    {
-      "type": "range",
-      "id": "title_size",
-      "label": "Taille titre",
-      "min": 20,
-      "max": 35,
-      "step": 5,
-      "default": 25
-    },
-    {
-      "type": "range",
-      "id": "text_size",
-      "label": "Taille texte",
-      "min": 14,
-      "max": 20,
-      "step": 2,
-      "default": 16
-    },
-    {
-      "type": "range",
-      "id": "rating_size",
-      "label": "Taille note",
-      "min": 16,
-      "max": 24,
-      "step": 2,
-      "default": 18
-    },
-    {
-      "type": "range",
-      "id": "info_size",
-      "label": "Taille info",
-      "min": 12,
-      "max": 18,
-      "step": 2,
-      "default": 14
-    },
-    {
-      "type": "range",
-      "id": "star_size",
-      "label": "Taille étoiles",
-      "min": 20,
-      "max": 30,
-      "step": 5,
-      "default": 25
-    },
-    {
-      "type": "range",
-      "id": "star_icon_size",
-      "label": "Taille icône étoile",
-      "min": 12,
-      "max": 18,
-      "step": 2,
-      "default": 14
-    },
-    {
-      "type": "header",
-      "content": "Mobile"
-    },
-    {
-      "type": "range",
-      "id": "mobile_spacing",
-      "label": "Espacement mobile",
-      "min": 5,
-      "max": 25,
-      "step": 5,
-      "default": 10
-    },
-    {
-      "type": "range",
-      "id": "mobile_title_size",
-      "label": "Taille titre mobile",
-      "min": 20,
-      "max": 30,
-      "step": 5,
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "mobile_star_size",
-      "label": "Taille étoiles mobile",
-      "min": 18,
-      "max": 24,
-      "step": 2,
-      "default": 20
-    },
-    {
-      "type": "range",
-      "id": "mobile_star_icon",
-      "label": "Icône étoiles mobile",
-      "min": 10,
-      "max": 16,
-      "step": 2,
-      "default": 12
-    },
-    {
-      "type": "range",
-      "id": "mobile_info_size",
-      "label": "Taille info mobile",
-      "min": 12,
-      "max": 16,
-      "step": 2,
-      "default": 12
-    },
-    {
-      "type": "range",
-      "id": "mobile_gap",
-      "label": "Espace éléments mobile",
-      "min": 5,
-      "max": 15,
-      "step": 5,
-      "default": 5
-    },
-    {
-      "type": "checkbox",
-      "id": "mobile_stack",
-      "label": "Empiler sur mobile",
-      "default": false
-    },
-    {
-      "type": "header",
-      "content": "Couleurs"
+      "content": "Colors",
+      "info": "Gradient replaces solid colors when set."
     },
     {
       "type": "color",
-      "id": "background_color",
-      "label": "Arrière-plan",
-      "default": "#ffffff"
+      "id": "background",
+      "label": "Background"
     },
     {
-      "type": "color",
-      "id": "title_color",
-      "label": "Couleur titre",
-      "default": "#1a202c"
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
     },
     {
       "type": "color",
       "id": "text_color",
-      "label": "Couleur texte",
-      "default": "#2d3748"
-    },
+      "label": "Text"
+    }
+  ],
+  "blocks": [
     {
-      "type": "color",
-      "id": "rating_color",
-      "label": "Couleur note",
-      "default": "#1a202c"
-    },
-    {
-      "type": "color",
-      "id": "star_color",
-      "label": "Couleur étoiles",
-      "default": "#00b67a"
-    },
-    {
-      "type": "color",
-      "id": "info_color",
-      "label": "Couleur info",
-      "default": "#718096"
-    },
-    {
-      "type": "color",
-      "id": "count_color",
-      "label": "Couleur nombre",
-      "default": "#1a202c"
+      "type": "testimonial",
+      "name": "Temoignage",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "600 x 400px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Nom et age",
+          "default": "Cliente, 00"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Badge verifiee",
+          "default": true
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Temoignage",
+          "default": "Ecrivez le temoignage ici..."
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Trustpilot Compact"
+      "name": "Temoignages",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "name": "Linda T., 49",
+            "verified": true,
+            "text": "Je suis maman active et j'ai toujours l'air epuisee. Instant Lift+ me sauve la vie !"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "name": "Jennifer K., 42",
+            "verified": true,
+            "text": "J'avais des poches sous les yeux tenaces depuis des annees. Les poches disparaissent litteralement !"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "name": "Patricia R., 58",
+            "verified": true,
+            "text": "Peau sensible, c'est l'enfer. Mais pas Instant Lift+ ! Doux et pourtant efficace."
+          }
+        }
+      ]
     }
   ]
 }
