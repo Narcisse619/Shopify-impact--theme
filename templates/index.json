@@ -863,68 +863,6 @@
         "text_color": ""
       }
     },
-    "impact_text_HM6cRh": {
-      "type": "impact-text",
-      "blocks": {
-        "item_mFMRwN": {
-          "type": "item",
-          "settings": {
-            "title": "96%",
-            "subheading": "DES UTILISATEURS CONSTATENT",
-            "content": "<p>une réduction des ridules et des rides du visage<br/><br/></p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_NpxTBp": {
-          "type": "item",
-          "settings": {
-            "title": "92%",
-            "subheading": "DES UTILISATEURS CONSTATENT",
-            "content": "<p>Une réduction des ridules et des rides du visage<br/><br/></p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        },
-        "item_kYRqwB": {
-          "type": "item",
-          "settings": {
-            "title": "86%",
-            "subheading": "DES UTILISATEURS CONSTATENT",
-            "content": "<p>Une peau plus douce et plus rebondie<br/><br/></p>",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": true,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_mFMRwN",
-        "item_NpxTBp",
-        "item_kYRqwB"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 0.5,
-        "background": "",
-        "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "custom_html_PnpHBT": {
       "type": "custom-html",
       "name": "Custom HTML",
@@ -1237,7 +1175,6 @@
     "tabs_LycG4c",
     "section_nous_vs_eux_xWJi96",
     "multi_column_MLDfJy",
-    "impact_text_HM6cRh",
     "custom_html_PnpHBT",
     "images_with_text_scrolling_8AKmYG",
     "garanties_BPCzTw",
